@@ -89,7 +89,7 @@ public class GetJiraInfo {
 	
 	
 	
-	public static List<Ticket> getTickets(String projectName) throws IOException, JSONException{
+	public static List<Ticket> getTickets(String projectName, List<Release> projReleases) throws IOException, JSONException{
 		
 		List<Ticket> tickets = new ArrayList<>();
 		
@@ -100,7 +100,7 @@ public class GetJiraInfo {
 	         j = i + 1000;
 	         String url = "https://issues.apache.org/jira/rest/api/2/search?jql=project=%22"
 	                + projectName + "%22AND%22issueType%22=%22Bug%22AND(%22status%22=%22closed%22OR"
-	                + "%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,resolutiondate,versions,created&startAt="
+	                + "%22status%22=%22resolved%22)AND%22resolution%22=%22fixed%22&fields=key,fixversions,resolutiondate,versions,created&startAt="
 	                + i.toString() + "&maxResults=" + j.toString();
 	         JSONObject json = readJsonFromUrl(url);
 	         JSONArray issues = json.getJSONArray("issues");
@@ -116,15 +116,16 @@ public class GetJiraInfo {
 	            dateString = ((CharSequence) issues.getJSONObject(i%1000).getJSONObject("fields").get("resolutiondate")).subSequence(0,10);
 	            LocalDate resDate = LocalDate.parse(dateString);
 	            
-	            tickets.add(new Ticket(key, id, crDate, resDate));
-	            Ticket ticket = tickets.get(i);
+	      
+	           	Ticket ticket = new Ticket(key, id, crDate, resDate);
+	           	ticket.addJSONObject(issues.getJSONObject(i%1000));
+	           	tickets.add(ticket);
+	          
 	            
 	            
 	            
-	            
-	            //
 	            //System.out.println(issues.getJSONObject(i%1000).toString());
-	            //System.out.print(id.toString()+"\n");
+	            //System.out.print(key+"\n");
 	         }  
 	      } while (i < total);
 		

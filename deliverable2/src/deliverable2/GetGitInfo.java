@@ -75,12 +75,9 @@ public class GetGitInfo {
 		
 	}
 	
-	public static void findReleaseFiles(Git git, Repository repository, List<Release> projReleases) throws NoHeadException, GitAPIException, IOException {
+	public static void findReleaseFiles(Git git, Repository repository, List<Release> projReleases, List <RevCommit> commits) throws NoHeadException, GitAPIException, IOException {
 			
-		List<RevCommit> commits = new ArrayList<>();
 		
-    	//get all commits of the project
-		commits = getAllCommits(git);
 		
 		//set last release commit
     	associateLastCommit(commits, projReleases);
@@ -101,15 +98,17 @@ public class GetGitInfo {
 		Iterable<RevCommit> log = git.log().all().call();
 
         for (RevCommit commit : log) {
+        		
                 commits.add(commit);
         }
+        System.out.println(commits.size());
 		return commits;
         
         //System.out.print(commits.toString() + "\n");
 		
 	}
 	
-	public static void associateLastCommit(List<RevCommit> commits, List<Release> projReleases) {
+	public static List<RevCommit> associateLastCommit(List<RevCommit> commits, List<Release> projReleases) {
 		
 		Integer commitsNumber = commits.size();
 		Integer releaseNumber = projReleases.size();
@@ -120,6 +119,16 @@ public class GetGitInfo {
 		int start = 0;
 
 		Collections.reverse(commits);
+		Release lastRelease = projReleases.get(projReleases.size()-1);
+		
+		for(int k = 0; k < commitsNumber; k++) {
+			
+			if (Instant.ofEpochSecond(commits.get(k).getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime().isAfter(lastRelease.getReleaseDate())) {
+				commitsNumber = k+1;
+				
+			}
+			
+		}
 		
 		for (int i = 0; i < releaseNumber ; i++) {
 			
@@ -132,6 +141,8 @@ public class GetGitInfo {
 					
 					commitDate = Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime();
 					
+					
+					
 
 					if (commitDate.isAfter(release.getReleaseDate())) {
 						release.setLastCommit(commits.get(j-1));
@@ -139,13 +150,16 @@ public class GetGitInfo {
 						break;
 					}
 					
+					
 					release.addCommit(commit);
-					//System.out.print(commit.toString());
-				}
-				
 			}
-			
+		    
 
+				
+		}
+			
+			
+		return commits;
 			
 		
 		

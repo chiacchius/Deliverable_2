@@ -10,8 +10,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 
 public class Release {
 	
-	private Integer index;         //release index
-	//private String releaseID;		
+	private Integer index;         //release index	
 	private String releaseName;	  //release ID (eg. 4.0.0)
 	private LocalDateTime date;   //when the version was released
 	private List<RevCommit> commits = new ArrayList<>(); //all commits of the release
@@ -21,7 +20,6 @@ public class Release {
 	
 	public Release(Integer index, String releaseName, LocalDateTime date) {
 		this.index = index;
-		//this.releaseID = releaseID;
 		this.releaseName = releaseName;
 		this.date = date;
 		
@@ -32,12 +30,12 @@ public class Release {
 	public void printRelease() {
 		System.out.print("\n\nRelease: " + this.index.toString() + "\t" + releaseName + "\t" + date.toString()+ "\n");
 		System.out.print((Instant.ofEpochSecond((this.lastCommit).getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime()).toString() + "\n");
-		
+		System.out.print("commitsNumber = " + commits.size());
 		int len = releaseFiles.size();
 		
-		/*System.out.print(this.lastCommit.toString());
+		//System.out.print(this.lastCommit.toString());
 		
-		for (int i = 0; i < len ; i++) {
+		/*for (int i = 0; i < len ; i++) {
 			System.out.print(this.releaseFiles.get(i).getFilePath()+"\n");
 		}*/
 		
@@ -48,9 +46,6 @@ public class Release {
 		return this.index;
 	}
 	
-	/*public String getReleaseReleaseID() {
-		return this.releaseID;
-	}*/
 	
 	public String getReleaseName() {
 		return this.releaseName;
@@ -62,6 +57,10 @@ public class Release {
 	
 	public List<ReleaseFile> getReleaseFiles(){
 		return this.releaseFiles;
+	}
+	
+	public List<RevCommit> getCommits(){
+		return this.commits;
 	}
 	
 	public RevCommit getLastCommit() {
