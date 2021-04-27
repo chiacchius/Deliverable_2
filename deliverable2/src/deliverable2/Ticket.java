@@ -2,6 +2,7 @@ package deliverable2;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.json.JSONObject;
@@ -16,7 +17,7 @@ public class Ticket {
 	private Release ov;
 	private Release fv;
 	private JSONObject jsonObj;
-	private List<Release> av;
+	private List<Release> av = new ArrayList<>();
 	
 	
 	
@@ -36,19 +37,20 @@ public class Ticket {
 		this.printIv();
 		this.printFv();
 		this.printOv();
+		this.printAv();
 
 	}
 	
 	private void printOv() {
 		if (this.ov != null) {
-			System.out.println("Ov: " +this.ov.getReleaseName());
+			System.out.println("Ov: " +this.ov.getReleaseIndex());
 		}	
 	}
 
 
 	private void printFv() {
 		if (this.fv != null) {
-			System.out.println("Fv: " + this.fv.getReleaseName());
+			System.out.println("Fv: " + this.fv.getReleaseIndex());
 		}
 		else {
 			System.out.println("Fv: null" );
@@ -59,9 +61,18 @@ public class Ticket {
 
 	private void printIv() {
 		if (this.iv != null) {
-			System.out.println("Iv: " + this.iv.getReleaseName());
+			System.out.println("Iv: " + this.iv.getReleaseIndex());
 		}
 		
+	}
+	
+	private void printAv() {
+		System.out.print("Av: ");
+
+		for (int i = 0; i<av.size(); i++) {
+			System.out.print(this.av.get(i).getReleaseIndex().toString() + "\t");
+		}
+		System.out.print("\n");
 	}
 
 

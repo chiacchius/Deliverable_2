@@ -32,23 +32,27 @@ import org.json.JSONObject;
 
 public class MainControl {
 
-	private static String PROJ_NAME = "BOOKKEEPER";
-	static String path;
-	static String url;
-	static Repository repository;
-    static Map<LocalDateTime, String> releases;
-    
-    private static List<Release> projReleases = new ArrayList<>();
-    private static List<Ticket> projTickets = new ArrayList<>();
-    private static List<RevCommit> commits = new ArrayList<>();
+	
 	
 	public static void main(String[] args) throws InvalidRemoteException, GitAPIException, IOException, JSONException  {
+		
+		
+		
+		String PROJ_NAME = "ZOOKEEPER";
+		String path;
+		String url;
+		Repository repository;
+	    Map<LocalDateTime, String> releases;
+	    
+	    List<Release> projReleases = new ArrayList<>();
+	    List<Ticket> projTickets = new ArrayList<>();
+	    List<RevCommit> commits;
 		
 		int j;
 		path = "/Users/chiacchius/Desktop/" + PROJ_NAME;
 		url = "https://github.com/apache/" + PROJ_NAME;
 		Git git= GetGitInfo.cloneProjectFromGitHub(path, PROJ_NAME);
-		Repository repository = git.getRepository();
+		repository  = git.getRepository();
 		
 		
 		
@@ -70,26 +74,26 @@ public class MainControl {
     	commits = GetGitInfo.getAllCommits(git);
     	GetGitInfo.findReleaseFiles(git, repository, projReleases, commits);
     	
-    	//set what versions are Ov, Fv, Iv 
+    	//set what versions are Ov, Fv, Iv, Av
     	setOvReleases(projReleases, projTickets);
     	setFvReleases(projReleases,projTickets, commits);
     	setIvReleases(projReleases, projTickets);
+    	setAvReleases(projReleases, projTickets);
+    	
+    	//find bugginess of files
     	
     	
-    	for (j=0;j<projReleasesLen ;j++) {
+    	
+    	
+    	/*for (j=0;j<projReleasesLen ;j++) {
        	 
     	 	projReleases.get(j).printRelease();	
     	 	
     	 
-        }
+        }*/
     	
     	
-    	
-    	
-    	
-		
-		
-	
+
 
 	}
 	
@@ -97,6 +101,25 @@ public class MainControl {
 	
 	
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
 
 
 
@@ -173,8 +196,8 @@ public class MainControl {
 				RevCommit commit = commits.get(j);
 				
 				if (commit.getFullMessage().contains(ticket.getTicketKey() + ":")) {
-					LocalDateTime commitDate = Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime();
-					Release fv = findFv(commitDate, projReleases);
+			
+					Release fv = findFv(Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime(), projReleases);
 					ticket.setFv(fv);
 					//System.err.print("\nKey: " + ticket.getTicketKey() + "\n" + commit.getFullMessage() +"\n\n");
 					
@@ -191,7 +214,77 @@ public class MainControl {
 	
 	
 	
+	private static void setAvReleases(List<Release> projReleases, List<Ticket> projTickets) {
+		
+		for (Ticket ticket: projTickets) {
+			
+			System.out.println(ticket.getTicketKey());
+			Integer iv = ticket.getIv().getReleaseIndex();
+			Integer fv = ticket.getFv().getReleaseIndex();
+			
+			
+			for (int i = iv; i < fv; i++) {
+				
+				Release release = findRelease(i, projReleases);
+				ticket.setAv(release);
+				
+				
+			}
+			
+			ticket.printTicket();
+			ticket.printVersions();
+			
+			
+			
+			
+			
+		}
+		
+		
+	}
 	
+	
+	
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private static void checkIfFvExists(List<Ticket> projTickets) {
 		
@@ -232,18 +325,130 @@ public class MainControl {
 		Float prop;
 		
 		for (Ticket ticket : projTickets) {
-			JSONObject json = ticket.getJSONObject();
-			//Release iv = findIV(json);
-			Release release = findIV(json, projReleases);
-			ticket.setIv(release);
-			ticket.printTicket();
-			ticket.printVersions();
+			
+			Release release = findIV(ticket, projReleases);
+			
+			
+			if (release != null) {
+				Boolean isCorrect = checkIfIvIsCorrect(release, ticket);
+				if (isCorrect) {
+					ticket.setIv(release);
+				}
+				
+				//System.out.println(ticket.getTicketKey());
+			}
+			
+			
+			
+			//ticket.printTicket();
+			//ticket.printVersions();
 		}
 		
 		prop = proportion(projTickets);
 		
+		for (Ticket ticketWithoutIv : projTickets) {
+			
+			if (ticketWithoutIv.getIv()==null) {
+				
+				int fv = ticketWithoutIv.getFv().getReleaseIndex();
+				int ov = ticketWithoutIv.getOv().getReleaseIndex();
+				
+				Float id = fv - (fv - ov) * prop;
+				
+				//System.out.println(id.intValue());
+
+				if (id.intValue() <= 0 ) {
+					id = (float) 1;
+					
+
+				}
+				if (id.intValue() > ticketWithoutIv.getFv().getReleaseIndex()) {
+					//System.out.println(ticketWithoutIv.getTicketKey()+ "eh");
+					
+
+					id = (float) ticketWithoutIv.getFv().getReleaseIndex();
+					
+					//System.out.println(id.intValue());
+				}
+				Release release = findRelease(id.intValue(), projReleases);
+				
+
+				ticketWithoutIv.setIv(release);
+				//System.out.println(ticketWithoutIv.getTicketKey());
+				//System.out.println(id.intValue());
+				//System.out.println(release.getReleaseIndex());
+
+				
+			}
+			
+			//ticketWithoutIv.printTicket();
+			//ticketWithoutIv.printVersions();
+			
+			
+		}
+		
 		
 	}
+
+
+
+
+
+
+
+
+
+	private static Boolean checkIfIvIsCorrect(Release release, Ticket ticket) {
+		
+		if (release.getReleaseIndex() > ticket.getOv().getReleaseIndex()) {
+			
+			return false;
+		
+		}
+		
+		return true;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	private static Release findRelease(int id, List<Release> projReleases) {
+		for (int i = 0; i < projReleases.size(); i++) {
+		
+			
+			if (projReleases.get(i).getReleaseIndex() == id) {
+			
+				return projReleases.get(i);
+				
+			}
+			
+			
+		}
+		return null;
+	}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,7 +464,7 @@ public class MainControl {
 		
 		for (Ticket ticket: projTickets) {
 			
-			if (ticket.getIv()!=null && ticket.getFv().getReleaseIndex() != ticket.getOv().getReleaseIndex()) {
+			if (ticket.getIv()!=null && !ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex()) ) {
 				
 				float num =(ticket.getFv().getReleaseIndex().floatValue() - ticket.getIv().getReleaseIndex().floatValue());
 				float den = ticket.getFv().getReleaseIndex().floatValue() - ticket.getOv().getReleaseIndex().floatValue();
@@ -299,10 +504,10 @@ public class MainControl {
 
 
 
-	private static Release findIV(JSONObject json, List<Release> projReleases) throws JSONException {
+	private static Release findIV(Ticket ticket, List<Release> projReleases) throws JSONException {
 		
 			
-		
+		JSONObject json = ticket.getJSONObject();
 		
 			if (json.getJSONObject("fields").getJSONArray("versions").length() > 0) {
 				
@@ -321,8 +526,7 @@ public class MainControl {
 				
 				
 			}
-			
-			
+			//System.out.println(ticket.getTicketKey());
 			return null;
 			
 		
@@ -394,17 +598,6 @@ public class MainControl {
 
 
 
-
-
-
-
-
-
-	
-	
-	
-	
-	
 	
 	
 
