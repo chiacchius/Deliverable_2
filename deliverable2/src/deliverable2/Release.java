@@ -4,7 +4,9 @@ import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.eclipse.jgit.revwalk.RevCommit;
 
@@ -15,7 +17,8 @@ public class Release {
 	private LocalDateTime date;   //when the version was released
 	private List<RevCommit> commits = new ArrayList<>(); //all commits of the release
 	private RevCommit lastCommit; //last commit of the release
-	
+	private Integer numFiles;
+
 	private List<ReleaseFile> releaseFiles = new ArrayList<>(); //all the java files of the release
 	
 	public Release(Integer index, String releaseName, LocalDateTime date) {
@@ -30,8 +33,8 @@ public class Release {
 	public void printRelease() {
 		System.out.print("\n\nRelease: " + this.index.toString() + "\t" + releaseName + "\t" + date.toString()+ "\n");
 		System.out.print((Instant.ofEpochSecond((this.lastCommit).getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime()).toString() + "\n");
-		System.out.print("commitsNumber = " + commits.size());
-		int len = releaseFiles.size();
+		System.out.print("commitsNumber = " + commits.size() + " numFiles = " + numFiles.toString()+ "\n");
+		//int len = releaseFiles.size();
 		
 		//System.out.print(this.lastCommit.toString());
 		
@@ -95,8 +98,38 @@ public class Release {
 	
 	
 	
+	public Integer getNumFiles() {
+		return this.numFiles;
+	}
+
+
+
+	public void setNumFiles(Integer numFiles) {
+		this.numFiles = numFiles;
+	}
 	
 	
+	public Boolean containsFile(String path){
+		boolean bool = false;
+	    for( ReleaseFile rf : this.releaseFiles ) {
+	      if( rf.getFilePath().equals(path) || rf.getChange().getPaths().contains(path) ) {
+	        bool = true;
+	        return bool;
+	      }
+	    }
+	    return bool;
+	} 
+	
+	
+	
+	 public ReleaseFile getReleaseFileByName( String name ) {
+		    for( ReleaseFile rf : this.releaseFiles ) {
+		      if( rf.getFilePath().equals(name) || rf.getChange().getPaths().contains(name) ) {
+		        return rf;
+		      }
+		    }
+		    return null;
+		  }
 	
 	
 }

@@ -11,7 +11,7 @@ import java.util.Map;
 public class CsvWriter {
 	
 	
-	public static void writeCsv(String projectName, ArrayList<LocalDateTime> releases, HashMap<LocalDateTime, String> releaseID, HashMap<LocalDateTime, String> releaseNames) throws IOException{
+	public static void writeCsv(String projectName, List<Release> releases) throws IOException{
 		   
 		FileWriter fileWriter = null;
 		 try {
@@ -19,19 +19,26 @@ public class CsvWriter {
 	            String outname = projectName + "VersionInfo.csv";
 					    //Name of CSV for output
 					    fileWriter = new FileWriter(outname);
-	            fileWriter.append("Index,Version ID,Version Name,Date");
+	            fileWriter.append("Index,Version ID,Version Name,Date,File,Bugginess");
 	            fileWriter.append("\n");
-	            int numVersions = releases.size();
-	            for ( int i = 0; i < releases.size(); i++) {
-	               Integer index = i + 1;
-	               fileWriter.append(index.toString());
-	               fileWriter.append(",");
-	               fileWriter.append(releaseID.get(releases.get(i)));
-	               fileWriter.append(",");
-	               fileWriter.append(releaseNames.get(releases.get(i)));
-	               fileWriter.append(",");
-	               fileWriter.append(releases.get(i).toString());
-	               fileWriter.append("\n");
+	            for ( int i = 0; i < releases.size()/2; i++) {
+		           	Release release = releases.get(i);
+		            for (int j=0; j<release.getNumFiles(); j++) {
+		               
+		               Integer index = i + 1;
+		               fileWriter.append(index.toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseIndex().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseName());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseDate().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getFilePath());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getBugginess().toString());
+		               fileWriter.append("\n");
+		            }
 	            }
 
 	         } catch (Exception e) {

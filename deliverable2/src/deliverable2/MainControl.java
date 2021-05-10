@@ -1,12 +1,13 @@
 package deliverable2;
 
-import java.io.File;
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -14,13 +15,19 @@ import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
 import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.Edit;
 import org.eclipse.jgit.diff.RawTextComparator;
+import org.eclipse.jgit.errors.IncorrectObjectTypeException;
+import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevSort;
+import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.EmptyTreeIterator;
@@ -34,23 +41,22 @@ public class MainControl {
 
 	
 	
-	public static void main(String[] args) throws InvalidRemoteException, GitAPIException, IOException, JSONException  {
+	public static void main(String[] args) throws GitAPIException, IOException, JSONException  {
 		
 		
 		
-		String PROJ_NAME = "ZOOKEEPER";
+		String PROJ_NAME = "BOOKKEEPER";
 		String path;
-		String url;
 		Repository repository;
-	    Map<LocalDateTime, String> releases;
 	    
-	    List<Release> projReleases = new ArrayList<>();
-	    List<Ticket> projTickets = new ArrayList<>();
+	    List<Release> projReleases;
+	    List<ReleaseFile> files;
+	    List<Ticket> projTickets;
 	    List<RevCommit> commits;
+	    List<Changes> changes;
 		
-		int j;
+
 		path = "/Users/chiacchius/Desktop/" + PROJ_NAME;
-		url = "https://github.com/apache/" + PROJ_NAME;
 		Git git= GetGitInfo.cloneProjectFromGitHub(path, PROJ_NAME);
 		repository  = git.getRepository();
 		
@@ -61,10 +67,7 @@ public class MainControl {
     	//retrieve all releases of the project
     	projReleases = GetJiraInfo.getReleases(PROJ_NAME);
     	
-    	
-    	//consider only the first half
-    	int projReleasesLen = projReleases.size();
-    	
+     	
     	
     	//retrieve all the tickets
     	projTickets = GetJiraInfo.getTickets(PROJ_NAME, projReleases);
@@ -72,7 +75,9 @@ public class MainControl {
     	
     	//retrieve all the file .java of a specific release
     	commits = GetGitInfo.getAllCommits(git);
-    	GetGitInfo.findReleaseFiles(git, repository, projReleases, commits);
+    	files = GetGitInfo.findReleaseFiles(git, repository, projReleases, commits);
+    	
+    	//setChangesToFiles(files, repository, projReleases);
     	
     	//set what versions are Ov, Fv, Iv, Av
     	setOvReleases(projReleases, projTickets);
@@ -80,33 +85,307 @@ public class MainControl {
     	setIvReleases(projReleases, projTickets);
     	setAvReleases(projReleases, projTickets);
     	
-    	//find bugginess of files
+    	
+    	/*for (Ticket ticket: projTickets) {
+		
+    		ticket.printTicket(); 
+    		ticket.printVersions();
+		}*/
     	
     	
     	
+    	//getData(repository, projReleases);
     	
-    	/*for (j=0;j<projReleasesLen ;j++) {
-       	 
-    	 	projReleases.get(j).printRelease();	
-    	 	
+    	
+    	changes = getChanges(repository, commits, files, projReleases);
+    	//take all changed file for avery ticket
+    	setFilesToTicket(projTickets, changes, files, repository);
+    	
+    	
+    	System.out.println("################### " + changes.size() + "####################");
+    	
+    	
+    	int num =0;
+    	
+    	for (Ticket ticket: projTickets) {
+    		
+    		//System.out.println("################### " + ticket.getTicketKey() + "  buggy files: " + ticket.getBugFiles().size());
+    		num += ticket.getBugFiles().size();
+        	RetrieveMetrics.checkBugginess(projReleases, ticket, repository, files);
+        	
+        	
+    	}
+    	
+    	//retrieve all metrics
+    	RetrieveMetrics.retrieveAllMetrics(repository, commits, projTickets, projReleases);
+    	
+    	
+    	System.out.println("################### " + num + "####################");
+    	
+    	int numbug=0;
+    	
+    	
+    	for (int j=0; j<projReleases.size()/2;j++) {
+    		
+    		//System.out.println("\n" + projReleases.get(j).getReleaseName() + "\n");
+    		
+    	 	for (ReleaseFile entry : projReleases.get(j).getReleaseFiles()) {
+    	 		if (entry.getBugginess()) {
+    	 			//System.out.println(entry.getFilePath());
+    	 			numbug++;
+    	 		}
+    	 	}
     	 
-        }*/
+        }
     	
+    	System.out.println(numbug);
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	CsvWriter.writeCsv(PROJ_NAME, projReleases);
     	
 
 
 	}
 	
 	
+
+	
 	
 	
 	
+	private static void setFilesToTicket(List<Ticket> projTickets, List<Changes> changes, List<ReleaseFile> files, Repository repository) throws MissingObjectException, IncorrectObjectTypeException, IOException {
+		
+		for (Ticket ticket: projTickets) {
+			
+		
+			try(RevWalk revWalk = new RevWalk( repository )){
+				
+				for (RevCommit comm: ticket.getCommits()) {
+					revWalk.sort(RevSort.TOPO); // all commit child before parents
+					RevCommit lastCommitBeforeResolution = revWalk.parseCommit(comm.getParent(0) );
+					
+					RevTree oldTree = lastCommitBeforeResolution.getTree();									
+					RevTree newTree = comm.getTree();
+					
+					
+					DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);
+					df.setRepository(repository);
+					df.setDiffComparator(RawTextComparator.DEFAULT);
+					df.setContext(0);
+					df.setDetectRenames(true);
+					List<DiffEntry> diffEntries = new ArrayList<>();
+					diffEntries = df.scan(oldTree, newTree);
+					for( DiffEntry entry : diffEntries ) {
+						//for every ticket update buggy files list
+						if ( entry.getOldPath().contains(".java") || entry.getNewPath().contains(".java")) {
+							//if a file was deleted a bug was resolved
+							if (entry.getChangeType()==ChangeType.DELETE) {
+								ticket.addBuggyFile(entry.getOldPath());
+							}
+							//if a file was modified a bug was resolved
+							else if (entry.getChangeType()==ChangeType.MODIFY){
+								ticket.addBuggyFile(entry.getNewPath());
+							}  
+							
+						}
+						  
+					}
+				}
+				
+				
+			}
+		
+		
+		
+		}
+		
+		
+	}
 
 
 
 
 
 
+
+	private static List<Changes> getChanges(Repository repository, List<RevCommit> commits, List<ReleaseFile> files, List<Release> projReleases) throws IOException {
+		
+		List<Changes> changes = new ArrayList<>();
+		RevWalk rw = new RevWalk(repository);
+		
+		for (RevCommit comm: commits) {
+			DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);	
+			df.setRepository(repository);
+			df.setDiffComparator(RawTextComparator.DEFAULT);
+			df.setDetectRenames(true);
+			
+			List<DiffEntry> entries=getEntryList(rw, df, comm);
+			
+			for (DiffEntry entry: entries) {
+				
+				String oldPath = entry.getOldPath();
+				String newPath = entry.getNewPath();
+				
+				if (entry.getChangeType().toString().equals("RENAME") && (entry.toString().contains(".java"))) {
+					createOrUpdateChanges(changes, oldPath, newPath);
+					
+					
+				}
+				
+			}
+		}
+		
+		
+		updateChanges(changes, files);
+		updateReleaseFiles(changes, projReleases);
+		return changes;
+		
+		
+	}
+
+
+
+
+
+
+
+	private static void updateReleaseFiles(List<Changes> changes, List<Release> projReleases) {
+		
+		for (int i=0; i<projReleases.size(); i++) {
+			
+			
+			for (ReleaseFile file: projReleases.get(i).getReleaseFiles()) {
+				
+				for (Changes ch: changes) {
+					
+					if (ch.getPaths().contains(file.getFilePath())) {
+						file.setChange(ch);
+						System.out.println("###########################################################");
+					}
+					
+					
+				}
+				
+				
+			}
+			
+			
+			
+			
+			
+		}
+	
+	
+	}
+
+
+
+
+
+
+
+	private static void updateChanges(List<Changes> changes, List<ReleaseFile> files) {
+		//set newPath of changes with the last one
+		for (int i=0;i<files.size();i++) {
+			
+			String fileName = files.get(i).getFilePath();
+				
+			for (int k=0;k<changes.size();k++) {
+					
+					for( int m=0;m<changes.get(k).getPaths().size();m++) {
+						
+						String renameFile = changes.get(k).getPaths().get(m);
+						
+						if (renameFile.equals(fileName) || fileName.contains(renameFile) ) {
+							changes.get(k).setNewPath(renameFile);
+							
+						}
+					}
+				}
+			}
+	}
+
+
+
+
+
+
+
+	private static void createOrUpdateChanges(List<Changes> changes, String oldPath, String newPath) {
+		
+		Boolean oldP = true;
+		Boolean newP = true;
+		
+		for (Changes ch:changes) {
+			
+			//if ch contains oldPath
+			if (!ch.checkPath(oldPath)) {
+				oldP=false;
+				if(ch.checkPath(newPath)) {
+					ch.addPath(newPath);
+					ch.setNewPath(newPath);
+					newP=false;
+				}
+			}
+			//if ch contains newPath
+			if (!ch.checkPath(newPath)) {
+				newP = true;
+				if (ch.checkPath(oldPath)) {
+					ch.addPath(oldPath);
+					oldP = false;
+				}
+			}
+			
+			
+		}
+		
+		
+		//create a new change
+		if (oldP && newP) {
+			Changes change = new Changes(newPath);
+			change.addPath(oldPath);
+			change.addPath(newPath);
+			changes.add(change);
+		}
+		
+		
+	}
+
+
+
+
+
+
+
+	public static List<DiffEntry> getEntryList(RevWalk rw, DiffFormatter df, RevCommit commit) throws IOException {
+		List<DiffEntry> diffEntries;
+		RevCommit parent = null;
+		
+		if(commit.getParentCount() !=0) {
+			parent =commit.getParent(0);
+		}
+			
+		
+		
+		if(parent != null) {
+			
+			diffEntries = df.scan(parent.getTree(), commit.getTree());
+			
+		}
+		else {
+			
+			ObjectReader reader = rw.getObjectReader();
+			diffEntries =df.scan(new EmptyTreeIterator(),
+			        new CanonicalTreeParser(null, reader, commit.getTree()));
+		}
+		
+		return diffEntries;
+	}
 
 
 
@@ -115,21 +394,6 @@ public class MainControl {
 
 
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -178,39 +442,7 @@ public class MainControl {
 	}
 	
 	
-	private static void setFvReleases(List<Release> projReleases, List<Ticket> projTickets, List<RevCommit> commits) {
-		
-
-		int j;
-		Integer commitsNum;
-
-		
-		
-		commitsNum = commits.size();
-		
-		for (Ticket ticket : projTickets) {
-			
-			
-			for(j = 0; j < commitsNum; j++) {
-				
-				RevCommit commit = commits.get(j);
-				
-				if (commit.getFullMessage().contains(ticket.getTicketKey() + ":")) {
-			
-					Release fv = findFv(Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime(), projReleases);
-					ticket.setFv(fv);
-					//System.err.print("\nKey: " + ticket.getTicketKey() + "\n" + commit.getFullMessage() +"\n\n");
-					
-				}
-				
-			}
-			
-		}
-		checkIfFvExists(projTickets);
-		
-		
-		
-	}
+	
 	
 	
 	
@@ -218,7 +450,7 @@ public class MainControl {
 		
 		for (Ticket ticket: projTickets) {
 			
-			System.out.println(ticket.getTicketKey());
+			//System.out.println(ticket.getTicketKey());
 			Integer iv = ticket.getIv().getReleaseIndex();
 			Integer fv = ticket.getFv().getReleaseIndex();
 			
@@ -231,8 +463,8 @@ public class MainControl {
 				
 			}
 			
-			ticket.printTicket();
-			ticket.printVersions();
+			//ticket.printTicket();
+			//ticket.printVersions();
 			
 			
 			
@@ -322,7 +554,8 @@ public class MainControl {
 
 	private static void setIvReleases(List<Release> projReleases, List<Ticket> projTickets) throws JSONException {
 		
-		Float prop;
+		Double prop;
+		Integer onePercent;
 		
 		for (Ticket ticket : projTickets) {
 			
@@ -333,6 +566,7 @@ public class MainControl {
 				Boolean isCorrect = checkIfIvIsCorrect(release, ticket);
 				if (isCorrect) {
 					ticket.setIv(release);
+					ticket.setNotProportion(true);
 				}
 				
 				//System.out.println(ticket.getTicketKey());
@@ -344,35 +578,45 @@ public class MainControl {
 			//ticket.printVersions();
 		}
 		
-		prop = proportion(projTickets);
+		onePercent = projTickets.size() /100;
+		
+		//prop = proportion(projTickets);
+		//Collections.reverse(projTickets);
 		
 		for (Ticket ticketWithoutIv : projTickets) {
 			
 			if (ticketWithoutIv.getIv()==null) {
 				
-				int fv = ticketWithoutIv.getFv().getReleaseIndex();
-				int ov = ticketWithoutIv.getOv().getReleaseIndex();
 				
-				Float id = fv - (fv - ov) * prop;
 				
-				//System.out.println(id.intValue());
+				prop = proportion(ticketWithoutIv, projTickets, onePercent);
+				System.out.println(ticketWithoutIv.getTicketKey() + "   ok");
+				
+				Math.ceil(prop);
+				
+				Double fv = (double) ticketWithoutIv.getFv().getReleaseIndex();
+				Double ov = (double) ticketWithoutIv.getOv().getReleaseIndex();
+				
+				Double id = fv - (fv - ov) * prop;
+				
+				id = Math.floor(id);
 
 				if (id.intValue() <= 0 ) {
-					id = (float) 1;
+					id = (double) 1;
 					
 
 				}
-				if (id.intValue() > ticketWithoutIv.getFv().getReleaseIndex()) {
+				if (id.intValue() > ticketWithoutIv.getOv().getReleaseIndex()) {
 					//System.out.println(ticketWithoutIv.getTicketKey()+ "eh");
 					
 
-					id = (float) ticketWithoutIv.getFv().getReleaseIndex();
+					id = (double) ticketWithoutIv.getOv().getReleaseIndex();
 					
 					//System.out.println(id.intValue());
 				}
 				Release release = findRelease(id.intValue(), projReleases);
+				System.out.println(release.getReleaseName());
 				
-
 				ticketWithoutIv.setIv(release);
 				//System.out.println(ticketWithoutIv.getTicketKey());
 				//System.out.println(id.intValue());
@@ -386,6 +630,8 @@ public class MainControl {
 			
 			
 		}
+		
+		Collections.reverse(projTickets);
 		
 		
 	}
@@ -458,32 +704,45 @@ public class MainControl {
 
 
 
-	private static Float proportion(List<Ticket> projTickets) {
+	private static Double proportion(Ticket tick, List<Ticket> projTickets, Integer onePercent) {
 		
-		List<Float> propList = new ArrayList<>();
+		List<Double> propList = new ArrayList<>();
+		Integer index = projTickets.indexOf(tick);
 		
-		for (Ticket ticket: projTickets) {
+		/*if (index-onePercent-1<0) {
+			return (double) 0;
+		}*/
+		
+		for (int i = index-1; i >= 0; i--) {
 			
-			if (ticket.getIv()!=null && !ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex()) ) {
+			Ticket ticket = projTickets.get(i);
+			
+			if (projTickets.get(i).getNotProportion() && projTickets.get(i).getIv()!=null && !ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex()) ) {
 				
-				float num =(ticket.getFv().getReleaseIndex().floatValue() - ticket.getIv().getReleaseIndex().floatValue());
-				float den = ticket.getFv().getReleaseIndex().floatValue() - ticket.getOv().getReleaseIndex().floatValue();
+				double num = Math.ceil(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getIv().getReleaseIndex().floatValue());
+				double den = Math.floor(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getOv().getReleaseIndex().floatValue());
+				
 				propList.add(num/den);
 
-				
-				
-				
+			
 			}
 			
+			else if (projTickets.get(i).getNotProportion() && ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex())){
+				double num = Math.ceil(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getIv().getReleaseIndex().floatValue());
+				double den = (double) 1;
+				propList.add(Math.ceil(num/den));
+			}
+			
+			if (propList.size()==onePercent) break;
 			
 		}
 		
-		float tot = 0;
-		for (Float p: propList) {
+		double tot = 0;
+		for (Double p: propList) {
 			tot += p;
 		}
-		System.out.println(tot/propList.size());
-		return tot/propList.size();
+		System.out.println(tick.getTicketKey()+    "   "+ tot/propList.size());
+		return (tot/propList.size());
 	
 	}
 
@@ -526,7 +785,6 @@ public class MainControl {
 				
 				
 			}
-			//System.out.println(ticket.getTicketKey());
 			return null;
 			
 		
@@ -549,7 +807,7 @@ public class MainControl {
 
 
 
-	private static Release findFv(LocalDateTime commitDate, List<Release> projReleases) {
+	private static Release findReleaseFromLdt(LocalDateTime commitDate, List<Release> projReleases) {
 		
 		for (int i = 0; i < projReleases.size()-1; i++ ) {
 			
@@ -565,7 +823,6 @@ public class MainControl {
 			
 			else if (commitDate.isAfter(release1.getReleaseDate()) && commitDate.isBefore(release2.getReleaseDate())) {
 				
-				//System.out.print(release2.getReleaseName().toString() + "\n");
 
 				return release2;
 
@@ -586,7 +843,7 @@ public class MainControl {
 			}
 			
 			else if (i == projReleases.size()-1 && commitDate.isAfter(release2.getReleaseDate())) {
-				return new Release(projReleases.size()+1 ,null, null);
+				return null;
 			}
 			
 			
@@ -598,7 +855,43 @@ public class MainControl {
 
 
 
-	
+private static void setFvReleases(List<Release> projReleases, List<Ticket> projTickets, List<RevCommit> commits) {
+		
+
+		int j;
+		Integer commitsNum;
+
+		
+		
+		commitsNum = commits.size();
+		
+		for (Ticket ticket : projTickets) {
+			
+			
+			for(j = 0; j < commitsNum; j++) {
+				
+				RevCommit commit = commits.get(j);
+				
+				if (commit.getFullMessage().contains(ticket.getTicketKey() + ":")) {
+					
+					
+					ticket.addCommit(commit);
+					Release fv = findReleaseFromLdt(Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime(), projReleases);
+					ticket.setFv(fv);
+
+					//System.err.print("\nKey: " + ticket.getTicketKey() + "\n" + commit.getFullMessage() +"\n\n");
+					//System.out.println("ticket: " + ticket.getTicketKey() + "------>commit: " + commit.getFullMessage());
+					
+				}
+				
+			}
+			
+		}
+		checkIfFvExists(projTickets);
+		
+		
+		
+	}
 	
 
 }

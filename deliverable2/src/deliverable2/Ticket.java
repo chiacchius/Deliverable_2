@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.eclipse.jgit.revwalk.RevCommit;
 import org.json.JSONObject;
 
 
@@ -17,15 +18,25 @@ public class Ticket {
 	private Release ov;
 	private Release fv;
 	private JSONObject jsonObj;
-	private List<Release> av = new ArrayList<>();
+	private Boolean notProportion;
+	
+	private List<Release> av;
+	private List<RevCommit> commits; //all commits related to the ticket
+	private List<String> bugFilesPath;
 	
 	
 	
+
+
 	public Ticket(String key, Integer id, LocalDate crDate, LocalDate resDate) {
 		this.key = key;
 		this.id = id;
 		this.creationDate = crDate;
 		this.resolutionDate = resDate;
+		this.av = new ArrayList<>();
+		this.commits = new ArrayList<>();
+		this.bugFilesPath = new ArrayList<>();
+		this.notProportion=false;
 	}
 	
 	
@@ -43,14 +54,14 @@ public class Ticket {
 	
 	private void printOv() {
 		if (this.ov != null) {
-			System.out.println("Ov: " +this.ov.getReleaseIndex());
+			System.out.println("Ov: " +this.ov.getReleaseName());
 		}	
 	}
 
 
 	private void printFv() {
 		if (this.fv != null) {
-			System.out.println("Fv: " + this.fv.getReleaseIndex());
+			System.out.println("Fv: " + this.fv.getReleaseName());
 		}
 		else {
 			System.out.println("Fv: null" );
@@ -61,7 +72,7 @@ public class Ticket {
 
 	private void printIv() {
 		if (this.iv != null) {
-			System.out.println("Iv: " + this.iv.getReleaseIndex());
+			System.out.println("Iv: " + this.iv.getReleaseName());
 		}
 		
 	}
@@ -70,9 +81,10 @@ public class Ticket {
 		System.out.print("Av: ");
 
 		for (int i = 0; i<av.size(); i++) {
-			System.out.print(this.av.get(i).getReleaseIndex().toString() + "\t");
+			System.out.print(this.av.get(i).getReleaseName() + "\t");
 		}
 		System.out.print("\n");
+		System.out.print(false);
 	}
 
 
@@ -137,6 +149,54 @@ public class Ticket {
 	public Release getOv() {
 		return this.ov;
 	}
+	
+	public List<Release> getAv() {
+		return this.av;
+	}
+	
+	
+	public void addCommit(RevCommit commit) {
+		this.commits.add(commit);
+	}
+	
+	public List<RevCommit> getCommits() {
+		return this.commits;
+	}
+
+
+	public void addBuggyFile(String rf) {
+		if (!this.bugFilesPath.contains(rf))
+			this.bugFilesPath.add(rf);
+	}
+
+
+	public List<String> getBugFiles() {
+		return bugFilesPath;
+	}
+
+
+	public void setBugFiles(List<String> bugFiles) {
+		this.bugFilesPath = bugFiles;
+	}
+	
+	
+	
+	
+	
+	public Boolean getNotProportion() {
+		return notProportion;
+	}
+
+
+	public void setNotProportion(Boolean notProportion) {
+		this.notProportion = notProportion;
+	}
+
+
+	
+
+	
+	
 	
 	
 }

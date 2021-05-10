@@ -22,6 +22,7 @@ import java.time.ZoneId;
 
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectLoader;
+import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 
 import org.json.JSONException;
@@ -33,16 +34,25 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.api.errors.NoHeadException;
+import org.eclipse.jgit.diff.DiffEntry;
+import org.eclipse.jgit.diff.DiffEntry.ChangeType;
+import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.Edit;
+import org.eclipse.jgit.diff.RawTextComparator;
 import org.eclipse.jgit.errors.CorruptObjectException;
 import org.eclipse.jgit.errors.IncorrectObjectTypeException;
 import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.revwalk.DepthWalk.Commit;
 import org.eclipse.jgit.revwalk.RevCommit;
+import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.revwalk.RevWalk;
+import org.eclipse.jgit.treewalk.CanonicalTreeParser;
+import org.eclipse.jgit.treewalk.EmptyTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
+import org.eclipse.jgit.util.io.DisabledOutputStream;
 import org.json.JSONArray;
 
 
@@ -75,7 +85,7 @@ public class GetGitInfo {
 		
 	}
 	
-	public static void findReleaseFiles(Git git, Repository repository, List<Release> projReleases, List <RevCommit> commits) throws NoHeadException, GitAPIException, IOException {
+	public static List<ReleaseFile> findReleaseFiles(Git git, Repository repository, List<Release> projReleases, List <RevCommit> commits) throws NoHeadException, GitAPIException, IOException {
 			
 		
 		
@@ -83,7 +93,7 @@ public class GetGitInfo {
     	associateLastCommit(commits, projReleases);
     	
     	//get all files of a release
-    	getFiles(projReleases, repository);
+    	return getFiles(projReleases, repository);
     	
     	
     	
@@ -158,7 +168,6 @@ public class GetGitInfo {
 				
 		}
 			
-			
 		return commits;
 			
 		
@@ -168,40 +177,65 @@ public class GetGitInfo {
 	
 	
 	
-	public static void getFiles(List<Release> releases, Repository repository) throws MissingObjectException, IncorrectObjectTypeException, CorruptObjectException, IOException {
+	public static List<ReleaseFile> getFiles(List<Release> releases, Repository repository) throws IOException {
 		
 		int i;
-		for(i=0 ; i < releases.size(); i++) {
+		List<ReleaseFile> files = new ArrayList<>();
+		for(Release release: releases) {
 			
-			Release release = releases.get(i);
+			//Release release = releases.get(i);
+			int numFiles=0;
 			
-			RevCommit lastCommit = release.getLastCommit();
+			try (RevWalk revWalk = new RevWalk(repository)) {
+                RevCommit commit = release.getLastCommit();
+                
+                // and using commit's tree find the path
+                RevTree tree = commit.getTree();
+                try (TreeWalk treeWalk = new TreeWalk(repository)) {
+                    treeWalk.addTree(tree);
+                    treeWalk.setRecursive(true);
+                   
+                    while( treeWalk.next() ) {
+                    	if( treeWalk.getPathString().contains(".java") ) {
+                    		//retrieve some data                		
+                    		numFiles++;
+                    		//build java class entity
+                    		//init
+                    		ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString());
+                    		Changes change = new Changes(treeWalk.getPathString());
+                    		rf.setChange(change);
+                    		//rf.setLOC(Integer.valueOf( FileParser.countLines( treeWalk, this.repository )) );                      	
+                    		release.addFile(rf);
+                    		files.add(rf);
+                    	}
+                    }
+                    
+                }
+                
+			}
+			release.setNumFiles(numFiles);
 			
 			
-			 RevTree tree = lastCommit.getTree();
-	         TreeWalk treeWalk = new TreeWalk(repository);
-	         treeWalk.addTree(tree);
-	         treeWalk.setRecursive(true);
-	         while (treeWalk.next()) {
-	            	
-	            if (treeWalk.getPathString().contains(".java")) {
-	            	
-	            	
-	            	release.addFile(new ReleaseFile(treeWalk.getPathString()));
-	            		            		
-	           		
+			
+			
 	         
-	           	}
-	            	
-
-	         }
 		
 		}
+		return files;
+		
+		
+		
 		
 		
 	}
-		
+
+
 	
+
+	
+	
+	
+
 	
 	
 	

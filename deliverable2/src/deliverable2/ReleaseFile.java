@@ -5,14 +5,29 @@ public class ReleaseFile {
 	
 	private String filePath; //file path
 	private Boolean bugginess;
+	private Integer authors;
+	private Release release;
+	private Changes change;
+	private Integer numRev;
 	
 	
-	public ReleaseFile(String path) {
+	
+
+	public ReleaseFile(Release release, String path) {
+		this.release=release;
 		this.filePath = path;
+		bugginess = false;
+		change=null;
+		authors = 0;
+		numRev=0;
 	}
 	
 	public String getFilePath() {
 		return this.filePath;
+	}
+	
+	public void setFilePath(String path) {
+		this.filePath = path;
 	}
 	
 	public void setBugginess(Boolean bugginess) {
@@ -21,6 +36,30 @@ public class ReleaseFile {
 	
 	public Boolean getBugginess() {
 		return this.bugginess;
+	}
+	
+	public void addAuthor() {
+		this.authors++;
+	}
+	
+	public Integer getAuthors() {
+		return this.authors;
+	}
+	
+	public Changes getChange() {
+		return change;
+	}
+
+	public void setChange(Changes change) {
+		this.change = change;
+	}
+
+	public Integer getNumRev() {
+		return numRev;
+	}
+
+	public void setNumRev(Integer numRev) {
+		this.numRev = numRev;
 	}
 	
 	
