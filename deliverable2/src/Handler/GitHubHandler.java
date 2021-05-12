@@ -1,4 +1,4 @@
-package deliverable2;
+package Handler;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,6 +28,9 @@ import org.eclipse.jgit.lib.Repository;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import Entity.Changes;
+import Entity.Release;
+import Entity.ReleaseFile;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
@@ -56,12 +59,12 @@ import org.eclipse.jgit.util.io.DisabledOutputStream;
 import org.json.JSONArray;
 
 
-public class GetGitInfo {
+public class GitHubHandler {
 	
 	
 	
 	
-	private GetGitInfo() throws InvalidRemoteException, TransportException, GitAPIException {}
+	private GitHubHandler() throws InvalidRemoteException, TransportException, GitAPIException {}
 	
 	
 	public static Git cloneProjectFromGitHub(String path, String projectName) throws InvalidRemoteException, org.eclipse.jgit.api.errors.TransportException, GitAPIException, IOException {
@@ -203,6 +206,7 @@ public class GetGitInfo {
                     		//init
                     		ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString());
                     		Changes change = new Changes(treeWalk.getPathString());
+                    		change.addPath(treeWalk.getPathString());
                     		rf.setChange(change);
                     		//rf.setLOC(Integer.valueOf( FileParser.countLines( treeWalk, this.repository )) );                      	
                     		release.addFile(rf);

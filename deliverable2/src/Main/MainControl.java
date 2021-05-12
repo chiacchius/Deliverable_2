@@ -1,4 +1,4 @@
-package deliverable2;
+package Main;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -36,6 +36,15 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import Entity.Changes;
+import Entity.Release;
+import Entity.ReleaseFile;
+import Entity.Ticket;
+import Handler.CsvWriterHandler;
+import Handler.GitHubHandler;
+import Handler.JiraHandler;
+import Handler.MetricsHandler;
+
 
 public class MainControl {
 
@@ -57,7 +66,7 @@ public class MainControl {
 		
 
 		path = "/Users/chiacchius/Desktop/" + PROJ_NAME;
-		Git git= GetGitInfo.cloneProjectFromGitHub(path, PROJ_NAME);
+		Git git= GitHubHandler.cloneProjectFromGitHub(path, PROJ_NAME);
 		repository  = git.getRepository();
 		
 		
@@ -65,19 +74,19 @@ public class MainControl {
 		
     	
     	//retrieve all releases of the project
-    	projReleases = GetJiraInfo.getReleases(PROJ_NAME);
+    	projReleases = JiraHandler.getReleases(PROJ_NAME);
     	
      	
     	
     	//retrieve all the tickets
-    	projTickets = GetJiraInfo.getTickets(PROJ_NAME, projReleases);
+    	projTickets = JiraHandler.getTickets(PROJ_NAME, projReleases);
     	
     	
     	//retrieve all the file .java of a specific release
-    	commits = GetGitInfo.getAllCommits(git);
-    	files = GetGitInfo.findReleaseFiles(git, repository, projReleases, commits);
+    	commits = GitHubHandler.getAllCommits(git);
+    	files = GitHubHandler.findReleaseFiles(git, repository, projReleases, commits);
+    	System.out.println("files: " + files.size());
     	
-    	//setChangesToFiles(files, repository, projReleases);
     	
     	//set what versions are Ov, Fv, Iv, Av
     	setOvReleases(projReleases, projTickets);
@@ -94,35 +103,28 @@ public class MainControl {
     	
     	
     	
-    	//getData(repository, projReleases);
+    	
+    	
+    	
     	
     	
     	changes = getChanges(repository, commits, files, projReleases);
     	//take all changed file for avery ticket
     	setFilesToTicket(projTickets, changes, files, repository);
     	
-    	
-    	System.out.println("################### " + changes.size() + "####################");
-    	
-    	
-    	int num =0;
+    
     	
     	for (Ticket ticket: projTickets) {
     		
-    		//System.out.println("################### " + ticket.getTicketKey() + "  buggy files: " + ticket.getBugFiles().size());
-    		num += ticket.getBugFiles().size();
-        	RetrieveMetrics.checkBugginess(projReleases, ticket, repository, files);
+        	MetricsHandler.checkBugginess(projReleases, ticket, repository, files);
         	
         	
     	}
     	
     	//retrieve all metrics
-    	RetrieveMetrics.retrieveAllMetrics(repository, commits, projTickets, projReleases);
+    	MetricsHandler.retrieveAllMetrics(repository, commits, projTickets, projReleases);
     	
-    	
-    	System.out.println("################### " + num + "####################");
-    	
-    	int numbug=0;
+    	int numbug =0;
     	
     	
     	for (int j=0; j<projReleases.size()/2;j++) {
@@ -140,13 +142,8 @@ public class MainControl {
     	
     	System.out.println(numbug);
     	
-    	
-    	
-    	
-    	
-    	
-    	
-    	CsvWriter.writeCsv(PROJ_NAME, projReleases);
+
+    	CsvWriterHandler.writeCsv(PROJ_NAME, projReleases);
     	
 
 
@@ -182,7 +179,7 @@ public class MainControl {
 					diffEntries = df.scan(oldTree, newTree);
 					for( DiffEntry entry : diffEntries ) {
 						//for every ticket update buggy files list
-						if ( entry.getOldPath().contains(".java") || entry.getNewPath().contains(".java")) {
+						if ( entry.toString().contains(".java")) {
 							//if a file was deleted a bug was resolved
 							if (entry.getChangeType()==ChangeType.DELETE) {
 								ticket.addBuggyFile(entry.getOldPath());
@@ -255,21 +252,24 @@ public class MainControl {
 
 
 	private static void updateReleaseFiles(List<Changes> changes, List<Release> projReleases) {
-		
+		int n=0;
 		for (int i=0; i<projReleases.size(); i++) {
 			
 			
 			for (ReleaseFile file: projReleases.get(i).getReleaseFiles()) {
-				
 				for (Changes ch: changes) {
 					
 					if (ch.getPaths().contains(file.getFilePath())) {
+						n++;
 						file.setChange(ch);
-						System.out.println("###########################################################");
+						
+						break;
 					}
 					
 					
+					
 				}
+				
 				
 				
 			}
@@ -278,7 +278,9 @@ public class MainControl {
 			
 			
 			
+			
 		}
+		System.out.println("@@@@@@@@@@@@@ "+ n +" @@@@@@@@@@@@");
 	
 	
 	}
@@ -301,7 +303,7 @@ public class MainControl {
 						
 						String renameFile = changes.get(k).getPaths().get(m);
 						
-						if (renameFile.equals(fileName) || fileName.contains(renameFile) ) {
+						if (renameFile.equals(fileName) || fileName.contains(renameFile)) {
 							changes.get(k).setNewPath(renameFile);
 							
 						}
@@ -327,6 +329,7 @@ public class MainControl {
 			if (!ch.checkPath(oldPath)) {
 				oldP=false;
 				if(ch.checkPath(newPath)) {
+
 					ch.addPath(newPath);
 					ch.setNewPath(newPath);
 					newP=false;
@@ -334,7 +337,8 @@ public class MainControl {
 			}
 			//if ch contains newPath
 			if (!ch.checkPath(newPath)) {
-				newP = true;
+
+				newP = false;
 				if (ch.checkPath(oldPath)) {
 					ch.addPath(oldPath);
 					oldP = false;
@@ -347,6 +351,7 @@ public class MainControl {
 		
 		//create a new change
 		if (oldP && newP) {
+			
 			Changes change = new Changes(newPath);
 			change.addPath(oldPath);
 			change.addPath(newPath);
@@ -380,8 +385,7 @@ public class MainControl {
 		else {
 			
 			ObjectReader reader = rw.getObjectReader();
-			diffEntries =df.scan(new EmptyTreeIterator(),
-			        new CanonicalTreeParser(null, reader, commit.getTree()));
+			diffEntries =df.scan(new EmptyTreeIterator(), new CanonicalTreeParser(null, reader, commit.getTree()));
 		}
 		
 		return diffEntries;

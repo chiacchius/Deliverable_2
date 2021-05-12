@@ -1,4 +1,4 @@
-package deliverable2;
+package Handler;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CsvWriter {
+import Entity.Release;
+
+public class CsvWriterHandler {
 	
 	
 	public static void writeCsv(String projectName, List<Release> releases) throws IOException{

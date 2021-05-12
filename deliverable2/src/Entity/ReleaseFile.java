@@ -1,4 +1,4 @@
-package deliverable2;
+package Entity;
 
 public class ReleaseFile {
 	
@@ -17,7 +17,6 @@ public class ReleaseFile {
 		this.release=release;
 		this.filePath = path;
 		bugginess = false;
-		change=null;
 		authors = 0;
 		numRev=0;
 	}
@@ -47,7 +46,8 @@ public class ReleaseFile {
 	}
 	
 	public Changes getChange() {
-		return change;
+		return this.change;
+
 	}
 
 	public void setChange(Changes change) {
@@ -60,6 +60,14 @@ public class ReleaseFile {
 
 	public void setNumRev(Integer numRev) {
 		this.numRev = numRev;
+	}
+
+	public Release getRelease() {
+		return release;
+	}
+
+	public void setRelease(Release release) {
+		this.release = release;
 	}
 	
 	

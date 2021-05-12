@@ -1,4 +1,4 @@
-package deliverable2;
+package Handler;
 
 import java.io.BufferedReader;
 import java.io.FileWriter;
@@ -18,16 +18,20 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import Entity.Release;
+import Entity.Ticket;
+
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.errors.TransportException;
 import org.json.JSONArray;
 
-public class GetJiraInfo {
+public class JiraHandler {
 	
 	
 	
-	private GetJiraInfo() {}
+	private JiraHandler() {}
 	
 	public static List<Release> getReleases(String projectName) throws IOException, JSONException{
 		

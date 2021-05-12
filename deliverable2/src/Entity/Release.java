@@ -1,4 +1,4 @@
-package deliverable2;
+package Entity;
 
 import java.time.Instant;
 import java.time.LocalDateTime;
