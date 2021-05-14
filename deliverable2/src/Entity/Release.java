@@ -112,7 +112,7 @@ public class Release {
 	public Boolean containsFile(String path){
 		boolean bool = false;
 	    for( ReleaseFile rf : this.releaseFiles ) {
-	      if( rf.getFilePath().equals(path) || rf.getChange().getPaths().contains(path) ) {
+	      if(rf.getChange().getPaths().contains(path) ) {
 	        bool = true;
 	        return bool;
 	      }
@@ -129,7 +129,7 @@ public class Release {
 		      }
 		    }
 		    return null;
-		  }
+		 }
 	
 	
 }

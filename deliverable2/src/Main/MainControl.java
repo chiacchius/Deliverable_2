@@ -6,6 +6,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -36,6 +37,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import Controller.ChangesController;
+import Controller.ReleaseController;
 import Entity.Changes;
 import Entity.Release;
 import Entity.ReleaseFile;
@@ -108,8 +111,10 @@ public class MainControl {
     	
     	
     	
-    	changes = getChanges(repository, commits, files, projReleases);
+    	changes = ChangesController.getChanges(repository, commits, files, projReleases);
+    	MetricsHandler.retrieveAllMetrics(repository, commits, projTickets, projReleases);
     	//take all changed file for avery ticket
+    	
     	setFilesToTicket(projTickets, changes, files, repository);
     	
     
@@ -122,23 +127,12 @@ public class MainControl {
     	}
     	
     	//retrieve all metrics
-    	MetricsHandler.retrieveAllMetrics(repository, commits, projTickets, projReleases);
+    	
     	
     	int numbug =0;
     	
     	
-    	for (int j=0; j<projReleases.size()/2;j++) {
-    		
-    		//System.out.println("\n" + projReleases.get(j).getReleaseName() + "\n");
-    		
-    	 	for (ReleaseFile entry : projReleases.get(j).getReleaseFiles()) {
-    	 		if (entry.getBugginess()) {
-    	 			//System.out.println(entry.getFilePath());
-    	 			numbug++;
-    	 		}
-    	 	}
-    	 
-        }
+    	
     	
     	System.out.println(numbug);
     	
@@ -155,7 +149,7 @@ public class MainControl {
 	
 	
 	
-	private static void setFilesToTicket(List<Ticket> projTickets, List<Changes> changes, List<ReleaseFile> files, Repository repository) throws MissingObjectException, IncorrectObjectTypeException, IOException {
+	private static void setFilesToTicket(List<Ticket> projTickets, List<Changes> changes, List<ReleaseFile> files, Repository repository) throws IOException {
 		
 		for (Ticket ticket: projTickets) {
 			
@@ -210,80 +204,14 @@ public class MainControl {
 
 
 
-	private static List<Changes> getChanges(Repository repository, List<RevCommit> commits, List<ReleaseFile> files, List<Release> projReleases) throws IOException {
-		
-		List<Changes> changes = new ArrayList<>();
-		RevWalk rw = new RevWalk(repository);
-		
-		for (RevCommit comm: commits) {
-			DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);	
-			df.setRepository(repository);
-			df.setDiffComparator(RawTextComparator.DEFAULT);
-			df.setDetectRenames(true);
-			
-			List<DiffEntry> entries=getEntryList(rw, df, comm);
-			
-			for (DiffEntry entry: entries) {
-				
-				String oldPath = entry.getOldPath();
-				String newPath = entry.getNewPath();
-				
-				if (entry.getChangeType().toString().equals("RENAME") && (entry.toString().contains(".java"))) {
-					createOrUpdateChanges(changes, oldPath, newPath);
-					
-					
-				}
-				
-			}
-		}
-		
-		
-		updateChanges(changes, files);
-		updateReleaseFiles(changes, projReleases);
-		return changes;
-		
-		
-	}
-
-
-
-
-
-
-
-	private static void updateReleaseFiles(List<Changes> changes, List<Release> projReleases) {
-		int n=0;
-		for (int i=0; i<projReleases.size(); i++) {
-			
-			
-			for (ReleaseFile file: projReleases.get(i).getReleaseFiles()) {
-				for (Changes ch: changes) {
-					
-					if (ch.getPaths().contains(file.getFilePath())) {
-						n++;
-						file.setChange(ch);
-						
-						break;
-					}
-					
-					
-					
-				}
-				
-				
-				
-			}
-			
-			
-			
-			
-			
-			
-		}
-		System.out.println("@@@@@@@@@@@@@ "+ n +" @@@@@@@@@@@@");
 	
+
+
+
+
+
+
 	
-	}
 
 
 
@@ -291,26 +219,7 @@ public class MainControl {
 
 
 
-	private static void updateChanges(List<Changes> changes, List<ReleaseFile> files) {
-		//set newPath of changes with the last one
-		for (int i=0;i<files.size();i++) {
-			
-			String fileName = files.get(i).getFilePath();
-				
-			for (int k=0;k<changes.size();k++) {
-					
-					for( int m=0;m<changes.get(k).getPaths().size();m++) {
-						
-						String renameFile = changes.get(k).getPaths().get(m);
-						
-						if (renameFile.equals(fileName) || fileName.contains(renameFile)) {
-							changes.get(k).setNewPath(renameFile);
-							
-						}
-					}
-				}
-			}
-	}
+	
 
 
 
@@ -318,48 +227,7 @@ public class MainControl {
 
 
 
-	private static void createOrUpdateChanges(List<Changes> changes, String oldPath, String newPath) {
-		
-		Boolean oldP = true;
-		Boolean newP = true;
-		
-		for (Changes ch:changes) {
-			
-			//if ch contains oldPath
-			if (!ch.checkPath(oldPath)) {
-				oldP=false;
-				if(ch.checkPath(newPath)) {
-
-					ch.addPath(newPath);
-					ch.setNewPath(newPath);
-					newP=false;
-				}
-			}
-			//if ch contains newPath
-			if (!ch.checkPath(newPath)) {
-
-				newP = false;
-				if (ch.checkPath(oldPath)) {
-					ch.addPath(oldPath);
-					oldP = false;
-				}
-			}
-			
-			
-		}
-		
-		
-		//create a new change
-		if (oldP && newP) {
-			
-			Changes change = new Changes(newPath);
-			change.addPath(oldPath);
-			change.addPath(newPath);
-			changes.add(change);
-		}
-		
-		
-	}
+	
 
 
 
@@ -367,29 +235,7 @@ public class MainControl {
 
 
 
-	public static List<DiffEntry> getEntryList(RevWalk rw, DiffFormatter df, RevCommit commit) throws IOException {
-		List<DiffEntry> diffEntries;
-		RevCommit parent = null;
-		
-		if(commit.getParentCount() !=0) {
-			parent =commit.getParent(0);
-		}
-			
-		
-		
-		if(parent != null) {
-			
-			diffEntries = df.scan(parent.getTree(), commit.getTree());
-			
-		}
-		else {
-			
-			ObjectReader reader = rw.getObjectReader();
-			diffEntries =df.scan(new EmptyTreeIterator(), new CanonicalTreeParser(null, reader, commit.getTree()));
-		}
-		
-		return diffEntries;
-	}
+	
 
 
 
@@ -461,7 +307,7 @@ public class MainControl {
 			
 			for (int i = iv; i < fv; i++) {
 				
-				Release release = findRelease(i, projReleases);
+				Release release = ReleaseController.findRelease(i, projReleases);
 				ticket.setAv(release);
 				
 				
@@ -618,7 +464,7 @@ public class MainControl {
 					
 					//System.out.println(id.intValue());
 				}
-				Release release = findRelease(id.intValue(), projReleases);
+				Release release = ReleaseController.findRelease(id.intValue(), projReleases);
 				System.out.println(release.getReleaseName());
 				
 				ticketWithoutIv.setIv(release);
@@ -676,20 +522,7 @@ public class MainControl {
 
 
 
-	private static Release findRelease(int id, List<Release> projReleases) {
-		for (int i = 0; i < projReleases.size(); i++) {
-		
-			
-			if (projReleases.get(i).getReleaseIndex() == id) {
-			
-				return projReleases.get(i);
-				
-			}
-			
-			
-		}
-		return null;
-	}
+	
 
 
 
@@ -811,51 +644,7 @@ public class MainControl {
 
 
 
-	private static Release findReleaseFromLdt(LocalDateTime commitDate, List<Release> projReleases) {
-		
-		for (int i = 0; i < projReleases.size()-1; i++ ) {
-			
-			Release release1 = projReleases.get(i);
-			Release release2 = projReleases.get(i+1);
-
-			
-			if (i ==0 && commitDate.isBefore(release1.getReleaseDate())) {
-
-				return release1;
-
-			}
-			
-			else if (commitDate.isAfter(release1.getReleaseDate()) && commitDate.isBefore(release2.getReleaseDate())) {
-				
-
-				return release2;
-
-				
-			}
-			
-			else if (commitDate.isEqual(release1.getReleaseDate())) {
-
-				return release1;
-
-			}
-			
-			else if (commitDate.isEqual(release2.getReleaseDate())) {
-
-				return release2;
-
-
-			}
-			
-			else if (i == projReleases.size()-1 && commitDate.isAfter(release2.getReleaseDate())) {
-				return null;
-			}
-			
-			
-			
-		}
-		return null;
-		
-	}
+	
 
 
 
@@ -880,7 +669,7 @@ private static void setFvReleases(List<Release> projReleases, List<Ticket> projT
 					
 					
 					ticket.addCommit(commit);
-					Release fv = findReleaseFromLdt(Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime(), projReleases);
+					Release fv = ReleaseController.findReleaseFromLdt(Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime(), projReleases);
 					ticket.setFv(fv);
 
 					//System.err.print("\nKey: " + ticket.getTicketKey() + "\n" + commit.getFullMessage() +"\n\n");

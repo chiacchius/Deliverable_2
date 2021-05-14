@@ -21,7 +21,7 @@ public class CsvWriterHandler {
 	            String outname = projectName + "VersionInfo.csv";
 					    //Name of CSV for output
 					    fileWriter = new FileWriter(outname);
-	            fileWriter.append("Index,Version ID,Version Name,Date,File,Bugginess");
+	            fileWriter.append("Index,Version ID,Version Name,Date,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");
 	            for ( int i = 0; i < releases.size()/2; i++) {
 		           	Release release = releases.get(i);
@@ -38,7 +38,27 @@ public class CsvWriterHandler {
 		               fileWriter.append(",");
 		               fileWriter.append(release.getReleaseFiles().get(j).getFilePath());
 		               fileWriter.append(",");
-		               fileWriter.append(release.getReleaseFiles().get(j).getBugginess().toString());
+		               fileWriter.append(release.getReleaseFiles().get(j).getLoc().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getLocAdded().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getAvgLocAdded().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getMaxLocAdded().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getLocTouched().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getChurn().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getMaxChurn().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getAvgChurn().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(String.valueOf(release.getReleaseFiles().get(j).getAuthors().size()));
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getNumRev().toString());
+		               fileWriter.append(",");
+		               fileWriter.append(release.getReleaseFiles().get(j).getBugginess());
 		               fileWriter.append("\n");
 		            }
 	            }

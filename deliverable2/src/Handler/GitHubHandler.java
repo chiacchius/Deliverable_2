@@ -182,7 +182,6 @@ public class GitHubHandler {
 	
 	public static List<ReleaseFile> getFiles(List<Release> releases, Repository repository) throws IOException {
 		
-		int i;
 		List<ReleaseFile> files = new ArrayList<>();
 		for(Release release: releases) {
 			
@@ -200,30 +199,27 @@ public class GitHubHandler {
                    
                     while( treeWalk.next() ) {
                     	if( treeWalk.getPathString().contains(".java") ) {
-                    		//retrieve some data                		
                     		numFiles++;
-                    		//build java class entity
-                    		//init
-                    		ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString());
+                    		
+                    		ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString()); //build ReleaseFile entity
                     		Changes change = new Changes(treeWalk.getPathString());
                     		change.addPath(treeWalk.getPathString());
                     		rf.setChange(change);
-                    		//rf.setLOC(Integer.valueOf( FileParser.countLines( treeWalk, this.repository )) );                      	
                     		release.addFile(rf);
-                    		files.add(rf);
+                    		Integer loc = MetricsHandler.locCalculator(repository, treeWalk);
+                    		rf.setLoc(loc);
+                    		files.add(rf); //add it to files list
                     	}
                     }
                     
                 }
                 
 			}
+			
+			
 			release.setNumFiles(numFiles);
 			
-			
-			
-			
-	         
-		
+
 		}
 		return files;
 		
