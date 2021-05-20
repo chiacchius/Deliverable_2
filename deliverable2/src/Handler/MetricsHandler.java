@@ -26,8 +26,6 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.io.DisabledOutputStream;
 
-import Controller.ChangesController;
-import Controller.ReleaseController;
 import Entity.Changes;
 import Entity.Release;
 import Entity.ReleaseFile;
@@ -81,8 +79,8 @@ public class MetricsHandler {
 				List<DiffEntry> diffEntries = new ArrayList<>();
 				diffEntries = df.scan(parent.getTree(), head.getTree());
 				LocalDateTime ldt = Instant.ofEpochSecond( head.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime();
-				ReleaseController releaseController = new ReleaseController();
-				Release rel = ReleaseController.findReleaseFromLdt( ldt, projReleases);
+				ReleaseHandler releaseController = new ReleaseHandler();
+				Release rel = ReleaseHandler.findReleaseFromLdt( ldt, projReleases);
 				
 				if( rel == null ) {
 					df.close();

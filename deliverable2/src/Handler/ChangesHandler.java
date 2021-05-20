@@ -1,4 +1,4 @@
-package Controller;
+package Handler;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -19,7 +19,7 @@ import Entity.Changes;
 import Entity.Release;
 import Entity.ReleaseFile;
 
-public class ChangesController {
+public class ChangesHandler {
 	
 	
 	

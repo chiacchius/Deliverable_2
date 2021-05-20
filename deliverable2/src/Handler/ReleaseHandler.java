@@ -1,11 +1,11 @@
-package Controller;
+package Handler;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
 import Entity.Release;
 
-public class ReleaseController {
+public class ReleaseHandler {
 
 	
 	
