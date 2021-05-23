@@ -1,16 +1,16 @@
-mag 23, 2021 4:50:20 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:09 PM Utility.ProjectLogger saveMess
 INFO:  [*] Starting retrieve data for BOOKKEEPER
-mag 23, 2021 4:50:36 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:23 PM Utility.ProjectLogger saveMess
 INFO:  [*] Exiting for BOOKKEEPER
-mag 23, 2021 4:50:36 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:23 PM Utility.ProjectLogger saveMess
 INFO: [*]Getting csv File: BOOKKEEPERVersionInfo.csv and starting machine learning processing
-mag 23, 2021 4:50:37 PM Utility.ProjectLogger saveMess
-INFO: arff file correctly creeated
-mag 23, 2021 4:50:37 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:24 PM Utility.ProjectLogger saveMess
+INFO: arff file correctly created
+mag 23, 2021 6:48:24 PM Utility.ProjectLogger saveMess
 INFO:  [*] Starting retrieve data for ZOOKEEPER
-mag 23, 2021 4:50:54 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:42 PM Utility.ProjectLogger saveMess
 INFO:  [*] Exiting for ZOOKEEPER
-mag 23, 2021 4:50:54 PM Utility.ProjectLogger saveMess
+mag 23, 2021 6:48:42 PM Utility.ProjectLogger saveMess
 INFO: [*]Getting csv File: ZOOKEEPERVersionInfo.csv and starting machine learning processing
-mag 23, 2021 4:50:55 PM Utility.ProjectLogger saveMess
-INFO: arff file correctly creeated
+mag 23, 2021 6:48:42 PM Utility.ProjectLogger saveMess
+INFO: arff file correctly created
