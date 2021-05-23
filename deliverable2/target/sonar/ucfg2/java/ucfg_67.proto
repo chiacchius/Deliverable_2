@@ -1,0 +1,953 @@
+
+FHandler.CsvWriterHandler#writeCsv(Ljava/lang/String;Ljava/util/List;)V`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ("105*ô
+24`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(f™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(f
+
+%78int"java.util.List#size()I*
+
+%77java.util.List2size()*
+23*ú
+68`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+A +(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(C
+%34Entity.ReleaseFile"
+__arrayGet*
+
+%33java.util.List*
+""*
+67*«
+25`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(_ÿ’
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(_
+%77java.util.List"/Entity.ReleaseFile#getAuthors()Ljava/util/List;*
+
+%76Entity.ReleaseFile2getAuthors()*
+24*Õ
+69`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+ +(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(<
+%33java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+68*ú
+26`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9P 9(Q≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(R
+%76Entity.ReleaseFile"
+__arrayGet*
+
+%75java.util.List*
+""*
+25*Õ
+27`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9 9(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java92 9(K
+%75java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+26*Ö
+28`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java8 8(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java8 8('
+%74java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+27*ô
+29`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7 7(]™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7 7(]
+%73java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%72java.lang.String2 append(Ljava/lang/CharSequence;)*
+28*Ö
+70`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java* *(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java* *('
+%32java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+69*ô
+71`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java) )(X™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java) )(X
+%31java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%30java.lang.String2 append(Ljava/lang/CharSequence;)*
+70*≈
+72`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(W÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(W
+%30java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%29java.lang.Integer2
+toString()*
+71*≈
+73`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(L÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(L
+%29java.lang.Integer".Entity.ReleaseFile#getLoc()Ljava/lang/Integer;*
+
+%28Entity.ReleaseFile2getLoc()*
+72*≈
+30`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(\÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(\
+%72java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%71java.lang.Integer2
+toString()*
+29*ú
+74`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)A )(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(C
+%28Entity.ReleaseFile"
+__arrayGet*
+
+%27java.util.List*
+""*
+73*œ
+31`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(Q‡›
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(Q
+%71java.lang.Integer"3Entity.ReleaseFile#getAvgChurn()Ljava/lang/Integer;*
+
+%70Entity.ReleaseFile2getAvgChurn()*
+30*Õ
+75`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java) )(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java)# )(<
+%27java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+74*ú
+32`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7A 7(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(C
+%70Entity.ReleaseFile"
+__arrayGet*
+
+%69java.util.List*
+""*
+31*Ö
+76`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java( ((ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java( (('
+%26java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+75*Õ
+33`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7 7(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java7# 7(<
+%69java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+32*ô
+77`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java' '(R™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java' '(R
+%25java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%24java.lang.String2 append(Ljava/lang/CharSequence;)*
+76*Õ
+78`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java'# '(Qﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java'# '(Q
+%24java.lang.String"2Entity.ReleaseFile#getFilePath()Ljava/lang/String;*
+
+%23Entity.ReleaseFile2getFilePath()*
+77*Ö
+34`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java6 6(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java6 6('
+%68java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+33*ú
+79`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java'A '(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java'# '(C
+%23Entity.ReleaseFile"
+__arrayGet*
+
+%22java.util.List*
+""*
+78*ô
+35`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5 5(]™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5 5(]
+%67java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%66java.lang.String2 append(Ljava/lang/CharSequence;)*
+34*≈
+36`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(\÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(\
+%66java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%65java.lang.Integer2
+toString()*
+35*œ
+37`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(Q‡›
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(Q
+%65java.lang.Integer"3Entity.ReleaseFile#getMaxChurn()Ljava/lang/Integer;*
+
+%64Entity.ReleaseFile2getMaxChurn()*
+36*ú
+38`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5A 5(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(C
+%64Entity.ReleaseFile"
+__arrayGet*
+
+%63java.util.List*
+""*
+37*Õ
+39`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5 5(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java5# 5(<
+%63java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+38*°
+100`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (Æ´
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java" (1	
+%5int"java.util.List#size()I*
+
+releasesjava.util.List2size()*
+4
+98*á
+102`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ($
+%4java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+\n2 append(Ljava/lang/CharSequence;)*
+100*¿
+103`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java	 (-©
+¶
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java	 (- 
+
+fileWriterjava.io.FileWriter"__id*
+
+%1java.io.FileWriter£†
+a
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (≠
+%3java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*ëé
+ãIndex,Version ID,Version Name,Date,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess2 append(Ljava/lang/CharSequence;)*
+102*‹
+104`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (ï
+í
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ( 
+
+fileWriterjava.io.FileWriter"__id*
+""ø
+º
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (=
+%0java.lang.String"__concat*!
+
+projectNamejava.lang.String*
+VersionInfo.csv¢
+ü
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (>
+outnamejava.lang.String"__id*
+
+%0java.lang.Stringìê
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ($
+%1java.io.FileWriter"java.io.FileWriter÷
+”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (-
+%2".java.io.FileWriter#<init>(Ljava/lang/String;)V*
+
+%1java.io.FileWriter*
+
+outnamejava.lang.String*
+103*Ü
+105`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (ï
+í
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ( 
+
+fileWriterjava.io.FileWriter"__id*
+""*
+104*Õ
+80`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java' '(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java'# '(<
+%22java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+79*Ö
+81`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java& &(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java& &('
+%21java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+80*ô
+82`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java% %(G™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java% %(G
+%20java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%19java.lang.String2 append(Ljava/lang/CharSequence;)*
+81*—
+83`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java%# %(F‚ﬂ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java%# %(F
+%19java.lang.String"4java.time.LocalDateTime#toString()Ljava/lang/String;* 
+
+%18java.time.LocalDateTime2
+toString()*
+82*›
+84`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java% %(ÓÎ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java%# %(;
+%18java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+releaseEntity.Release2getReleaseDate()*
+83*Ö
+40`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java4 4(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java4 4('
+%62java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+39*Ö
+85`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java$ $(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java$ $('
+%17java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+84*ô
+41`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3 3(Z™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3 3(Z
+%61java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%60java.lang.String2 append(Ljava/lang/CharSequence;)*
+40*ô
+86`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java# #(<™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java# #(<
+%16java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%15java.lang.String2 append(Ljava/lang/CharSequence;)*
+85*≈
+42`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(Y÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(Y
+%60java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%59java.lang.Integer2
+toString()*
+41*œ
+87`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java# #(‡›
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java## #(;
+%15java.lang.String"1Entity.Release#getReleaseName()Ljava/lang/String;*
+
+releaseEntity.Release2getReleaseName()*
+86*…
+43`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(N⁄◊
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(N
+%59java.lang.Integer"0Entity.ReleaseFile#getChurn()Ljava/lang/Integer;*
+
+%58Entity.ReleaseFile2
+getChurn()*
+42*Ö
+88`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java" "(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java" "('
+%14java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+87*ú
+44`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3A 3(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(C
+%58Entity.ReleaseFile"
+__arrayGet*
+
+%57java.util.List*
+""*
+43*ô
+89`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java! !(H™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java! !(H
+%13java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%12java.lang.String2 append(Ljava/lang/CharSequence;)*
+88*Õ
+45`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3 3(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java3# 3(<
+%57java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+44*Ö
+46`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java2 2(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java2 2('
+%56java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+45*ô
+47`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1 1(_™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1 1(_
+%55java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%54java.lang.String2 append(Ljava/lang/CharSequence;)*
+46*≈
+48`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(^÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(^
+%54java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%53java.lang.Integer2
+toString()*
+47*”
+49`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(S‰·
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(S
+%53java.lang.Integer"5Entity.ReleaseFile#getLocTouched()Ljava/lang/Integer;*
+
+%52Entity.ReleaseFile2getLocTouched()*
+48*≈
+90`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java!# !(G÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java!# !(G
+%12java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%11java.lang.Integer2
+toString()*
+89*”
+91`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java! !(‰·
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java!# !(<
+%11java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
+
+releaseEntity.Release2getReleaseIndex()*
+90*Ö
+92`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java   (ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java   ('
+%10java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+91*ó
+93`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (4®•
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (4
+%9java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%8java.lang.String2 append(Ljava/lang/CharSequence;)*
+92*ÿ
+94`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java! ("è
+å
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java ('
+indexjava.lang.Integer"__id*
+""◊‘
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java# (3
+%8java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+indexjava.lang.Integer2
+toString()*
+93*ú
+50`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1A 1(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(C
+%52Entity.ReleaseFile"
+__arrayGet*
+
+%51java.util.List*
+""*
+49*Õ
+51`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1 1(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java1# 1(<
+%51java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+50*œ
+96`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (€ÿ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (3
+%7java.lang.Integer"/Entity.Release#getNumFiles()Ljava/lang/Integer;*
+
+releaseEntity.Release2getNumFiles()*	
+94
+100*Ö
+52`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java0 0(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java0 0('
+%50java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+51*ç
+97`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (0û
+õ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java (0
+releaseEntity.Release"__id*
+
+%6Entity.Release*
+96*ô
+53`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/ /(`™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/ /(`
+%49java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%48java.lang.String2 append(Ljava/lang/CharSequence;)*
+52*ú
+98`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java  ((≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java  (/
+%6Entity.Release"
+__arrayGet*
+
+releasesjava.util.List*
+""*
+97*Ü
+10`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java> >(óî
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java> >((
+%92java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+\n2 append(Ljava/lang/CharSequence;)*
+96*≈
+54`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(_÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(_
+%48java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%47java.lang.Integer2
+toString()*
+53*ô
+11`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java= =(S™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java= =(S
+%91java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%90java.lang.String2 append(Ljava/lang/CharSequence;)*
+10*’
+55`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(TÊ„
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(T
+%47java.lang.Integer"6Entity.ReleaseFile#getMaxLocAdded()Ljava/lang/Integer;*
+
+%46Entity.ReleaseFile2getMaxLocAdded()*
+54*œ
+12`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java=# =(R‡›
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java=# =(R
+%90java.lang.String"3Entity.ReleaseFile#getBugginess()Ljava/lang/String;*
+
+%89Entity.ReleaseFile2getBugginess()*
+11*ú
+56`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/A /(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(C
+%46Entity.ReleaseFile"
+__arrayGet*
+
+%45java.util.List*
+""*
+55*ú
+13`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java=A =(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java=# =(C
+%89Entity.ReleaseFile"
+__arrayGet*
+
+%88java.util.List*
+""*
+12*Õ
+57`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/ /(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java/# /(<
+%45java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+56*Õ
+14`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java= =(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java=# =(<
+%88java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+13*Ö
+58`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java. .(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java. .('
+%44java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+57*Ö
+15`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java< <(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java< <('
+%87java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+14*ô
+59`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java- -(`™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java- -(`
+%43java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%42java.lang.String2 append(Ljava/lang/CharSequence;)*
+58*ô
+16`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java; ;([™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java; ;([
+%86java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%85java.lang.String2 append(Ljava/lang/CharSequence;)*
+15*≈
+17`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(Z÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(Z
+%85java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%84java.lang.Integer2
+toString()*
+16*À
+18`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(O‹Ÿ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(O
+%84java.lang.Integer"1Entity.ReleaseFile#getNumRev()Ljava/lang/Integer;*
+
+%83Entity.ReleaseFile2getNumRev()*
+17*ú
+19`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;A ;(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(C
+%83Entity.ReleaseFile"
+__arrayGet*
+
+%82java.util.List*
+""*
+18*~
+0 "w
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.javaN N(
+implicit return*±
+3`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.javaH H(ƒ¡
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.javaH H("
+%97void"#java.io.OutputStreamWriter#close()V*"
+ 
+
+fileWriterjava.io.FileWriter2close()*
+0*±
+4`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.javaG G(ƒ¡
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.javaG G("
+%96void"#java.io.OutputStreamWriter#flush()V*"
+ 
+
+fileWriterjava.io.FileWriter2flush()*
+3*≈
+60`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(_÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(_
+%42java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%41java.lang.Integer2
+toString()*
+59*’
+61`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(TÊ„
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(T
+%41java.lang.Integer"6Entity.ReleaseFile#getAvgLocAdded()Ljava/lang/Integer;*
+
+%40Entity.ReleaseFile2getAvgLocAdded()*
+60*ú
+62`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-A -(B≠
+™
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(C
+%40Entity.ReleaseFile"
+__arrayGet*
+
+%39java.util.List*
+""*
+61*Õ
+63`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java- -(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java-# -(<
+%39java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+62*Õ
+20`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java; ;(ﬁ€
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java;# ;(<
+%82java.util.List"0Entity.Release#getReleaseFiles()Ljava/util/List;*
+
+releaseEntity.Release2getReleaseFiles()*
+19*Ö
+64`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java, ,(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java, ,('
+%38java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+63*Ö
+21`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java: :(ñì
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java: :('
+%81java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+,2 append(Ljava/lang/CharSequence;)*
+20*ô
+65`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+ +(]™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+ +(]
+%37java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%36java.lang.String2 append(Ljava/lang/CharSequence;)*
+64*ô
+22`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9 9(h™ß
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9 9(h
+%80java.io.Writer"Kjava.io.OutputStreamWriter#append(Ljava/lang/CharSequence;)Ljava/io/Writer;*"
+ 
+
+fileWriterjava.io.FileWriter*
+
+%79java.lang.String2 append(Ljava/lang/CharSequence;)*
+21*≈
+66`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(\÷”
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(\
+%36java.lang.String".java.lang.Integer#toString()Ljava/lang/String;*
+
+%35java.lang.Integer2
+toString()*
+65*¿
+23`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9# 9(g—
+Œ
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java9# 9(g
+%79java.lang.String"-java.lang.String#valueOf(I)Ljava/lang/String;*"
+java.lang.String*
+
+
+%78int*
+22*œ
+67`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(Q‡›
+`
+V/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/CsvWriterHandler.java+# +(Q
+%35java.lang.Integer"3Entity.ReleaseFile#getLocAdded()Ljava/lang/Integer;*
+
+%34Entity.ReleaseFile2getLocAdded()*
+66:
+projectNamejava.lang.String:
+releasesjava.util.ListB"
+Handler.CsvWriterHandler

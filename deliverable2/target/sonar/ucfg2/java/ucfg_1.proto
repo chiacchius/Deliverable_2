@@ -1,0 +1,725 @@
+
+}Handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java@ @(&"76*‘
+69^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaG G(‰·
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaG G(%	
+%7int"4org.eclipse.jgit.revwalk.RevCommit#getParentCount()I*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit2getParentCount()*
+0
+67*ç
+26^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai i(7†
+ù
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai i(7
+rfEntity.ReleaseFile"__id*
+
+%45Entity.ReleaseFile*
+23*ñ
+27^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai i(7©¶
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai i(7
+%45Entity.ReleaseFile"KEntity.Release#getReleaseFileByName(Ljava/lang/String;)LEntity/ReleaseFile;*
+
+relEntity.Release*
+
+%44java.lang.String2(getReleaseFileByName(Ljava/lang/String;)*
+26*‚
+28^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai i(ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javai% i(6
+%44java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getOldPath()*
+27*Æ
+70^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE	 E(N¡
+æ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE	 E(N*
+head"org.eclipse.jgit.revwalk.RevCommit"__id**
+(
+%6"org.eclipse.jgit.revwalk.RevCommit*
+69*˜
+71^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE E(Näá
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE E(N(
+%6"org.eclipse.jgit.revwalk.RevCommit"torg.eclipse.jgit.revwalk.RevWalk#parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/revwalk/RevCommit;*-
++
+revWalk org.eclipse.jgit.revwalk.RevWalk*%
+#
+%5org.eclipse.jgit.lib.ObjectId2/parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)*
+70*Ì
+72^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE$ E(MÄ˝
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE$ E(M#
+%5org.eclipse.jgit.lib.ObjectId"Eorg.eclipse.jgit.lib.Ref#getObjectId()Lorg/eclipse/jgit/lib/ObjectId;* 
+
+%4org.eclipse.jgit.lib.Ref2getObjectId()*
+71*°
+73^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE E(¥±
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaE$ E(?
+%4org.eclipse.jgit.lib.Ref"Vorg.eclipse.jgit.lib.Repository#exactRef(Ljava/lang/String;)Lorg/eclipse/jgit/lib/Ref;*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+HEAD2exactRef(Ljava/lang/String;)*
+72*ä
+74^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaC C(2¿
+Ω
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaC C(2+
+revWalk org.eclipse.jgit.revwalk.RevWalk"__id*(
+&
+%0 org.eclipse.jgit.revwalk.RevWalkô
+ñ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaD D(&
+%2 org.eclipse.jgit.revwalk.RevSort"__id*
+""æª
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaD D(
+
+%3void"Jorg.eclipse.jgit.revwalk.RevWalk#sort(Lorg/eclipse/jgit/revwalk/RevSort;)V*-
++
+revWalk org.eclipse.jgit.revwalk.RevWalk*(
+&
+%2 org.eclipse.jgit.revwalk.RevSort2(sort(Lorg/eclipse/jgit/revwalk/RevSort;)*
+73*á
+30^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javah h(4óî
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javah h(4
+%43java.lang.Boolean"BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;*
+
+relEntity.Release*
+
+%42java.lang.String2 containsFile(Ljava/lang/String;)*
+5
+28*Æ
+75^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaC& C(0≠™
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaC C($&
+%0 org.eclipse.jgit.revwalk.RevWalk" org.eclipse.jgit.revwalk.RevWalkë
+é
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaC C(2
+%1"Korg.eclipse.jgit.revwalk.RevWalk#<init>(Lorg/eclipse/jgit/lib/Repository;)V*(
+&
+%0 org.eclipse.jgit.revwalk.RevWalk*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+74*‚
+31^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javah h(ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javah! h(2
+%42java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getOldPath()*
+30*ä
+76^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaB B(ù
+ö
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaB B(*
+head"org.eclipse.jgit.revwalk.RevCommit"__id*
+""*
+75*ç
+32^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf f(7†
+ù
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf f(7
+rfEntity.ReleaseFile"__id*
+
+%41Entity.ReleaseFile*
+23*ñ
+33^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf f(7©¶
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf f(7
+%41Entity.ReleaseFile"KEntity.Release#getReleaseFileByName(Ljava/lang/String;)LEntity/ReleaseFile;*
+
+relEntity.Release*
+
+%40java.lang.String2(getReleaseFileByName(Ljava/lang/String;)*
+32*‚
+34^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf f(ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaf% f(6
+%40java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getNewPath()*
+33*à
+36^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javae
+ e(.óî
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javae
+ e(.
+%39java.lang.Boolean"BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;*
+
+relEntity.Release*
+
+%38java.lang.String2 containsFile(Ljava/lang/String;)*
+31
+34*
+37^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javab b(ã
+à
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javab b(
+rfEntity.ReleaseFile"__id*
+""ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javae e(,
+%38java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getNewPath()*
+36*„
+39^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_L _(SÛ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_1 _(T
+%37boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%36java.lang.String*	
+.java2"contains(Ljava/lang/CharSequence;)*
+37
+5*‚
+40^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_1 _(5ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_1 _(B
+%36java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getOldPath()*
+39*‰
+42^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_% _(,Û
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_
+ _(-
+%35boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
+
+%34java.lang.String*	
+.java2"contains(Ljava/lang/CharSequence;)*
+37
+40*‚
+43^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_
+ _(ıÚ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java_
+ _(
+%34java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2getNewPath()*
+42*Ø
+45^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW W(2¬
+ø
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW W(2*
+head"org.eclipse.jgit.revwalk.RevCommit"__id*+
+)
+%33"org.eclipse.jgit.revwalk.RevCommit*
+69*˛
+46^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW W(2ëé
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW W(2)
+%33"org.eclipse.jgit.revwalk.RevCommit"torg.eclipse.jgit.revwalk.RevWalk#parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/revwalk/RevCommit;*-
++
+revWalk org.eclipse.jgit.revwalk.RevWalk*+
+)
+%32"org.eclipse.jgit.revwalk.RevCommit2/parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)*
+45*ê
+47^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW W(£†
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaW  W(1)
+%32"org.eclipse.jgit.revwalk.RevCommit"Sorg.eclipse.jgit.revwalk.RevCommit#getParent(I)Lorg/eclipse/jgit/revwalk/RevCommit;*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit*2 2getParent(I)*
+46*¡
+48^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaV V(‘—
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaV V(
+%31void",org.eclipse.jgit.diff.DiffFormatter#close()V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter2close()*
+47*â
+49^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaS S(Hô
+ñ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaS S(H
+relEntity.Release"__id*
+
+%30Entity.Release*
+48
+5*≠
+50^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaR R(<¿
+Ω
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaS S(G
+%30Entity.Release"dHandler.ReleaseHandler#findReleaseFromLdt(Ljava/time/LocalDateTime;Ljava/util/List;)LEntity/Release;*"
+Handler.ReleaseHandler* 
+
+ldtjava.time.LocalDateTime* 
+
+projReleasesjava.util.List*
+49*Â
+51^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(p´
+®
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(p
+ldtjava.time.LocalDateTime"__id* 
+
+%27java.time.LocalDateTimeöó
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaR+ R(9
+%28Handler.ReleaseHandler"Handler.ReleaseHandler≠
+™
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaR' R(;
+%29" Handler.ReleaseHandler#<init>()V*
+
+%28Handler.ReleaseHandler*
+50*È
+52^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(o¸˘
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(o
+%27java.time.LocalDateTime"Bjava.time.ZonedDateTime#toLocalDateTime()Ljava/time/LocalDateTime;* 
+
+%26java.time.ZonedDateTime2toLocalDateTime()*
+51*ä
+53^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(]ùö
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(]
+%26java.time.ZonedDateTime"Ejava.time.Instant#atZone(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;*
+
+%24java.time.Instant*
+
+%25java.time.ZoneId2atZone(Ljava/time/ZoneId;)*
+52*√
+54^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQL Q(R÷
+”
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQL Q(\
+%25java.time.ZoneId"9java.time.ZoneId#of(Ljava/lang/String;)Ljava/time/ZoneId;*"
+java.time.ZoneId*
+UTC*
+53*ì
+10`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(•¢
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(2'
+%57 org.eclipse.jgit.lib.PersonIdent"Uorg.eclipse.jgit.revwalk.RevCommit#getAuthorIdent()Lorg/eclipse/jgit/lib/PersonIdent;*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit2getAuthorIdent()*
+9*∆
+55^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(DŸ
+÷
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ Q(D
+%24java.time.Instant"5java.time.Instant#ofEpochSecond(J)Ljava/time/Instant;*"
+java.time.Instant*
+
+
+%23int*
+54*≥
+11`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÉ É(ƒ¡
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÉ É(#
+%56void"Entity.ReleaseFile#addChurn(I)V*
+
+rfEntity.ReleaseFile*
+""2addChurn(I)*
+10*Ù
+56^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP P(;°
+û
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP P(;
+diffEntriesjava.util.List"__id*
+
+%22java.util.List„‡
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaQ/ Q(C
+
+%23int"3org.eclipse.jgit.revwalk.RevCommit#getCommitTime()I*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit2getCommitTime()*
+55*ı
+12`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÇ Ç(5ÜÉ
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÇ Ç(5
+%55void"6Entity.ReleaseFile#addLocTouched(Ljava/lang/Integer;)V*
+
+rfEntity.ReleaseFile*
+
+%54java.lang.Integer2"addLocTouched(Ljava/lang/Integer;)*
+11*∂
+57^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP P(;…∆
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP P(;
+%22java.util.List"~org.eclipse.jgit.diff.DiffFormatter#scan(Lorg/eclipse/jgit/revwalk/RevTree;Lorg/eclipse/jgit/revwalk/RevTree;)Ljava/util/List;*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*)
+'
+%20 org.eclipse.jgit.revwalk.RevTree*)
+'
+%21 org.eclipse.jgit.revwalk.RevTree2Jscan(Lorg/eclipse/jgit/revwalk/RevTree;Lorg/eclipse/jgit/revwalk/RevTree;)*
+56*æ
+13`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÇ Ç(œ
+Ã
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÇ Ç(3
+%54java.lang.Integer"/java.lang.Integer#valueOf(I)Ljava/lang/Integer;*"
+java.lang.Integer*
+""*
+12*Ç
+58^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP, P(0ïí
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP, P(:'
+%21 org.eclipse.jgit.revwalk.RevTree"Norg.eclipse.jgit.revwalk.RevCommit#getTree()Lorg/eclipse/jgit/revwalk/RevTree;*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit2	getTree()*
+57*Ò
+14`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÅ Å(1Çˇ
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÅ Å(1
+%53void"4Entity.ReleaseFile#addLocAdded(Ljava/lang/Integer;)V*
+
+rfEntity.ReleaseFile*
+
+%52java.lang.Integer2 addLocAdded(Ljava/lang/Integer;)*
+13*≠
+59^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaO O(4¶
+£
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaO O(4
+diffEntriesjava.util.List"__id*
+
+%18java.util.ArrayListóî
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaP P(*'
+%20 org.eclipse.jgit.revwalk.RevTree"Norg.eclipse.jgit.revwalk.RevCommit#getTree()Lorg/eclipse/jgit/revwalk/RevTree;*.
+,
+parent"org.eclipse.jgit.revwalk.RevCommit2	getTree()*
+58*º
+15^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java (œ
+Ã
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÅ Å(/
+%52java.lang.Integer"/java.lang.Integer#valueOf(I)Ljava/lang/Integer;*"
+java.lang.Integer*
+""*
+14*Õ
+16^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x(ï
+í
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x("
+editorg.eclipse.jgit.diff.Edit"__id*
+""ƒ
+¡
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x("
+editorg.eclipse.jgit.diff.Edit"
+__arrayGet*'
+%
+%47org.eclipse.jgit.diff.EditList*
+""*
+15
+21*∏
+18^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaz$ z((À»
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaz$ z(4
+
+%51int"'org.eclipse.jgit.diff.Edit#getBeginB()I*$
+"
+editorg.eclipse.jgit.diff.Edit2getBeginB()*
+16*¥
+19^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javay y(6«ƒ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaz z(!
+
+%50int"%org.eclipse.jgit.diff.Edit#getEndB()I*$
+"
+editorg.eclipse.jgit.diff.Edit2	getEndB()*
+18*~
+0 "w
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaú ú(
+implicit return*≤
+1`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(1ƒ
+¡
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(1*
+head"org.eclipse.jgit.revwalk.RevCommit"__id*+
+)
+%64"org.eclipse.jgit.revwalk.RevCommit*
+69*Ä
+2`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(1ìê
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(1)
+%64"org.eclipse.jgit.revwalk.RevCommit"torg.eclipse.jgit.revwalk.RevWalk#parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/revwalk/RevCommit;*-
++
+revWalk org.eclipse.jgit.revwalk.RevWalk*+
+)
+%63"org.eclipse.jgit.revwalk.RevCommit2/parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)*
+1*í
+3`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(•¢
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaí í(0)
+%63"org.eclipse.jgit.revwalk.RevCommit"Sorg.eclipse.jgit.revwalk.RevCommit#getParent(I)Lorg/eclipse/jgit/revwalk/RevCommit;*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit*2 2getParent(I)*
+2*√
+4`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaë ë(÷”
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaë ë(
+%62void",org.eclipse.jgit.diff.DiffFormatter#close()V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter2close()*
+3*Õ
+5^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java\ \(ö
+ó
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java\ \('
+difforg.eclipse.jgit.diff.DiffEntry"__id*
+""¡
+æ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.java\ \('
+difforg.eclipse.jgit.diff.DiffEntry"
+__arrayGet*
+
+diffEntriesjava.util.List*
+""*
+4
+43*◊
+6`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÖ. Ö(/ÍÁ
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÖ Ö(0
+%61void"2Entity.ReleaseFile#setNumRev(Ljava/lang/Integer;)V*
+
+rfEntity.ReleaseFile*
+""2setNumRev(Ljava/lang/Integer;)*
+5*»
+7`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÖ Ö(€ÿ
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÖ Ö(+
+%60java.lang.Integer"1Entity.ReleaseFile#getNumRev()Ljava/lang/Integer;*
+
+rfEntity.ReleaseFile2getNumRev()*
+6*Ë
+8`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(=˚¯
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(=
+%59void"1Entity.ReleaseFile#addAuthor(Ljava/lang/String;)V*
+
+rfEntity.ReleaseFile*
+
+%58java.lang.String2addAuthor(Ljava/lang/String;)*
+7*ﬂ
+9`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(<ÚÔ
+`
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaÑ Ñ(<
+%58java.lang.String"<org.eclipse.jgit.lib.PersonIdent#getName()Ljava/lang/String;*)
+'
+%57 org.eclipse.jgit.lib.PersonIdent2	getName()*
+8*´
+60^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaO" O(3îë
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaO& O(1
+%18java.util.ArrayList"java.util.ArrayListß
+§
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaO" O(3
+%19"java.util.ArrayList#<init>()V*
+
+%18java.util.ArrayList*
+59*·
+61^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaN N(ÙÒ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaN N(
+%17void"8org.eclipse.jgit.diff.DiffFormatter#setDetectRenames(Z)V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*
+""2setDetectRenames(Z)*
+60*—
+62^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaM M(‰·
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaM M(
+%16void"2org.eclipse.jgit.diff.DiffFormatter#setContext(I)V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*2 2setContext(I)*
+61*Å
+63^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaL L(°
+û
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaL L(2.
+%14'org.eclipse.jgit.diff.RawTextComparator"__id*
+""Ì
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaL L(3
+%15void"aorg.eclipse.jgit.diff.DiffFormatter#setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*0
+.
+%14'org.eclipse.jgit.diff.RawTextComparator2<setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)*
+62*â
+64^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaJ
+ J(N¬
+ø
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaJ
+ J(N)
+df#org.eclipse.jgit.diff.DiffFormatter"__id*,
+*
+%11#org.eclipse.jgit.diff.DiffFormatter◊‘
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaK K( 
+%13void"Uorg.eclipse.jgit.diff.DiffFormatter#setRepository(Lorg/eclipse/jgit/lib/Repository;)V*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository20setRepository(Lorg/eclipse/jgit/lib/Repository;)*
+63*∏
+20^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javay& y(*À»
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javay& y(6
+
+%49int"'org.eclipse.jgit.diff.Edit#getBeginA()I*$
+"
+editorg.eclipse.jgit.diff.Edit2getBeginA()*
+19*©
+65^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI
+ I(E√
+¿
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI
+ I(E,
+parent"org.eclipse.jgit.revwalk.RevCommit"__id**
+(
+%9"org.eclipse.jgit.revwalk.RevCommitß
+§
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaJ/ J(L4
+%10-org.eclipse.jgit.util.io.DisabledOutputStream"__id*
+""¥±
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaJ! J(.*
+%11#org.eclipse.jgit.diff.DiffFormatter"#org.eclipse.jgit.diff.DiffFormatterï
+í
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaJ J(M
+%12"Corg.eclipse.jgit.diff.DiffFormatter#<init>(Ljava/io/OutputStream;)V*,
+*
+%11#org.eclipse.jgit.diff.DiffFormatter*6
+4
+%10-org.eclipse.jgit.util.io.DisabledOutputStream*
+64*¥
+21^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javay y(«ƒ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javay y(#
+
+%48int"%org.eclipse.jgit.diff.Edit#getEndA()I*$
+"
+editorg.eclipse.jgit.diff.Edit2	getEndA()*
+20*¸
+66^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI I(Dèå
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI I(D(
+%9"org.eclipse.jgit.revwalk.RevCommit"torg.eclipse.jgit.revwalk.RevWalk#parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)Lorg/eclipse/jgit/revwalk/RevCommit;*-
++
+revWalk org.eclipse.jgit.revwalk.RevWalk**
+(
+%8"org.eclipse.jgit.revwalk.RevCommit2/parseCommit(Lorg/eclipse/jgit/lib/AnyObjectId;)*
+65*Å
+22^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x(9îë
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x(9%
+%47org.eclipse.jgit.diff.EditList"Norg.eclipse.jgit.patch.FileHeader#toEditList()Lorg/eclipse/jgit/diff/EditList;**
+(
+%46!org.eclipse.jgit.patch.FileHeader2toEditList()*
+16*è
+67^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI I(%¢ü
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javaI2 I(C(
+%8"org.eclipse.jgit.revwalk.RevCommit"Sorg.eclipse.jgit.revwalk.RevCommit#getParent(I)Lorg/eclipse/jgit/revwalk/RevCommit;*,
+*
+head"org.eclipse.jgit.revwalk.RevCommit*2 2getParent(I)*
+66*˚
+23^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x(éã
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/MetricsHandler.javax x(,(
+%46!org.eclipse.jgit.patch.FileHeader"vorg.eclipse.jgit.diff.DiffFormatter#toFileHeader(Lorg/eclipse/jgit/diff/DiffEntry;)Lorg/eclipse/jgit/patch/FileHeader;*+
+)
+df#org.eclipse.jgit.diff.DiffFormatter*)
+'
+difforg.eclipse.jgit.diff.DiffEntry2/toFileHeader(Lorg/eclipse/jgit/diff/DiffEntry;)*
+22:-
+
+repositoryorg.eclipse.jgit.lib.Repository:
+commitsjava.util.List:
+projTicketsjava.util.List:
+projReleasesjava.util.ListB"
+Handler.MetricsHandler

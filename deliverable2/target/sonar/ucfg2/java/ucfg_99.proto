@@ -1,0 +1,16 @@
+
+8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java9 9($"1*÷
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java:	 :(ž
+›
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java:	 :(
+%0java.time.LocalDateTime"__id**
+Entity.Release"
+date"y
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java: :(
+
+%0java.time.LocalDateTimeB
+Entity.Release

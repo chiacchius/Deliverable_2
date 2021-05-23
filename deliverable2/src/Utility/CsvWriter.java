@@ -1,4 +1,4 @@
-package Handler;
+package Utility;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,31 +10,28 @@ import java.util.Map;
 
 import Entity.Release;
 
-public class CsvWriterHandler {
+public class CsvWriter {
 	
 	
-	public static void writeCsv(String projectName, List<Release> releases) throws IOException{
+	public static String writeCsv(String projectName, List<Release> releases) throws IOException{
 		   
 		FileWriter fileWriter = null;
+		 String outname = null;
 		 try {
 	            fileWriter = null;
-	            String outname = projectName + "VersionInfo.csv";
+	            outname = projectName + "VersionInfo.csv";
 					    //Name of CSV for output
 					    fileWriter = new FileWriter(outname);
-	            fileWriter.append("Index,Version ID,Version Name,Date,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
+	            fileWriter.append("Version ID,Version Name,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");
 	            for ( int i = 0; i < releases.size()/2; i++) {
 		           	Release release = releases.get(i);
 		            for (int j=0; j<release.getNumFiles(); j++) {
 		               
-		               Integer index = i + 1;
-		               fileWriter.append(index.toString());
-		               fileWriter.append(",");
+		               
 		               fileWriter.append(release.getReleaseIndex().toString());
 		               fileWriter.append(",");
 		               fileWriter.append(release.getReleaseName());
-		               fileWriter.append(",");
-		               fileWriter.append(release.getReleaseDate().toString());
 		               fileWriter.append(",");
 		               fileWriter.append(release.getReleaseFiles().get(j).getFilePath());
 		               fileWriter.append(",");
@@ -63,17 +60,21 @@ public class CsvWriterHandler {
 		            }
 	            }
 
-	         } catch (Exception e) {
+	     } catch (Exception e) {
 	            System.out.println("Error in csv writer");
 	            e.printStackTrace();
-	         } finally {
+	     } finally {
 	            try {
 	               fileWriter.flush();
 	               fileWriter.close();
+	               
 	            } catch (IOException e) {
 	               System.out.println("Error while flushing/closing fileWriter !!!");
 	               e.printStackTrace();
 	            }
-	         }
+	     }
+		 return outname;
 	}
+	
+	
 }

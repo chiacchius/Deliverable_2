@@ -43,16 +43,16 @@ import Entity.Release;
 import Entity.ReleaseFile;
 import Entity.Ticket;
 import Handler.ChangesHandler;
-import Handler.CsvWriterHandler;
 import Handler.GitHubHandler;
 import Handler.JiraHandler;
 import Handler.MetricsHandler;
 import Handler.ReleaseHandler;
+import Utility.CsvWriter;
 import Utility.ProjectLogger;
 
 public class ControllerDeliverable1 {
 	
-	
+	private String csvFile;
 	
 	
 	
@@ -64,7 +64,7 @@ public class ControllerDeliverable1 {
 
 
 
-	public static void run(String projectName, String path) throws GitAPIException, IOException, JSONException  {
+	public void run(String projectName, String path) throws GitAPIException, IOException, JSONException  {
 		
 		
 		
@@ -147,7 +147,7 @@ public class ControllerDeliverable1 {
     	
     	
 
-    	CsvWriterHandler.writeCsv(PROJ_NAME, projReleases);
+    	this.csvFile = CsvWriter.writeCsv(PROJ_NAME, projReleases);
     	
     	ProjectLogger.getSingletonInstance().saveMess(" [*] Exiting for " + projectName);
 
@@ -214,7 +214,9 @@ public class ControllerDeliverable1 {
 
 
 
-
+	public String getCsvFileName() {
+		return this.csvFile;
+	}
 	
 
 

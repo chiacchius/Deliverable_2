@@ -1,0 +1,51 @@
+
+EHandler.ReleaseHandler#findRelease(ILjava/util/List;)LEntity/Release;^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (""5*è
+3^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (Ø
+¨
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (
+%3Entity.Release"
+__arrayGet* 
+
+projReleasesjava.util.List*
+"""x
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (
+
+%3Entity.Release*¸
+4^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (Ø
+¨
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (
+%1Entity.Release"
+__arrayGet* 
+
+projReleasesjava.util.List*
+""‹Ÿ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (,
+%2java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
+
+%1Entity.Release2getReleaseIndex()*
+3
+5*û
+5^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (∞≠
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java ()	
+%0int"java.util.List#size()I* 
+
+projReleasesjava.util.List2size()*
+4
+1*Õ
+1^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java	 ("h
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (
+"":
+"":
+projReleasesjava.util.ListB"
+Handler.ReleaseHandler

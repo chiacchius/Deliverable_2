@@ -1,0 +1,338 @@
+
+LController.ControllerDeliverable1#run(Ljava/lang/String;Ljava/lang/String;)Vi
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaC C("5*Ó
+2k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java†
+ †(—
+”
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java†
+ †(
+ticketEntity.Ticket"__id*
+""¾
+»
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java†
+ †(
+ticketEntity.Ticket"
+__arrayGet*
+
+projTicketsjava.util.List*
+""*
+3
+1*”
+3k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaˆ	 ˆ(œ
+™
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaˆ	 ˆ(O
+%20void"xHandler.MetricsHandler#checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)V*"
+Handler.MetricsHandler* 
+
+projReleasesjava.util.List*
+
+ticketEntity.Ticket*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+
+filesjava.util.List*
+2*âB
+5i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaG G( ¶
+³
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaG G(!
+	PROJ_NAMEjava.lang.String"__id*!
+
+projectNamejava.lang.String«
+¨
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaI I(-
+
+repositoryorg.eclipse.jgit.lib.Repository"__id*
+""œ
+™
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaK K( 
+projReleasesjava.util.List"__id*
+""•
+’
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaL L(
+filesjava.util.List"__id*
+""›
+˜
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaM M(
+projTicketsjava.util.List"__id*
+""—
+”
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaN N(
+commitsjava.util.List"__id*
+""—
+”
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaO O(
+changesjava.util.List"__id*
+""ë
+è
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaQ Q()
+%0Utility.ProjectLogger"CUtility.ProjectLogger#getSingletonInstance()LUtility/ProjectLogger;*"
+Utility.ProjectLoggerÙ
+Ö
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaQ3 Q(c
+%1java.lang.String"__concat*$"
+  [*] Starting retrieve data for *!
+
+projectNamejava.lang.String†ƒ
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaQ Q(d
+
+%2void"3Utility.ProjectLogger#saveMess(Ljava/lang/String;)V*
+
+%0Utility.ProjectLogger*
+
+%1java.lang.String2saveMess(Ljava/lang/String;)Ô
+Ñ
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaT T(@
+%3org.eclipse.jgit.api.Git"lHandler.GitHubHandler#cloneProjectFromGitHub(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jgit/api/Git;*"
+Handler.GitHubHandler*
+
+pathjava.lang.String*
+
+	PROJ_NAMEjava.lang.String·
+´
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaT T(A
+gitorg.eclipse.jgit.api.Git"__id* 
+
+%3org.eclipse.jgit.api.Git”‘
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaU U(#%
+%4org.eclipse.jgit.lib.Repository"Iorg.eclipse.jgit.api.Git#getRepository()Lorg/eclipse/jgit/lib/Repository;*!
+
+gitorg.eclipse.jgit.api.Git2getRepository()Ì
+É
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaU U(#-
+
+repositoryorg.eclipse.jgit.lib.Repository"__id*'
+%
+%4org.eclipse.jgit.lib.Repositoryƒ
+€
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java\ \(6
+%5java.util.List"CHandler.JiraHandler#getReleases(Ljava/lang/String;)Ljava/util/List;*"
+Handler.JiraHandler*
+
+	PROJ_NAMEjava.lang.String¬
+©
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java\ \(6
+projReleasesjava.util.List"__id*
+
+%5java.util.List´
+±
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaa a(B
+%6java.util.List"RHandler.JiraHandler#getTickets(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;*"
+Handler.JiraHandler*
+
+	PROJ_NAMEjava.lang.String* 
+
+projReleasesjava.util.List«
+¨
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaa a(B
+projTicketsjava.util.List"__id*
+
+%6java.util.List“
+
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javae e(/
+%7java.util.List"OHandler.GitHubHandler#getAllCommits(Lorg/eclipse/jgit/api/Git;)Ljava/util/List;*"
+Handler.GitHubHandler*!
+
+gitorg.eclipse.jgit.api.Git§
+¤
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javae e(/
+commitsjava.util.List"__id*
+
+%7java.util.ListÈ
+Å
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaf f(S
+%8java.util.List"“Handler.GitHubHandler#findReleaseFiles(Lorg/eclipse/jgit/api/Git;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)Ljava/util/List;*"
+Handler.GitHubHandler*!
+
+gitorg.eclipse.jgit.api.Git*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository* 
+
+projReleasesjava.util.List*
+
+commitsjava.util.List¥
+¢
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaf f(S
+filesjava.util.List"__id*
+
+%8java.util.List—
+”
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javag g(
+%9java.io.PrintStream"__id*
+""µ²
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javag$ g(0
+
+%10int"java.util.List#size()I*
+
+filesjava.util.List2size()¬
+©
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javag g(0
+%11java.lang.String"__concat*	
+files: *
+
+
+%10int‚ÿ
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javag g(1
+%12void"0java.io.PrintStream#println(Ljava/lang/String;)V*
+
+%9java.io.PrintStream*
+
+%11java.lang.String2println(Ljava/lang/String;)¹
+¶
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javak k(-
+%13void"RController.ControllerDeliverable1#setOvReleases(Ljava/util/List;Ljava/util/List;)V*%"#
+!Controller.ControllerDeliverable1* 
+
+projReleasesjava.util.List*
+
+projTicketsjava.util.Listæ
+ã
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javal l(5
+%14void"bController.ControllerDeliverable1#setFvReleases(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V*%"#
+!Controller.ControllerDeliverable1* 
+
+projReleasesjava.util.List*
+
+projTicketsjava.util.List*
+
+commitsjava.util.List¹
+¶
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javam m(-
+%15void"RController.ControllerDeliverable1#setIvReleases(Ljava/util/List;Ljava/util/List;)V*%"#
+!Controller.ControllerDeliverable1* 
+
+projReleasesjava.util.List*
+
+projTicketsjava.util.List¹
+¶
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javan n(-
+%16void"RController.ControllerDeliverable1#setAvReleases(Ljava/util/List;Ljava/util/List;)V*%"#
+!Controller.ControllerDeliverable1* 
+
+projReleasesjava.util.List*
+
+projTicketsjava.util.List³
+°
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java~ ~(R
+%17java.util.List"„Handler.ChangesHandler#getChanges(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;*"
+Handler.ChangesHandler*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+
+commitsjava.util.List*
+
+filesjava.util.List* 
+
+projReleasesjava.util.List¨
+¥
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java~ ~(R
+changesjava.util.List"__id*
+
+%17java.util.List§
+¤
+i
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java (V
+%18void"}Handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V*"
+Handler.MetricsHandler*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+
+commitsjava.util.List*
+
+projTicketsjava.util.List* 
+
+projReleasesjava.util.List·
+´
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java‚ ‚(>
+%19void"†Controller.ControllerDeliverable1#setFilesToTicket(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)V*%"#
+!Controller.ControllerDeliverable1*
+
+projTicketsjava.util.List*
+
+changesjava.util.List*
+
+filesjava.util.List*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository*
+2*Š
+0 "‚
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java› ›(
+implicit return*í
+1k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java– –(¦
+£
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java– –(7
+%21void"FHandler.CsvWriterHandler#writeCsv(Ljava/lang/String;Ljava/util/List;)V*"
+Handler.CsvWriterHandler*
+
+	PROJ_NAMEjava.lang.String* 
+
+projReleasesjava.util.Listî
+ë
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java˜ ˜()
+%22Utility.ProjectLogger"CUtility.ProjectLogger#getSingletonInstance()LUtility/ProjectLogger;*"
+Utility.ProjectLoggerÍ
+Ê
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java˜3 ˜(T
+%23java.lang.String"__concat*
+ [*] Exiting for *!
+
+projectNamejava.lang.String‹ˆ
+k
+_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java˜ ˜(U
+%24void"3Utility.ProjectLogger#saveMess(Ljava/lang/String;)V*
+
+%22Utility.ProjectLogger*
+
+%23java.lang.String2saveMess(Ljava/lang/String;)*
+0:
+projectNamejava.lang.String:
+pathjava.lang.StringB%"#
+!Controller.ControllerDeliverable1

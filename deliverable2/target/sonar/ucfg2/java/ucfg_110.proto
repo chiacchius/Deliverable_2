@@ -1,0 +1,70 @@
+
+BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap p("5*ç
+2V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javar
+ r(É
+Ä
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javar
+ r(
+rfEntity.ReleaseFile"__id*
+""°
+û
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javar
+ r(
+rfEntity.ReleaseFile"
+__arrayGet*
+
+%0java.util.List*
+""*
+4
+1*Ω
+3V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javat t("`
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javau	 u(
+""*‡
+4V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javas
+ s( «
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javas
+ s(
+%1Entity.Changes".Entity.ReleaseFile#getChange()LEntity/Changes;*
+
+rfEntity.ReleaseFile2getChange()¿Ω
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javas
+ s(#
+%2java.util.List")Entity.Changes#getPaths()Ljava/util/List;*
+
+%1Entity.Changes2
+getPaths()ÍÁ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javas
+ s(2
+%3boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+%2java.util.List*
+
+pathjava.lang.String2contains(Ljava/lang/Object;)*
+2
+3*Ä
+5V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javar r(ù
+ö
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javar r(,
+%0java.util.List"__id*$*"
+Entity.Release"
+releaseFiles*
+2*Ω
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javax x("`
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javax x(
+"":
+pathjava.lang.StringB
+Entity.Release

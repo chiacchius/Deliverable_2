@@ -1,0 +1,81 @@
+
+KEntity.Release#getReleaseFileByName(Ljava/lang/String;)LEntity/ReleaseFile;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java} }()"6*ç
+2V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java~ ~(É
+Ä
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java~ ~(
+rfEntity.ReleaseFile"__id*
+""°
+û
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java~ ~(
+rfEntity.ReleaseFile"
+__arrayGet*
+
+%0java.util.List*
+""*
+5
+1*’
+3X
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaÄ Ä("v
+X
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaÄ
+ Ä(
+
+rfEntity.ReleaseFile*‡
+4V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java- (/ «
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java- (;
+%3Entity.Changes".Entity.ReleaseFile#getChange()LEntity/Changes;*
+
+rfEntity.ReleaseFile2getChange()¿Ω
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java- (F
+%4java.util.List")Entity.Changes#getPaths()Ljava/util/List;*
+
+%3Entity.Changes2
+getPaths()ÍÁ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java- (U
+%5boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+
+%4java.util.List*
+
+namejava.lang.String2contains(Ljava/lang/Object;)*
+2
+3*•
+5V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java (“œ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java (
+%1java.lang.String"2Entity.ReleaseFile#getFilePath()Ljava/lang/String;*
+
+rfEntity.ReleaseFile2getFilePath()ÍÁ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java ()
+%2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+%1java.lang.String*
+
+namejava.lang.String2equals(Ljava/lang/Object;)*
+3
+4*Ä
+6V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java~ ~( ù
+ö
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java~ ~(-
+%0java.util.List"__id*$*"
+Entity.Release"
+releaseFiles*
+2*¡
+1X
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaÉ É("b
+X
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaÉ É(
+"":
+namejava.lang.StringB
+Entity.Release

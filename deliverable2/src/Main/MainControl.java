@@ -38,16 +38,17 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import Controller.ControllerDeliverable1;
+import Controller.ControllerDeliverable2;
 import Entity.Changes;
 import Entity.Release;
 import Entity.ReleaseFile;
 import Entity.Ticket;
 import Handler.ChangesHandler;
-import Handler.CsvWriterHandler;
 import Handler.GitHubHandler;
 import Handler.JiraHandler;
 import Handler.MetricsHandler;
 import Handler.ReleaseHandler;
+import Utility.CsvWriter;
 import Utility.ProjectLogger;
 
 
@@ -60,16 +61,29 @@ public class MainControl {
 		
 		String PROJNAME1 = "BOOKKEEPER";
 		String PROJNAME2 = "ZOOKEEPER";
-		String path = "/Users/chiacchius/Desktop/";
+		String path = "./";
 		logCTR = ProjectLogger.getSingletonInstance();
 		ControllerDeliverable1 controllerDeliverable1 = new ControllerDeliverable1();
+		ControllerDeliverable2 controllerDeliverable2 = new ControllerDeliverable2();
 
-		//Deliverable1 --> creation of the dataset with the check oof the bugginess
 		
-		ControllerDeliverable1.run(PROJNAME1, path+PROJNAME1);
-		ControllerDeliverable1.run(PROJNAME2, path+PROJNAME2);
+		/* ****************** BOOKKEEPER ***************** */
+		
+		
+		controllerDeliverable1.run(PROJNAME1, path+PROJNAME1); //Deliverable1 --> creation of the dataset with the check oof the bugginess
+		
+		
+		controllerDeliverable2.run(PROJNAME1, controllerDeliverable1.getCsvFileName()); //Deliverable2 --> analyze data with machine learning
+		
+		/* ****************** ZOOKEEPER ***************** */
+		
+		
+		controllerDeliverable1.run(PROJNAME2, path+PROJNAME2); //Deliverable1 --> creation of the dataset with the check of the bugginess
+		
+		
+		controllerDeliverable2.run(PROJNAME2, controllerDeliverable1.getCsvFileName()); //Deliverable2 --> analyze data with machine learning
 
-
+		
 	}
 	
 	
