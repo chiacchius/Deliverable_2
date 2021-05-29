@@ -20,5 +20,6 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="/Users/chiacchius/Downloads/java-json.jar"/>
 	<classpathentry kind="lib" path="/Users/chiacchius/weka-3-8-5/weka.jar"/>
+	<classpathentry kind="lib" path="/Users/chiacchius/weka-3-8-5/weka-src.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

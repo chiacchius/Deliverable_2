@@ -56,7 +56,7 @@ public class MainControl {
 
 	private static ProjectLogger logCTR;
 	
-	public static void main(String[] args) throws GitAPIException, IOException, JSONException  {
+	public static void main(String[] args) throws Exception  {
 		
 		
 		String PROJNAME1 = "BOOKKEEPER";
