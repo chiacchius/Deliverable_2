@@ -65,7 +65,7 @@ public class Walk {
 		this.testSet = new Instances(dataset, trainSetElementsNum, testSetElementsNum);
 		
 		
-		this.setPercentageTrain((double) (this.trainSet.size()/dataset.size()));
+		this.setPercentageTrain((double) this.trainSet.size()/(double)dataset.size());
 
 		
 		

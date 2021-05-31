@@ -12,6 +12,7 @@ import Handler.SamplingHandler;
 import weka.filters.Filter;
 import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SpreadSubsample;
+import Utility.CsvWriter;
 import Utility.ProjectLogger;
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
@@ -46,6 +47,7 @@ public class ControllerDeliverable2 {
 		
 		//get number of last walk of the Walk Forward
 		int lastWalk = (int) this.dataSet.get(this.dataSet.size()-1).value(0);
+		System.out.println(lastWalk);
 		
 		//instantiation of walks
 		
@@ -59,6 +61,8 @@ public class ControllerDeliverable2 {
 		for (Walk walk: this.walks) {
 			walkEvaluation(walk);
 		}
+		
+		CsvWriter.writeSecondCsv(projectName, this.modelMetrics);
 		
 		
 		
@@ -345,7 +349,6 @@ public class ControllerDeliverable2 {
 				
 				
 				
-				//printEvaluation(trainSet, testSet, walk, evaluation, classifierName, sampling, featureName);
 				
 				
 			}
@@ -367,11 +370,10 @@ public class ControllerDeliverable2 {
 				
 				evaluation.evaluateModel(classifier, testSet);
 				
-				//printEvaluation(null, null, walk, evaluation, classifierName, sampling, featureName);
 				
 			}
 			catch (Exception e) { 
-				//ProjectLogger.getSingletonInstance().saveMess("Failed to build unfiltered classifier"); 
+				ProjectLogger.getSingletonInstance().saveMess("Failed to build unfiltered classifier"); 
 		
 				System.exit(1);
 				
@@ -387,7 +389,7 @@ public class ControllerDeliverable2 {
 					(int) evaluation.numFalsePositives(classIndex), (int) evaluation.numFalseNegatives(classIndex)};
 			double[] metrics = {evaluation.precision(classIndex), evaluation.recall(classIndex), evaluation.areaUnderROC(classIndex), evaluation.kappa()};
 			
-			this.modelMetrics.add(new ModelMetrics(this.projName, attributes, walk.getTrainId(),percents , trueFalsePositiveNegative, metrics));
+			this.modelMetrics.add(new ModelMetrics(this.projName, attributes, walk.getTrainId(), percents , trueFalsePositiveNegative, metrics));
 		
 		}
 		else ProjectLogger.getSingletonInstance().saveMess("Invalid walk");
@@ -399,49 +401,7 @@ public class ControllerDeliverable2 {
 	
 
 
-	private void printEvaluation(Instances trainSet, Instances testSet, Walk walk, Evaluation evaluation,
-			String classifier, String sampling, String feature) throws SecurityException, IOException {
-		
-		int trueDefectiveIndex;
-		if(trainSet == null) trueDefectiveIndex = /*getDefectiveClassIndex(walk.getTrainSet());*/   walk.getTrainSet().attribute(walk.getTrainSet().numAttributes() - 1).indexOfValue("Yes");
-		else trueDefectiveIndex = trainSet.attribute(trainSet.numAttributes() - 1).indexOfValue("Yes");
-		
-		ProjectLogger.getSingletonInstance().saveMess("Walk #" + walk.getTrainId());
-		ProjectLogger.getSingletonInstance().saveMess(" +-Defective \"true\" index: " + trueDefectiveIndex);
-		ProjectLogger.getSingletonInstance().saveMess(" +-Number of features: " + walk.getTrainSet().numAttributes());
-		if(trainSet != null)
-		{
-			ProjectLogger.getSingletonInstance().saveMess(" +-Number of filtered features: " + trainSet.numAttributes());
-			String newFeatures = "";
-			StringBuilder sb = new StringBuilder(newFeatures);
-		
-			for(int i = 0; i < trainSet.numAttributes(); i++)
-				sb.append(trainSet.attribute(i).name() + "; ");
-			
-			ProjectLogger.getSingletonInstance().saveMess(" +----Features: " + sb.toString());	
-			ProjectLogger.getSingletonInstance().saveMess(" +-Filtered Class Index: " + testSet.classAttribute().name() + " [" + testSet.classIndex() + "]");
-			
-		}
-		ProjectLogger.getSingletonInstance().saveMess(" +-Class Index: " + walk.getTestSet().classAttribute().name() + " [" + walk.getTestSet().classIndex() + "]");
-		ProjectLogger.getSingletonInstance().saveMess(" +-Classifier: " + classifier);
-		ProjectLogger.getSingletonInstance().saveMess(" +-Balancing: " + sampling);
-		ProjectLogger.getSingletonInstance().saveMess(" +-Feature: " + feature);
-		ProjectLogger.getSingletonInstance().saveMess(" +-Evaluation results:");
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----Precision: " + evaluation.precision(trueDefectiveIndex));
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----TP: " + evaluation.numTruePositives(trueDefectiveIndex) + " FP: " + evaluation.numFalsePositives(trueDefectiveIndex));
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----TN: " + evaluation.numTrueNegatives(trueDefectiveIndex) + " FN: " + evaluation.numFalseNegatives(trueDefectiveIndex));
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----Area under ROC: " + evaluation.areaUnderROC(trueDefectiveIndex));
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----Kappa: " + evaluation.kappa());
-		ProjectLogger.getSingletonInstance().saveMess(" |");
-		ProjectLogger.getSingletonInstance().saveMess(" +----Error rate: " + evaluation.errorRate());
-		
-		
-	}
+	
 
 
 	private void preProcess() throws SecurityException, IOException {

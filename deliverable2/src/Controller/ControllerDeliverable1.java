@@ -147,7 +147,7 @@ public class ControllerDeliverable1 {
     	
     	
 
-    	this.csvFile = CsvWriter.writeCsv(PROJ_NAME, projReleases);
+    	this.csvFile = CsvWriter.writeFirstCsv(PROJ_NAME, projReleases);
     	
     	ProjectLogger.getSingletonInstance().saveMess(" [*] Exiting for " + projectName);
 

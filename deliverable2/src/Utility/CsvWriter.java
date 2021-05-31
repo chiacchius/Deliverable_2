@@ -1,5 +1,6 @@
 package Utility;
 
+import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
@@ -8,12 +9,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import Entity.ModelMetrics;
 import Entity.Release;
 
 public class CsvWriter {
 	
 	
-	public static String writeCsv(String projectName, List<Release> releases) throws IOException{
+	public static String writeFirstCsv(String projectName, List<Release> releases) throws IOException{
 		   
 		FileWriter fileWriter = null;
 		 String outname = null;
@@ -74,6 +76,66 @@ public class CsvWriter {
 	            }
 	     }
 		 return outname;
+	}
+
+	
+	
+	
+	public static void writeSecondCsv(String projectName, List<ModelMetrics> modelMetrics) throws SecurityException, IOException {
+		
+		
+		
+		try (BufferedWriter br = new BufferedWriter(
+				new FileWriter(projectName + "_metrics.csv"))) {
+			StringBuilder sb = new StringBuilder();
+
+			sb.append("Dataset,Training_Release,%Training,%Defective_training,%Defective_testing,Classifier,Balancing,Feature_Selection,TP,FP,TN,FN,Precision,Recall,ROC_Area,Kappa\n");
+			
+				for (ModelMetrics metric : modelMetrics) {
+					
+					sb.append(metric.getDataset());
+					sb.append(",");
+					sb.append(metric.getTrainingReleaseNumber());
+					sb.append(",");
+					sb.append(metric.getTrainingPercent());
+					sb.append(",");
+					sb.append(metric.getDefectTrainingPercent());
+					sb.append(",");
+					sb.append(metric.getDefectTestPercent());
+					sb.append(",");
+					sb.append(metric.getClassifier());
+					sb.append(",");
+					sb.append(metric.getBalancing());
+					sb.append(",");
+					sb.append(metric.getFeatureSelection());
+					sb.append(",");
+					sb.append(metric.getTp());
+					sb.append(",");
+					sb.append(metric.getFp());
+					sb.append(",");
+					sb.append(metric.getTn());
+					sb.append(",");
+					sb.append(metric.getFn());
+					sb.append(",");
+					sb.append(metric.getPrecision());
+					sb.append(",");
+					sb.append(metric.getRecall());
+					sb.append(",");
+					sb.append(metric.getRocArea());
+					sb.append(",");
+					sb.append(metric.getKappa());
+					sb.append("\n");
+					
+				}
+			
+
+			br.write(sb.toString());
+		} catch (Exception e) {
+
+			ProjectLogger.getSingletonInstance().saveMess("Error in csv writer");
+		}
+		
+		
 	}
 	
 	
