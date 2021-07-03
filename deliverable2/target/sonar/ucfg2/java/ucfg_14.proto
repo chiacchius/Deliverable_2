@@ -1,36 +1,16 @@
 
-hController.ControllerDeliverable1#checkIfIvIsCorrect(LEntity/Release;LEntity/Ticket;)Ljava/lang/Boolean;k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaü ü(*"3*ç
-2k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java€
- €("u
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java€ €(
-""*©
-3k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaþ þ(îë
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaþ þ(
-%0java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
-
-releaseEntity.Release2getReleaseIndex()ÑÎ
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaþ" þ(0
-%1Entity.Release"%Entity.Ticket#getOv()LEntity/Release;*
-
-ticketEntity.Ticket2getOv()éæ
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaþ" þ(B
-%2java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
-
-%1Entity.Release2getReleaseIndex()*
-2
-1*ç
-1k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java„	 „("u
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.java„ „(
-"":
-releaseEntity.Release:
-ticketEntity.TicketB%"#
-!Controller.ControllerDeliverable1
+4Entity.ModelMetrics#getBalancing()Ljava/lang/String;[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java3 3("1*‚
+1[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4	 4(¦
+£
+[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4	 4(
+%0java.lang.String"__id*&*$
+Entity.ModelMetrics"
+	balancing"w
+[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4 4(
+
+%0java.lang.StringB
+Entity.ModelMetrics

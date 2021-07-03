@@ -1,16 +1,101 @@
 
-+Entity.Ticket#getBugFiles()Ljava/util/List;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java≠ ≠( "1*Ô
-1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÆ	 Æ(ù
-ö
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÆ	 Æ(
-%0java.util.List"__id*#*!
-Entity.Ticket"
-bugFilesPath"q
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÆ Æ(
-
-%0java.util.ListB
-Entity.Ticket
+PHandler.JiraHandler#readJsonArrayFromUrl(Ljava/lang/String;)Lorg/json/JSONArray;]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaè è(-"7*ﬂ
+2]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î(*"{
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î(*
+
+%9org.json.JSONArray*Ã
+3]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î()êç
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î(
+%9org.json.JSONArray"org.json.JSONArrayœ
+Ã
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î()
+%10".org.json.JSONArray#<init>(Ljava/lang/String;)V*
+
+%9org.json.JSONArray*
+
+%8java.lang.String*
+2*á
+4]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí í(_¶
+£
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí í(_
+rdjava.io.BufferedReader"__id*
+
+%6java.io.BufferedReaderÙ
+Ò
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaî î((
+%8java.lang.String"?Handler.JiraHandler#readAll(Ljava/io/Reader;)Ljava/lang/String;*"
+Handler.JiraHandler*
+
+rdjava.io.BufferedReader*
+3*‚
+5]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí í(_òï
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí í(,
+%6java.io.BufferedReader"java.io.BufferedReader›
+⁄
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí í(_
+%7"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
+
+%6java.io.BufferedReader*!
+
+%4java.io.InputStreamReader*
+4*º
+6]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaíC í(Eê
+ç
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaíG í(]
+%3java.nio.charset.Charset"__id*
+""ûõ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí1 í(B
+%4java.io.InputStreamReader"java.io.InputStreamReaderû
+õ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaí- í(^
+%5"Rjava.io.InputStreamReader#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V*!
+
+%4java.io.InputStreamReader*
+
+isjava.io.InputStream* 
+
+%3java.nio.charset.Charset*
+5*´
+7]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaê  ê(#ÑÅ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaê ê(
+%0java.net.URL"java.net.URL√
+¿
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaê ê($
+%1"(java.net.URL#<init>(Ljava/lang/String;)V*
+
+%0java.net.URL*
+
+urljava.lang.String—Œ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaê ê(1
+%2java.io.InputStream".java.net.URL#openStream()Ljava/io/InputStream;*
+
+%0java.net.URL2openStream()†
+ù
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaê ê(2
+isjava.io.InputStream"__id*
+
+%2java.io.InputStream*
+6:
+urljava.lang.StringB"
+Handler.JiraHandler

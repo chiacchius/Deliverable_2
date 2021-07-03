@@ -63,8 +63,8 @@ public class MainControl {
 		String PROJNAME2 = "ZOOKEEPER";
 		String path = "./";
 		logCTR = ProjectLogger.getSingletonInstance();
-		ControllerDeliverable1 controllerDeliverable1 = new ControllerDeliverable1();
-		ControllerDeliverable2 controllerDeliverable2 = new ControllerDeliverable2();
+		var controllerDeliverable1 = new ControllerDeliverable1();
+		var controllerDeliverable2 = new ControllerDeliverable2();
 
 		
 		/* ****************** BOOKKEEPER ***************** */

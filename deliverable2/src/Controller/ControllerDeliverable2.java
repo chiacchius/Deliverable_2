@@ -51,7 +51,7 @@ public class ControllerDeliverable2 {
 		
 		//instantiation of walks
 		
-		for (int i=1; i<lastWalk; i++) {
+		for (var i=1; i<lastWalk; i++) {
 			this.walks.add(new Walk(i, this.dataSet));
 		}
 		
@@ -79,7 +79,7 @@ public class ControllerDeliverable2 {
 		AbstractClassifier classifier = null;
 		
 		
-		for (int i =0; i<classifiers.size(); i++) {
+		for (var i =0; i<classifiers.size(); i++) {
 			
 			
 			switch (classifiers.get(i)) {
@@ -137,7 +137,7 @@ public class ControllerDeliverable2 {
 		features.add("Wrapper with Best First");
 		
 		
-		for (int i=0; i<features.size(); i++) {
+		for (var i=0; i<features.size(); i++) {
 			
 			Filter filter = null;
 			Instances filteredTrainSet = null;
@@ -284,7 +284,7 @@ public class ControllerDeliverable2 {
 				
 				case "Smote":
 					
-					SMOTE smote = SamplingHandler.smote(trainSet);
+					var smote = SamplingHandler.smote(trainSet);
 					
 					filteredClassifier = new FilteredClassifier();
 					filteredClassifier.setClassifier(classifier);

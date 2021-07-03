@@ -1,16 +1,16 @@
 
-)Entity.Changes#getPaths()Ljava/util/List;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java& &("1*æ
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(–
-“
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(
-%0java.util.List"__id**
-Entity.Changes"
-paths"p
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java' '(
+*Entity.Ticket#getCommits()Ljava/util/List;W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¡ ¡(""1*ê
+1W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¢	 ¢(˜
+•
+W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¢	 ¢(
+%0java.util.List"__id**
+Entity.Ticket"	
+commits"q
+W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¢ ¢(
 
-%0java.util.ListB
-Entity.Changes
+%0java.util.ListB
+Entity.Ticket

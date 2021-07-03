@@ -1,7 +1,6 @@
 package Handler;
 
 import java.io.BufferedReader;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,9 +21,6 @@ import org.json.JSONObject;
 import Entity.Release;
 import Entity.Ticket;
 
-import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.api.errors.InvalidRemoteException;
-import org.eclipse.jgit.errors.TransportException;
 import org.json.JSONArray;
 
 public class JiraHandler {

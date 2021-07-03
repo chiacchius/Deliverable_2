@@ -12,14 +12,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/chiacchius/Downloads/org.eclipse.jgit-5.11.0.202103091610-r.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/chiacchius/Downloads/java-json.jar"/>
-	<classpathentry kind="lib" path="/Users/chiacchius/weka-3-8-5/weka.jar"/>
-	<classpathentry kind="lib" path="/Users/chiacchius/weka-3-8-5/weka-src.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

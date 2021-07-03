@@ -1,0 +1,270 @@
+
+[Handler.GitHubHandler#associateLastCommit(Ljava/util/List;Ljava/util/List;)Ljava/util/List;]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javab b(2"15*Ü
+13]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(Ω
+∫
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(+(
+%5"org.eclipse.jgit.revwalk.RevCommit"
+__arrayGet*
+
+commitsjava.util.List*
+""ﬂ‹
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(;	
+%6int"3org.eclipse.jgit.revwalk.RevCommit#getCommitTime()I**
+(
+%5"org.eclipse.jgit.revwalk.RevCommit2getCommitTime()÷
+”
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(<
+%7java.time.Instant"5java.time.Instant#ofEpochSecond(J)Ljava/time/Instant;*"
+java.time.Instant*
+	
+%6int‘
+—
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaqD q(T
+%8java.time.ZoneId"9java.time.ZoneId#of(Ljava/lang/String;)Ljava/time/ZoneId;*"
+java.time.ZoneId*
+UTCôñ
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(U
+%9java.time.ZonedDateTime"Ejava.time.Instant#atZone(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;*
+
+%7java.time.Instant*
+
+%8java.time.ZoneId2atZone(Ljava/time/ZoneId;)˙˜
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(g
+%10java.time.LocalDateTime"Bjava.time.ZonedDateTime#toLocalDateTime()Ljava/time/LocalDateTime;*
+
+%9java.time.ZonedDateTime2toLocalDateTime()Ì
+^
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaqp q(å
+%11java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+lastReleaseEntity.Release2getReleaseDate()≤Ø
+^
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaq q(ç
+%12boolean"Hjava.time.LocalDateTime#isAfter(Ljava/time/chrono/ChronoLocalDateTime;)Z* 
+
+%10java.time.LocalDateTime* 
+
+%11java.time.LocalDateTime2/isAfter(Ljava/time/chrono/ChronoLocalDateTime;)*
+13
+8
+12
+1*Ø
+15]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javad d(!™ß
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javad d((	
+%0int"java.util.List#size()I*
+
+commitsjava.util.List2size()ô
+ñ
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javad d()"
+commitsNumberjava.lang.Integer"__id*
+	
+%0intØ¨
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javae e(-	
+%1int"java.util.List#size()I* 
+
+projReleasesjava.util.List2size()ô
+ñ
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javae e(."
+releaseNumberjava.lang.Integer"__id*
+	
+%1intã
+à
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaf f(
+releaseEntity.Release"__id*
+""û
+õ
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javag g(,
+commit"org.eclipse.jgit.revwalk.RevCommit"__id*
+""ó
+î
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javah h(%
+
+commitDatejava.time.LocalDateTime"__id*
+""ÿ
+’
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javal l(
+
+%2void"0java.util.Collections#reverse(Ljava/util/List;)V*"
+java.util.Collections*
+
+commitsjava.util.ListØ¨
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javam) m(<	
+%3int"java.util.List#size()I* 
+
+projReleasesjava.util.List2size()Æ
+´
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javam m(?
+%4Entity.Release"
+__arrayGet* 
+
+projReleasesjava.util.List*
+""ü
+ú
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javam m(@
+lastReleaseEntity.Release"__id*
+
+%4Entity.Release*
+
+13
+8
+1*¢
+4_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaç ç(∞≠
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaç ç(
+%24void"?Entity.Release#addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)V*
+
+releaseEntity.Release*.
+,
+commit"org.eclipse.jgit.revwalk.RevCommit2/addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)*	
+6
+8
+1*Á
+5_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaá á(¿
+Ω
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaá á(,)
+%22"org.eclipse.jgit.revwalk.RevCommit"
+__arrayGet*
+
+commitsjava.util.List*
+""µ≤
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaá á(-
+%23void"CEntity.Release#setLastCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)V*
+
+releaseEntity.Release*+
+)
+%22"org.eclipse.jgit.revwalk.RevCommit23setLastCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)*
+8
+1*ï
+6]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java (æ
+ª
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java ()
+%14"org.eclipse.jgit.revwalk.RevCommit"
+__arrayGet*
+
+commitsjava.util.List*
+""√
+¿
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java (,
+commit"org.eclipse.jgit.revwalk.RevCommit"__id*+
+)
+%14"org.eclipse.jgit.revwalk.RevCommitÊ„
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅ( Å(>
+
+%15int"3org.eclipse.jgit.revwalk.RevCommit#getCommitTime()I*.
+,
+commit"org.eclipse.jgit.revwalk.RevCommit2getCommitTime()⁄
+◊
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅ Å(?
+%16java.time.Instant"5java.time.Instant#ofEpochSecond(J)Ljava/time/Instant;*"
+java.time.Instant*
+
+
+%15int◊
+‘
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅG Å(W
+%17java.time.ZoneId"9java.time.ZoneId#of(Ljava/lang/String;)Ljava/time/ZoneId;*"
+java.time.ZoneId*
+UTCûõ
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅ Å(X
+%18java.time.ZonedDateTime"Ejava.time.Instant#atZone(Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;*
+
+%16java.time.Instant*
+
+%17java.time.ZoneId2atZone(Ljava/time/ZoneId;)˝˙
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅ Å(j
+%19java.time.LocalDateTime"Bjava.time.ZonedDateTime#toLocalDateTime()Ljava/time/LocalDateTime;* 
+
+%18java.time.ZonedDateTime2toLocalDateTime()≥
+∞
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÅ Å(j%
+
+commitDatejava.time.LocalDateTime"__id* 
+
+%19java.time.LocalDateTimeÌÍ
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÜ Ü(4
+%20java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+releaseEntity.Release2getReleaseDate()∫∑
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaÜ	 Ü(5
+%21boolean"Hjava.time.LocalDateTime#isAfter(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime* 
+
+%20java.time.LocalDateTime2/isAfter(Ljava/time/chrono/ChronoLocalDateTime;)*
+4
+5*æ
+8]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaz z(Ø
+¨
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaz z( 
+%13Entity.Release"
+__arrayGet* 
+
+projReleasesjava.util.List*
+""ú
+ô
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaz z( 
+releaseEntity.Release"__id*
+
+%13Entity.Release*	
+6
+8
+1*Ü
+12]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javar r(î
+ë
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javar r("
+commitsNumberjava.lang.Integer"__id*
+""*
+
+13
+8
+1*‰
+1_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaî	 î("~
+_
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaî î(
+
+commitsjava.util.List:
+commitsjava.util.List:
+projReleasesjava.util.ListB"
+Handler.GitHubHandler

@@ -1,18 +1,14 @@
 
-RHandler.JiraHandler$1#compare(Ljava/time/LocalDateTime;Ljava/time/LocalDateTime;)I[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaH H( "1*ö
-1[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaI I(¬©
-[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaI I()	
-%0int"Jjava.time.LocalDateTime#compareTo(Ljava/time/chrono/ChronoLocalDateTime;)I*
-
-o1java.time.LocalDateTime*
-
-o2java.time.LocalDateTime21compareTo(Ljava/time/chrono/ChronoLocalDateTime;)"e
-[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.javaI I(*
-"":
-o1java.time.LocalDateTime:
-o2java.time.LocalDateTimeB
-Handler.JiraHandler$1
+3Entity.ReleaseFile#getBugginess()Ljava/lang/String;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java/ /("2"1*Æ
+2Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java0 0(""e
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java0 0(#
+Yes*Å
+1Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java1	 1("d
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java1 1(
+NoB
+Entity.ReleaseFile

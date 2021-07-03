@@ -1,55 +1,16 @@
 
-?Handler.JiraHandler#readAll(Ljava/io/Reader;)Ljava/lang/String;]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java­ ­("4*Û
-2]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java±
- ±(ñî
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java±
- ±(
-%3java.lang.StringBuilder":java.lang.StringBuilder#append(C)Ljava/lang/StringBuilder;*
-
-sbjava.lang.StringBuilder*
-""2	append(C)*
-3*’
-3]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java° °(¥¢
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java° °(	
-%2int"java.io.Reader#read()I*
-
-rdjava.io.Reader2read()*
-2
-1*Þ
-4]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java® ®(-š—
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java® ®(+
-%0java.lang.StringBuilder"java.lang.StringBuilder¬
-©
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java® ®(-
-%1"!java.lang.StringBuilder#<init>()V*
-
-%0java.lang.StringBuilder¨
-¥
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java® ®(.
-sbjava.lang.StringBuilder"__id*
-
-%0java.lang.StringBuilder*
-3*½
-1]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java³ ³(ÝÚ
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java³ ³(
-%4java.lang.String"4java.lang.StringBuilder#toString()Ljava/lang/String;*
-
-sbjava.lang.StringBuilder2
-toString()"y
-]
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/JiraHandler.java³ ³(
-
-%4java.lang.String:
-rdjava.io.ReaderB"
-Handler.JiraHandler
+1Entity.ReleaseFile#getNumRev()Ljava/lang/Integer;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaE E("1*ý
+1Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaF	 F(¢
+Ÿ
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaF	 F(
+%0java.lang.Integer"__id*"* 
+Entity.ReleaseFile"
+numRev"w
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaF F(
+
+%0java.lang.IntegerB
+Entity.ReleaseFile
