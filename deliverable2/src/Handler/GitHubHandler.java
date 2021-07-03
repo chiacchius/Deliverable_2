@@ -38,10 +38,12 @@ public class GitHubHandler {
 	
 	
 	
-	private GitHubHandler() throws InvalidRemoteException, TransportException, GitAPIException {}
+	private GitHubHandler() {
+			throw new IllegalStateException("Handler class");
+	}
 	
 	
-	public static Git cloneProjectFromGitHub(String path, String projectName) throws InvalidRemoteException, org.eclipse.jgit.api.errors.TransportException, GitAPIException, IOException {
+	public static Git cloneProjectFromGitHub(String path, String projectName) throws GitAPIException, IOException {
 		//get the project from github and copy it locally
 		
 		Git git;
@@ -52,7 +54,6 @@ public class GitHubHandler {
 				       .setDirectory(new File(path)) 
 				       .call();
 		} catch (JGitInternalException e) {
-			//e.printStackTrace();
 			git = Git.open(new File(path));
 			
 		}
@@ -62,7 +63,7 @@ public class GitHubHandler {
 		
 	}
 	
-	public static List<ReleaseFile> findReleaseFiles(Git git, Repository repository, List<Release> projReleases, List <RevCommit> commits) throws NoHeadException, GitAPIException, IOException {
+	public static List<ReleaseFile> findReleaseFiles(Repository repository, List<Release> projReleases, List <RevCommit> commits) throws IOException {
 			
 		
 		
@@ -79,7 +80,7 @@ public class GitHubHandler {
 	}
 
 
-	public static List<RevCommit> getAllCommits(Git git) throws NoHeadException, GitAPIException, IOException{
+	public static List<RevCommit> getAllCommits(Git git) throws GitAPIException, IOException{
 		
 		List<RevCommit> commits = new ArrayList<>();
 		Iterable<RevCommit> log = git.log().all().call();
@@ -88,11 +89,9 @@ public class GitHubHandler {
         		
                 commits.add(commit);
         }
-        System.out.println(commits.size());
 		return commits;
         
-        //System.out.print(commits.toString() + "\n");
-		
+
 	}
 	
 	public static List<RevCommit> associateLastCommit(List<RevCommit> commits, List<Release> projReleases) {
@@ -159,38 +158,35 @@ public class GitHubHandler {
 		List<ReleaseFile> files = new ArrayList<>();
 		for(Release release: releases) {
 			
-			//Release release = releases.get(i);
 			int numFiles=0;
 			
-			try (RevWalk revWalk = new RevWalk(repository)) {
-                RevCommit commit = release.getLastCommit();
+
+			RevCommit commit = release.getLastCommit();
                 
-                // and using commit's tree find the path
-                RevTree tree = commit.getTree();
-                try (TreeWalk treeWalk = new TreeWalk(repository)) {
-                    treeWalk.addTree(tree);
-                    treeWalk.setRecursive(true);
+			// and using commit's tree find the path
+			RevTree tree = commit.getTree();
+			try (TreeWalk treeWalk = new TreeWalk(repository)) {
+				treeWalk.addTree(tree);
+				treeWalk.setRecursive(true);
                    
-                    while( treeWalk.next() ) {
-                    	if( treeWalk.getPathString().contains(".java") ) {
-                    		numFiles++;
+				while( treeWalk.next() ) {
+					if( treeWalk.getPathString().contains(".java") ) {
+						numFiles++;
                     		
-                    		ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString()); //build ReleaseFile entity
-                    		Changes change = new Changes(treeWalk.getPathString());
-                    		change.addPath(treeWalk.getPathString());
-                    		rf.setChange(change);
-                    		release.addFile(rf);
-                    		Integer loc = MetricsHandler.locCalculator(repository, treeWalk);
-                    		rf.setLoc(loc);
-                    		files.add(rf); //add it to files list
-                    	}
-                    }
+						ReleaseFile rf = new ReleaseFile(release, treeWalk.getPathString()); //build ReleaseFile entity
+						Changes change = new Changes(treeWalk.getPathString());
+						change.addPath(treeWalk.getPathString());
+						rf.setChange(change);
+						release.addFile(rf);
+						Integer loc = MetricsHandler.locCalculator(repository, treeWalk);
+						rf.setLoc(loc);
+						files.add(rf); //add it to files list
+					}
+				}
                     
-                }
-                
 			}
-			
-			
+                
+
 			release.setNumFiles(numFiles);
 			
 

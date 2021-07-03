@@ -1,17 +1,17 @@
 
-3Entity.ReleaseFile#getAvgChurn()Ljava/lang/Integer;\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaë ë("1*Ö
+3Entity.ReleaseFile#getMaxChurn()Ljava/lang/Integer;\
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaç ç("1*Ö
 1\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí	 í(¶
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé	 é(¶
 £
 \
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí	 í(
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé	 é(
 %0java.lang.Integer"__id*$*"
 Entity.ReleaseFile"
 
-avgChurn"y
+maxChurn"y
 \
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí í(
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé é(
 
 %0java.lang.IntegerB
 Entity.ReleaseFile

@@ -1,17 +1,16 @@
 
-.Entity.Walk#getTrainSet()Lweka/core/Instances;S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaO O("1*Á
+6Entity.Walk#getPercentageBugsTrain()Ljava/lang/Double;S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javay y(%"1*Ï
 1S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP	 P(ò
-ï
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaz	 z(†
+ù
 S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP	 P(
-%0weka.core.Instances"__id**
-Entity.Walk"
-
-trainSet"r
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaz	 z(
+%0java.lang.Double"__id*(*&
+Entity.Walk"
+percentageBugsTrain"o
 S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP P(
-
-%0weka.core.InstancesB
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaz z(
+
+%0java.lang.DoubleB
 Entity.Walk

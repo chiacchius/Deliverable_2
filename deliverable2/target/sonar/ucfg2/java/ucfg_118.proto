@@ -1,16 +1,16 @@
 
-%Entity.Ticket#getOv()LEntity/Release;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaî î("1*Â
++Entity.Ticket#getBugFiles()Ljava/util/List;W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÄ Ä( "1*Ô
 1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaï	 ï(ì
-ê
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ	 Å(ù
+ö
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaï	 ï(
-%0Entity.Release"__id**
-Entity.Ticket"
-ov"q
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ	 Å(
+%0java.util.List"__id*#*!
+Entity.Ticket"
+bugFilesPath"q
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaï ï(
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ Å(
 
-%0Entity.ReleaseB
+%0java.util.ListB
 Entity.Ticket

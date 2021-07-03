@@ -1,369 +1,194 @@
 
-ÑHandler.ChangesHandler#getChanges(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (&"19*ı
+dHandler.ReleaseHandler#findReleaseFromLdt(Ljava/time/LocalDateTime;Ljava/util/List;)LEntity/Release;^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java (("16*‰
 13^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java2	 2(∞≠
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java) )("~
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java2	 2(1
-%16*org.eclipse.jgit.diff.DiffEntry$ChangeType"[org.eclipse.jgit.diff.DiffEntry#getChangeType()Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;**
-(
-entryorg.eclipse.jgit.diff.DiffEntry2getChangeType()ÍÁ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java2	 2()
-%17java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*3
-1
-%16*org.eclipse.jgit.diff.DiffEntry$ChangeType2
-toString()‰·
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java2	 2(:
-%18boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%17java.lang.String*
-
-RENAME2equals(Ljava/lang/Object;)*
-10
-12*Ë
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java) )(
+
+release1Entity.Release*ô
 14^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java0% 0(,˜Ù
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java' '(ÏÈ
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java0% 0(>
-%15boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
-
-newPathjava.lang.String*	
-.java2"contains(Ljava/lang/CharSequence;)*
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java'$ '(=
+%3java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release1Entity.Release2getReleaseDate()π∂
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java' '(>
+%4boolean"Ijava.time.LocalDateTime#isBefore(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime*
+
+%3java.time.LocalDateTime20isBefore(Ljava/time/chrono/ChronoLocalDateTime;)*
 13
-10*¢	
+12*í
 15^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java- -(ˆÛ
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java# #("Ø
+¨
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java- -('
-%12java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;**
-(
-entryorg.eclipse.jgit.diff.DiffEntry2getOldPath()°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java- -((
-oldPathjava.lang.String"__id*
-
-%12java.lang.StringˆÛ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java. .('
-%13java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;**
-(
-entryorg.eclipse.jgit.diff.DiffEntry2getNewPath()°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java. .((
-newPathjava.lang.String"__id*
-
-%13java.lang.String˜Ù
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java0 0(!
-%14boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
-
-oldPathjava.lang.String*	
-.java2"contains(Ljava/lang/CharSequence;)*
-13
-14*Á
-17^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java#( #(<¶
-£
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java#( #(E3
-%4-org.eclipse.jgit.util.io.DisabledOutputStream"__id*
-""≥∞
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java# #(')
-%5#org.eclipse.jgit.diff.DiffFormatter"#org.eclipse.jgit.diff.DiffFormatterí
-è
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java# #(F
-%6"Corg.eclipse.jgit.diff.DiffFormatter#<init>(Ljava/io/OutputStream;)V*+
-)
-%5#org.eclipse.jgit.diff.DiffFormatter*5
-3
-%4-org.eclipse.jgit.util.io.DisabledOutputStream¡
-æ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java# #(G)
-df#org.eclipse.jgit.diff.DiffFormatter"__id*+
-)
-%5#org.eclipse.jgit.diff.DiffFormatter÷”
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java$ $(
-
-%7void"Uorg.eclipse.jgit.diff.DiffFormatter#setRepository(Lorg/eclipse/jgit/lib/Repository;)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*/
--
-
-repositoryorg.eclipse.jgit.lib.Repository20setRepository(Lorg/eclipse/jgit/lib/Repository;)†
-ù
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java% %(1-
-%8'org.eclipse.jgit.diff.RawTextComparator"__id*
-""ÓÎ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java% %(2
-
-%9void"aorg.eclipse.jgit.diff.DiffFormatter#setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*/
--
-%8'org.eclipse.jgit.diff.RawTextComparator2<setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)ÙÒ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java& &(
-%10void"8org.eclipse.jgit.diff.DiffFormatter#setDetectRenames(Z)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*
-""2setDetectRenames(Z)æ
-ª
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java( ((5
-%11java.util.List"†Handler.ChangesHandler#getEntryList(Lorg/eclipse/jgit/revwalk/RevWalk;Lorg/eclipse/jgit/diff/DiffFormatter;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;*"
-Handler.ChangesHandler*(
-&
-rw org.eclipse.jgit.revwalk.RevWalk*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*,
-*
-comm"org.eclipse.jgit.revwalk.RevCommitù
-ö
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java( ((6
-entriesjava.util.List"__id*
-
-%11java.util.List*
-10*Õ	
-19^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (+ìê
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java ()
-%0java.util.ArrayList"java.util.ArrayList•
-¢
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (+
-%1"java.util.ArrayList#<init>()V*
-
-%0java.util.ArrayList°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (,
-changesjava.util.List"__id*
-
-%0java.util.ArrayList≠™
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (&
-%2 org.eclipse.jgit.revwalk.RevWalk" org.eclipse.jgit.revwalk.RevWalkë
-é
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java (&
-%3"Korg.eclipse.jgit.revwalk.RevWalk#<init>(Lorg/eclipse/jgit/lib/Repository;)V*(
-&
-%2 org.eclipse.jgit.revwalk.RevWalk*/
--
-
-repositoryorg.eclipse.jgit.lib.Repositoryª
-∏
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java ('&
-rw org.eclipse.jgit.revwalk.RevWalk"__id*(
-&
-%2 org.eclipse.jgit.revwalk.RevWalk*
-9*‚
-1^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javak	 k("}
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javak k(
-
-changesjava.util.List*Œ
-2^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaJ J(ù
-ö
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaJ J(*
-comm"org.eclipse.jgit.revwalk.RevCommit"__id*
-""¿
-Ω
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaJ J(*
-comm"org.eclipse.jgit.revwalk.RevCommit"
-__arrayGet*
-
-commitsjava.util.List*
-""*
-6
-1* 
-3^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaS S(õ
-ò
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaS S((
-entryorg.eclipse.jgit.diff.DiffEntry"__id*
-""æ
-ª
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaS S((
-entryorg.eclipse.jgit.diff.DiffEntry"
-__arrayGet*
-
-entriesjava.util.List*
-""*
-2
-4*⁄
-4^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaU U(ˆÛ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaU U('
-%30java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;**
-(
-entryorg.eclipse.jgit.diff.DiffEntry2getOldPath()ˆÛ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaV V('
-%31java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;**
-(
-entryorg.eclipse.jgit.diff.DiffEntry2getNewPath()*
-3*Ô
-6^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaK( K(<ß
-§
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaK( K(E4
-%22-org.eclipse.jgit.util.io.DisabledOutputStream"__id*
-""¥±
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaK K('*
-%23#org.eclipse.jgit.diff.DiffFormatter"#org.eclipse.jgit.diff.DiffFormatterï
-í
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaK K(F
-%24"Corg.eclipse.jgit.diff.DiffFormatter#<init>(Ljava/io/OutputStream;)V*,
-*
-%23#org.eclipse.jgit.diff.DiffFormatter*6
-4
-%22-org.eclipse.jgit.util.io.DisabledOutputStream¬
-ø
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaK K(G)
-df#org.eclipse.jgit.diff.DiffFormatter"__id*,
-*
-%23#org.eclipse.jgit.diff.DiffFormatter◊‘
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaL L(
-%25void"Uorg.eclipse.jgit.diff.DiffFormatter#setRepository(Lorg/eclipse/jgit/lib/Repository;)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*/
--
-
-repositoryorg.eclipse.jgit.lib.Repository20setRepository(Lorg/eclipse/jgit/lib/Repository;)°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaM M(1.
-%26'org.eclipse.jgit.diff.RawTextComparator"__id*
-""Ì
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaM M(2
-%27void"aorg.eclipse.jgit.diff.DiffFormatter#setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*0
-.
-%26'org.eclipse.jgit.diff.RawTextComparator2<setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)ÙÒ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaN N(
-%28void"8org.eclipse.jgit.diff.DiffFormatter#setDetectRenames(Z)V*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*
-""2setDetectRenames(Z)æ
-ª
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaP P(5
-%29java.util.List"†Handler.ChangesHandler#getEntryList(Lorg/eclipse/jgit/revwalk/RevWalk;Lorg/eclipse/jgit/diff/DiffFormatter;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;*"
-Handler.ChangesHandler*(
-&
-rw org.eclipse.jgit.revwalk.RevWalk*+
-)
-df#org.eclipse.jgit.diff.DiffFormatter*,
-*
-comm"org.eclipse.jgit.revwalk.RevCommitù
-ö
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaP P(6
-entriesjava.util.List"__id*
-
-%29java.util.List*
-3*î
-8^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaE E(ç
-ä
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaE E(
-%20void"GHandler.ChangesHandler#updateChanges(Ljava/util/List;Ljava/util/List;)V*"
-Handler.ChangesHandler*
-
-changesjava.util.List*
-
-filesjava.util.Listô
-ñ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.javaF F(+
-%21void"LHandler.ChangesHandler#updateReleaseFiles(Ljava/util/List;Ljava/util/List;)V*"
-Handler.ChangesHandler*
-
-changesjava.util.List* 
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java# #()
+%1Entity.Release"
+__arrayGet* 
 
-projReleasesjava.util.List*
-2*œ
-9^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java" "(ù
+projReleasesjava.util.List*
+""ù
 ö
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java" "(*
-comm"org.eclipse.jgit.revwalk.RevCommit"__id*
-""¿
-Ω
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java# #(*
+release1Entity.Release"__id*
+
+%1Entity.ReleaseØ
+¨
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java" "(*
-comm"org.eclipse.jgit.revwalk.RevCommit"
-__arrayGet*
-
-commitsjava.util.List*
-""*
-17
-8*Ã
-10^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java+ +(õ
-ò
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java$ $(+
+%2Entity.Release"
+__arrayGet* 
+
+projReleasesjava.util.List*
+""ù
+ö
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java+ +((
-entryorg.eclipse.jgit.diff.DiffEntry"__id*
-""æ
-ª
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java$ $(,
+release2Entity.Release"__id*
+
+%2Entity.Release*
+14
+12*†
+16^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java! !(∞≠
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java+ +((
-entryorg.eclipse.jgit.diff.DiffEntry"
-__arrayGet*
-
-entriesjava.util.List*
-""*
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java! !()	
+%0int"java.util.List#size()I* 
+
+projReleasesjava.util.List2size()*
 15
-9*π
-12^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java3 3(Ã
-…
+1*Õ
+1^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaI	 I("h
 ^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ChangesHandler.java3 3(6
-%19void"cHandler.ChangesHandler#createOrUpdateChanges(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V*"
-Handler.ChangesHandler*
-
-changesjava.util.List*
-
-oldPathjava.lang.String*
-
-newPathjava.lang.String*
-10:-
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaI I(
+""*Õ
+3^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaC C("h
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaC C(
+""*ò
+4^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaB* B(4ÌÍ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaB= B(V
+%14java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release2Entity.Release2getReleaseDate()π∂
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaB* B(W
+%15boolean"Hjava.time.LocalDateTime#isAfter(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
 
-repositoryorg.eclipse.jgit.lib.Repository:
-commitsjava.util.List:
-filesjava.util.List:
+commitDatejava.time.LocalDateTime* 
+
+%14java.time.LocalDateTime2/isAfter(Ljava/time/chrono/ChronoLocalDateTime;)*
+3
+16*†
+5^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaB B(±Æ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.javaB B($
+
+%13int"java.util.List#size()I* 
+
+projReleasesjava.util.List2size()*
+4
+16*„
+6^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java= =("~
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java= =(
+
+release2Entity.Release*ó
+7^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java; ;(ÌÍ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java; ;(8
+%11java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release2Entity.Release2getReleaseDate()π∂
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java; ;(9
+%12boolean"Hjava.time.LocalDateTime#isEqual(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime* 
+
+%11java.time.LocalDateTime2/isEqual(Ljava/time/chrono/ChronoLocalDateTime;)*
+5
+6*„
+8^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java7 7("~
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java7 7(
+
+release1Entity.Release*ï
+9^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java5 5(ÏÈ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java5 5(8
+%9java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release1Entity.Release2getReleaseDate()∏µ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java5 5(9
+%10boolean"Hjava.time.LocalDateTime#isEqual(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime*
+
+%9java.time.LocalDateTime2/isEqual(Ljava/time/chrono/ChronoLocalDateTime;)*
+7
+8*‰
+10^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java0 0("~
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java0 0(
+
+release2Entity.Release*ò
+11^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java-= -(GÏÈ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java-Q -(j
+%7java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release2Entity.Release2getReleaseDate()π∂
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java-= -(k
+%8boolean"Ijava.time.LocalDateTime#isBefore(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime*
+
+%7java.time.LocalDateTime20isBefore(Ljava/time/chrono/ChronoLocalDateTime;)*
+9
+10*ñ
+12^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java- -(ÏÈ
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java- -(8
+%5java.time.LocalDateTime"8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;*
+
+release1Entity.Release2getReleaseDate()∑¥
+^
+T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/ReleaseHandler.java- -(9
+%6boolean"Hjava.time.LocalDateTime#isAfter(Ljava/time/chrono/ChronoLocalDateTime;)Z*'
+%
+
+commitDatejava.time.LocalDateTime*
+
+%5java.time.LocalDateTime2/isAfter(Ljava/time/chrono/ChronoLocalDateTime;)*
+9
+11:%
+
+commitDatejava.time.LocalDateTime:
 projReleasesjava.util.ListB"
-Handler.ChangesHandler
+Handler.ReleaseHandler

@@ -1,9 +1,16 @@
 
-Entity.Walk#getTrainId()IU
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java• •("1*»
-1U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java–	 –("_
-U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java– –(
-""B
-Entity.Walk
+8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java2 2($"1*÷
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3	 3(ž
+›
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3	 3(
+%0java.time.LocalDateTime"__id**
+Entity.Release"
+date"y
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3 3(
+
+%0java.time.LocalDateTimeB
+Entity.Release

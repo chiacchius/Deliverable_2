@@ -1,88 +1,53 @@
 
-lHandler.GitHubHandler#cloneProjectFromGitHub(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jgit/api/Git;]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java, ,()"11*ï
-2]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2 5(´
-®
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2 5(
-gitorg.eclipse.jgit.api.Git"__id* 
-
-%6org.eclipse.jgit.api.Git*
-1*„
-6]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 5(˘ˆ
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 5(
-%6org.eclipse.jgit.api.Git"Borg.eclipse.jgit.api.CloneCommand#call()Lorg/eclipse/jgit/api/Git;*)
-'
-%5!org.eclipse.jgit.api.CloneCommand2call()*
-2*∑
-7]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 4((Õ 
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 4(('
-%5!org.eclipse.jgit.api.CloneCommand"aorg.eclipse.jgit.api.CloneCommand#setDirectory(Ljava/io/File;)Lorg/eclipse/jgit/api/CloneCommand;*)
-'
-%2!org.eclipse.jgit.api.CloneCommand*
-
-%3java.io.File2setDirectory(Ljava/io/File;)*
-6*µ
-8]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java4" 4(&ÑÅ
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java4 4(!
-%3java.io.File"java.io.Fileƒ
-¡
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java4 4('
-%4"(java.io.File#<init>(Ljava/lang/String;)V*
-
-%3java.io.File*
+-Entity.Changes#checkPath(Ljava/lang/String;)ZV
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java ("5*ç
+2V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (É
+Ä
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+pathjava.lang.String"__id*
+""°
+û
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+pathjava.lang.String"
+__arrayGet*
+
+%0java.util.List*
+""*
+4
+1*Ω
+3V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java ("`
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+""*’
+4V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+ÔÏ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
-pathjava.lang.String*
-7*Å
-9]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java3 3(/«
-ƒ
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java3 3(=
-%1java.lang.String"__concat*
-https://github.com/apache/*!
-
-projectNamejava.lang.StringÕ 
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 3(>'
-%2!org.eclipse.jgit.api.CloneCommand"_org.eclipse.jgit.api.CloneCommand#setURI(Ljava/lang/String;)Lorg/eclipse/jgit/api/CloneCommand;*)
-'
-%0!org.eclipse.jgit.api.CloneCommand*
-
-%1java.lang.String2setURI(Ljava/lang/String;)*
-8*„
-10]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 2(¯
-ı
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java2	 2('
-%0!org.eclipse.jgit.api.CloneCommand"Morg.eclipse.jgit.api.Git#cloneRepository()Lorg/eclipse/jgit/api/CloneCommand;*"
-org.eclipse.jgit.api.Git*
-9*˝
-11]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java/ /(
-ë
-é
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java/ /(
-
-gitorg.eclipse.jgit.api.Git"__id*
-""*
-10*Á
-1]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java<	 <("Ç
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.java< <(!
-
-gitorg.eclipse.jgit.api.Git:
-pathjava.lang.String:
-projectNamejava.lang.StringB"
-Handler.GitHubHandler
+pathjava.lang.String*
+
+newPathjava.lang.String2equals(Ljava/lang/Object;)*
+2
+3*˘
+5V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (ñ
+ì
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+%0java.util.List"__id**
+Entity.Changes"
+paths*
+2*Ω
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java#	 #("`
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java# #(
+"":
+newPathjava.lang.StringB
+Entity.Changes

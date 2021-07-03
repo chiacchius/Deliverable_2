@@ -27,7 +27,9 @@ public class JiraHandler {
 	
 	
 	
-	private JiraHandler() {}
+	private JiraHandler() {
+		throw new IllegalStateException("Handler class");
+	}
 	
 	public static List<Release> getReleases(String projectName) throws IOException, JSONException{
 		
@@ -35,21 +37,20 @@ public class JiraHandler {
 		HashMap<LocalDateTime, String> releaseNames;
 	    HashMap<LocalDateTime, String> releaseID;
 	    ArrayList<LocalDateTime> releases;
-		Integer numVersions;
-		
+
 		
 		List<Release> projReleases = new ArrayList<>();
 		
 		   //Fills the arraylist with releases dates and orders them
 		   //Ignores releases with missing dates
-		   releases = new ArrayList<LocalDateTime>();
+		   releases = new ArrayList<>();
 		         Integer i;
 		         Integer j;
 		         String url = "https://issues.apache.org/jira/rest/api/2/project/" + projectName;
 		         JSONObject json = readJsonFromUrl(url);
 		         JSONArray versions = json.getJSONArray("versions");
-		         releaseNames = new HashMap<LocalDateTime, String>();
-		         releaseID = new HashMap<LocalDateTime, String> ();
+		         releaseNames = new HashMap<>();
+		         releaseID = new HashMap<> ();
 		         for (i = 0; i < versions.length(); i++ ) {
 		            String name = "";
 		            String id = "";
@@ -81,7 +82,6 @@ public class JiraHandler {
 		         
 		    
 		         
-		         //CsvWriter.writeCsv(projectName, releases, releaseID, releaseNames);
 		         return projReleases;
 		
 	}
@@ -121,11 +121,7 @@ public class JiraHandler {
 	           	ticket.addJSONObject(issues.getJSONObject(i%1000));
 	           	tickets.add(ticket);
 	          
-	            
-	            
-	            
-	            //System.out.println(issues.getJSONObject(i%1000).toString());
-	            //System.out.print(key+"\n");
+
 	         }  
 	      } while (i < total);
 		

@@ -1,16 +1,16 @@
 
-3Entity.Ticket#getNotProportion()Ljava/lang/Boolean;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¹ ¹( "1*ö
-1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaº	 º(¡
-ž
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaº	 º(
-%0java.lang.Boolean"__id*$*"
-Entity.Ticket"
-notProportion"t
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaº º(
-
-%0java.lang.BooleanB
-Entity.Ticket
+-Entity.Walk#getTestSet()Lweka/core/Instances;S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java] ]("1*æ
+1S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^	 ^(—
+”
+S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^	 ^(
+%0weka.core.Instances"__id**
+Entity.Walk"	
+testSet"r
+S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^ ^(
+
+%0weka.core.InstancesB
+Entity.Walk

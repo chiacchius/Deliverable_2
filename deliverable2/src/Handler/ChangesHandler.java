@@ -20,10 +20,12 @@ import Entity.Release;
 import Entity.ReleaseFile;
 
 public class ChangesHandler {
+
+	private ChangesHandler() {
+		throw new IllegalStateException("Handler class");
+	}
 	
-	
-	
-public static List<Changes> getChanges(Repository repository, List<RevCommit> commits, List<ReleaseFile> files, List<Release> projReleases) throws IOException {
+	public static List<Changes> getChanges(Repository repository, List<RevCommit> commits, List<ReleaseFile> files, List<Release> projReleases) throws IOException {
 		
 		List<Changes> changes = new ArrayList<>();
 		RevWalk rw = new RevWalk(repository);
@@ -52,8 +54,7 @@ public static List<Changes> getChanges(Repository repository, List<RevCommit> co
 						
 						
 					}
-					ReleaseFile rf = null;
-					
+
 					
 					
 				}
@@ -69,47 +70,13 @@ public static List<Changes> getChanges(Repository repository, List<RevCommit> co
 		updateChanges(changes, files);
 		updateReleaseFiles(changes, projReleases);
 		
-		
-		
-		for (RevCommit comm: commits) {
-			DiffFormatter df = new DiffFormatter(DisabledOutputStream.INSTANCE);	
-			df.setRepository(repository);
-			df.setDiffComparator(RawTextComparator.DEFAULT);
-			df.setDetectRenames(true);
-			
-			List<DiffEntry> entries=getEntryList(rw, df, comm);
-			
-			//create Changes
-			for (DiffEntry entry: entries) {
-				
-				String oldPath = entry.getOldPath();
-				String newPath = entry.getNewPath();
-				
-				
-				
-			}
-			
-			
-			
-			
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		return changes;
 	}
 
 	
 	private static void updateReleaseFiles(List<Changes> changes, List<Release> projReleases) {
-		int n=0;
+
 		for (int i=0; i<projReleases.size(); i++) {
 			
 			
@@ -225,10 +192,6 @@ private static void createOrUpdateChanges(List<Changes> changes, String oldPath,
 	}
 
 
-	public static Changes getChangeFromName(String newPath, String oldPath) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	
 

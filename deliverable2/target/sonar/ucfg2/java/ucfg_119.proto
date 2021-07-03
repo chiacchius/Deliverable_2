@@ -1,16 +1,16 @@
 
-%Entity.Ticket#getAv()Ljava/util/List;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaò ò("1*Â
+3Entity.Ticket#getNotProportion()Ljava/lang/Boolean;W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÜ Ü( "1*ˆ
 1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaô	 ô(ì
-ê
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá	 á(°
+û
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaô	 ô(
-%0java.util.List"__id**
-Entity.Ticket"
-av"q
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá	 á(
+%0java.lang.Boolean"__id*$*"
+Entity.Ticket"
+notProportion"t
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaô ô(
-
-%0java.util.ListB
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá á(
+
+%0java.lang.BooleanB
 Entity.Ticket

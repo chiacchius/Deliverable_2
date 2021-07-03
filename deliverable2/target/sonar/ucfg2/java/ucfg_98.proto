@@ -1,62 +1,47 @@
 
-:Handler.SamplingHandler#getBugsNum(Lweka/core/Instances;)I_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaU U("6*≠
-4_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaZ Z(µ
-≤
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaZ Z(
-%4weka.core.Instance"
-__arrayGet*!
-
-trainSetweka.core.Instances*
-""√¿
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaZ Z(1	
-%5int"!weka.core.Instances#classIndex()I*!
-
-trainSetweka.core.Instances2classIndex()√¿
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaZ Z(2
-%6double"weka.core.Instance#value(I)D*
-
-%4weka.core.Instance*
-	
-%5int2value(I)*
-5*¶
+\Handler.SamplingHandler#smote(Lweka/core/Instances;)Lweka/filters/supervised/instance/SMOTE;_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.java@ @("7*˘
 5_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaY Y(∑¥
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaE E(À
+»
 _
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaY Y($	
-%3int"weka.core.Instances#size()I*!
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaE E(/
+smote&weka.filters.supervised.instance.SMOTE"__id*.
+,
+%0&weka.filters.supervised.instance.SMOTEøº
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaF F(!
+%2boolean"Mweka.filters.supervised.instance.SMOTE#setInputFormat(Lweka/core/Instances;)Z*1
+/
+smote&weka.filters.supervised.instance.SMOTE*!
 
-trainSetweka.core.Instances2size()*
-4
-1*ò
+trainSetweka.core.Instances2%setInputFormat(Lweka/core/Instances;)*
+1*ı
 6_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaV V(…∆
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaE E(∫∑
 _
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaW( W(@	
-%0int"$weka.core.Instances#numAttributes()I*!
-
-trainSetweka.core.Instances2numAttributes()ÔÏ
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaE E(,
+%0&weka.filters.supervised.instance.SMOTE"&weka.filters.supervised.instance.SMOTEÃ
+…
 _
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaW W(E
-%1weka.core.Attribute"5weka.core.Instances#attribute(I)Lweka/core/Attribute;*!
-
-trainSetweka.core.Instances*
-""2attribute(I)ÓÎ
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaE E(
+%1"0weka.filters.supervised.instance.SMOTE#<init>()V*.
+,
+%0&weka.filters.supervised.instance.SMOTE*
+5*è
+7_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaA A(£
+†
 _
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaW W(Y	
-%2int"5weka.core.Attribute#indexOfValue(Ljava/lang/String;)I*
-
-%1weka.core.Attribute*
-Yes2 indexOfValue(Ljava/lang/String;)*
-5*œ
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaA A(/
+smote&weka.filters.supervised.instance.SMOTE"__id*
+""*
+6*˚
 1_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.java^	 ^("i
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaP	 P("î
 _
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.java^ ^(
-"":
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/SamplingHandler.javaP P(1
+/
+smote&weka.filters.supervised.instance.SMOTE:
 trainSetweka.core.InstancesB"
 Handler.SamplingHandler

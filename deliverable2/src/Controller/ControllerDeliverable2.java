@@ -19,7 +19,6 @@ import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;
 import weka.classifiers.lazy.IBk;
 import weka.classifiers.meta.FilteredClassifier;
-import weka.filters.supervised.instance.SMOTE;
 import weka.classifiers.trees.RandomForest;
 import weka.core.Instances;
 import weka.core.converters.ArffSaver;
@@ -33,7 +32,9 @@ public class ControllerDeliverable2 {
 	private List<Walk> walks = new ArrayList<>();
 	private String projName;
 
-	public ControllerDeliverable2() {}
+	public ControllerDeliverable2() throws IOException {
+		ProjectLogger.getSingletonInstance().saveMess("starting deliverable 2");
+	}
 	
 	
 	public void run(String projectName, String fileCsv) throws Exception {
@@ -47,7 +48,7 @@ public class ControllerDeliverable2 {
 		
 		//get number of last walk of the Walk Forward
 		int lastWalk = (int) this.dataSet.get(this.dataSet.size()-1).value(0);
-		System.out.println(lastWalk);
+		ProjectLogger.getSingletonInstance().saveMess("last Walk" + lastWalk);
 		
 		//instantiation of walks
 		
@@ -208,7 +209,7 @@ public class ControllerDeliverable2 {
 				testingSet =filteredTestSet;
 			}
 			
-			chooseSamplingSelection(classifier, classifierName, features.get(i), walk, trainingSet, testingSet);
+			chooseSampSelection(classifier, classifierName, features.get(i), walk, trainingSet, testingSet);
 			
 
 			
@@ -217,7 +218,7 @@ public class ControllerDeliverable2 {
 	}
 
 
-	private void chooseSamplingSelection(AbstractClassifier classifier, String classifierName, String featureName, Walk walk, Instances trainSet, Instances testSet) throws Exception {
+	private void chooseSampSelection(AbstractClassifier classifier, String classifierName, String featureName, Walk walk, Instances trainSet, Instances testSet) throws Exception {
 		
 		List<String> samplings = new ArrayList<>();
 		
@@ -274,7 +275,7 @@ public class ControllerDeliverable2 {
 					
 					catch (Exception e) {
 						
-						ProjectLogger.getSingletonInstance().saveMess("[X]undersampling aplication error");
+						ProjectLogger.getSingletonInstance().saveMess("[X]undersampling application error");
 						
 					}
 					

@@ -1,16 +1,9 @@
 
-2Entity.Walk#getPercentageTrain()Ljava/lang/Double;S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javak k(!"1*è
-1S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javal	 l(œ
-™
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javal	 l(
-%0java.lang.Double"__id*$*"
-Entity.Walk"
-percentageTrain"o
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javal l(
-
-%0java.lang.DoubleB
+Entity.Walk#getTrainId()IU
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java• •("1*»
+1U
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java–	 –("_
+U
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java– –(
+""B
 Entity.Walk

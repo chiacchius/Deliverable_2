@@ -1,9 +1,11 @@
 package Entity;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import Utility.ProjectLogger;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.json.JSONObject;
 
@@ -39,52 +41,10 @@ public class Ticket {
 	}
 	
 	
-	public void printTicket() {
-		System.out.print("Ticket: " + this.id.toString() + " key: " + this.key  +  " creation date: " + this.creationDate.toString()  + " resolution date: " + this.resolutionDate.toString() + "\n");
-	}
-	
-	public void printVersions() {
-		this.printIv();
-		this.printFv();
-		this.printOv();
-		this.printAv();
-
-	}
-	
-	private void printOv() {
-		if (this.ov != null) {
-			System.out.println("Ov: " +this.ov.getReleaseName());
-		}	
+	public void printTicket() throws IOException {
+		ProjectLogger.getSingletonInstance().saveMess("Ticket: " + this.id.toString() + " key: " + this.key  +  " creation date: " + this.creationDate.toString()  + " resolution date: " + this.resolutionDate.toString() + "\n");
 	}
 
-
-	private void printFv() {
-		if (this.fv != null) {
-			System.out.println("Fv: " + this.fv.getReleaseName());
-		}
-		else {
-			System.out.println("Fv: null" );
-
-		}
-	}
-
-
-	private void printIv() {
-		if (this.iv != null) {
-			System.out.println("Iv: " + this.iv.getReleaseName());
-		}
-		
-	}
-	
-	private void printAv() {
-		System.out.print("Av: ");
-
-		for (int i = 0; i<av.size(); i++) {
-			System.out.print(this.av.get(i).getReleaseName() + "\t");
-		}
-		System.out.print("\n");
-		System.out.print(false);
-	}
 
 
 	public String getTicketKey() {
@@ -94,11 +54,7 @@ public class Ticket {
 	public LocalDate getCreationDate() {
 		return this.creationDate;
 	}
-	
-	public LocalDate getResolutionDate() {
-		return this.resolutionDate;
-	}
-	
+
 	public void addJSONObject(JSONObject jsonObj) {
 		this.jsonObj = jsonObj;
 	}
@@ -173,13 +129,6 @@ public class Ticket {
 		return bugFilesPath;
 	}
 
-
-	public void setBugFiles(List<String> bugFiles) {
-		this.bugFilesPath = bugFiles;
-	}
-	
-	
-	
 	
 	
 	public Boolean getNotProportion() {

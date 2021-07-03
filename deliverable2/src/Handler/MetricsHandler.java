@@ -29,11 +29,13 @@ import Entity.Ticket;
 
 
 public class MetricsHandler {
+
+	private MetricsHandler() {
+		throw new IllegalStateException("Handler class");
+	}
 	
 	
-	
-	
-	public static void checkBugginess(List<Release> projReleases, Ticket ticket, Repository repository, List<ReleaseFile> files) throws MissingObjectException, IncorrectObjectTypeException, IOException {
+	public static void checkBugginess(Ticket ticket){
 		//take the commit before the resolutionCommit of the bug
 		for (String path: ticket.getBugFiles()) {
 			

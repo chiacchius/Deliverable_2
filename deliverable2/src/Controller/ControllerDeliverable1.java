@@ -27,7 +27,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import Entity.Changes;
 import Entity.Release;
 import Entity.ReleaseFile;
 import Entity.Ticket;
@@ -44,8 +43,9 @@ public class ControllerDeliverable1 {
 	private String csvFile;
 	
 	
-	
-	public ControllerDeliverable1() {}
+	public ControllerDeliverable1() throws IOException {
+		ProjectLogger.getSingletonInstance().saveMess("deliverable1 start");
+	}
 
 
 
@@ -57,19 +57,17 @@ public class ControllerDeliverable1 {
 		
 		
 		
-		String PROJ_NAME = projectName;
+		String PROJNAME = projectName;
 		Repository repository;
 	    
 	    List<Release> projReleases;
 	    List<ReleaseFile> files;
 	    List<Ticket> projTickets;
 	    List<RevCommit> commits;
-	    List<Changes> changes;
-		
+
 	    ProjectLogger.getSingletonInstance().saveMess(" [*] Starting retrieve data for " + projectName);
 
-		//path = "/Users/chiacchius/Desktop/" + PROJ_NAME;
-		Git git= GitHubHandler.cloneProjectFromGitHub(path, PROJ_NAME);
+		Git git= GitHubHandler.cloneProjectFromGitHub(path, PROJNAME);
 		repository  = git.getRepository();
 		
 		
@@ -77,18 +75,18 @@ public class ControllerDeliverable1 {
 		
     	
     	//retrieve all releases of the project
-    	projReleases = JiraHandler.getReleases(PROJ_NAME);
+    	projReleases = JiraHandler.getReleases(PROJNAME);
     	
      	
     	
     	//retrieve all the tickets
-    	projTickets = JiraHandler.getTickets(PROJ_NAME, projReleases);
+    	projTickets = JiraHandler.getTickets(PROJNAME, projReleases);
     	
     	
     	//retrieve all the file .java of a specific release
     	commits = GitHubHandler.getAllCommits(git);
-    	files = GitHubHandler.findReleaseFiles(git, repository, projReleases, commits);
-    	System.out.println("files: " + files.size());
+    	files = GitHubHandler.findReleaseFiles(repository, projReleases, commits);
+    	ProjectLogger.getSingletonInstance().saveMess("files: " + files.size());
     	
     	
     	//set what versions are Ov, Fv, Iv, Av
@@ -96,32 +94,21 @@ public class ControllerDeliverable1 {
     	setFvReleases(projReleases,projTickets, commits);
     	setIvReleases(projReleases, projTickets);
     	setAvReleases(projReleases, projTickets);
-    	
-    	
-    	/*for (Ticket ticket: projTickets) {
-		
-    		ticket.printTicket(); 
-    		ticket.printVersions();
-		}*/
+
     	
     	
     	
-    	
-    	
-    	
-    	
-    	
-    	changes = ChangesHandler.getChanges(repository, commits, files, projReleases);
+    	ChangesHandler.getChanges(repository, commits, files, projReleases);
     	MetricsHandler.retrieveAllMetrics(repository, commits, projTickets, projReleases);  //retrieve all metrics
     	
     	
-    	setFilesToTicket(projTickets, changes, files, repository); //take all changed file for every ticket
+    	setFilesToTicket(projTickets, repository); //take all changed file for every ticket
     	
     
     	
     	for (Ticket ticket: projTickets) {
     		
-        	MetricsHandler.checkBugginess(projReleases, ticket, repository, files); //check file buggy considering changed file for every ticket 
+        	MetricsHandler.checkBugginess(ticket); //check file buggy considering changed file for every ticket
         	
         	
     	}
@@ -135,7 +122,7 @@ public class ControllerDeliverable1 {
     	
     	
 
-    	this.csvFile = CsvWriter.writeFirstCsv(PROJ_NAME, projReleases);
+    	this.csvFile = CsvWriter.writeFirstCsv(PROJNAME, projReleases);
     	
     	ProjectLogger.getSingletonInstance().saveMess(" [*] Exiting for " + projectName);
 
@@ -148,7 +135,7 @@ public class ControllerDeliverable1 {
 	
 	
 	
-	private static void setFilesToTicket(List<Ticket> projTickets, List<Changes> changes, List<ReleaseFile> files, Repository repository) throws IOException {
+	private static void setFilesToTicket(List<Ticket> projTickets, Repository repository) throws IOException {
 		
 		for (Ticket ticket: projTickets) {
 			
@@ -172,30 +159,29 @@ public class ControllerDeliverable1 {
 					diffEntries = df.scan(oldTree, newTree);
 					for( DiffEntry entry : diffEntries ) {
 						//for every ticket update buggy files list
-						if ( entry.toString().contains(".java")) {
+						if ( entry.toString().contains(".java") && entry.getChangeType()==ChangeType.DELETE) {
 							//if a file was deleted a bug was resolved
-							if (entry.getChangeType()==ChangeType.DELETE) {
-								ticket.addBuggyFile(entry.getOldPath());
-							}
-							//if a file was modified a bug was resolved
-							else if (entry.getChangeType()==ChangeType.MODIFY){
-								ticket.addBuggyFile(entry.getNewPath());
-							}  
-							
+							ticket.addBuggyFile(entry.getOldPath());
 						}
-						  
+							//if a file was modified a bug was resolved
+						else if (entry.toString().contains(".java") && entry.getChangeType()==ChangeType.MODIFY){
+								ticket.addBuggyFile(entry.getNewPath());
+						}
+							
 					}
+						  
 				}
-				
-				
 			}
-		
-		
-		
+				
+				
 		}
 		
 		
+		
 	}
+		
+		
+
 
 
 
@@ -301,7 +287,7 @@ public class ControllerDeliverable1 {
 		
 		for (Ticket ticket: projTickets) {
 			
-			//System.out.println(ticket.getTicketKey());
+
 			Integer iv = ticket.getIv().getReleaseIndex();
 			Integer fv = ticket.getFv().getReleaseIndex();
 			
@@ -313,14 +299,7 @@ public class ControllerDeliverable1 {
 				
 				
 			}
-			
-			//ticket.printTicket();
-			//ticket.printVersions();
-			
-			
-			
-			
-			
+
 		}
 		
 		
@@ -414,25 +393,19 @@ public class ControllerDeliverable1 {
 			
 			
 			if (release != null) {
-				Boolean isCorrect = checkIfIvIsCorrect(release, ticket);
+				boolean isCorrect = checkIfIvIsCorrect(release, ticket);
 				if (isCorrect) {
 					ticket.setIv(release);
 					ticket.setNotProportion(true);
 				}
 				
-				//System.out.println(ticket.getTicketKey());
 			}
-			
-			
-			
-			//ticket.printTicket();
-			//ticket.printVersions();
+
 		}
 		
 		onePercent = projTickets.size() /100;
 		
-		//prop = proportion(projTickets);
-		//Collections.reverse(projTickets);
+
 		
 		for (Ticket ticketWithoutIv : projTickets) {
 			
@@ -441,8 +414,7 @@ public class ControllerDeliverable1 {
 				
 				
 				prop = proportion(ticketWithoutIv, projTickets, onePercent);
-				System.out.println(ticketWithoutIv.getTicketKey() + "   ok");
-				
+
 				Math.ceil(prop);
 				
 				Double fv = (double) ticketWithoutIv.getFv().getReleaseIndex();
@@ -458,26 +430,19 @@ public class ControllerDeliverable1 {
 
 				}
 				if (id.intValue() > ticketWithoutIv.getOv().getReleaseIndex()) {
-					//System.out.println(ticketWithoutIv.getTicketKey()+ "eh");
-					
+
 
 					id = (double) ticketWithoutIv.getOv().getReleaseIndex();
 					
-					//System.out.println(id.intValue());
 				}
 				Release release = ReleaseHandler.findRelease(id.intValue(), projReleases);
-				System.out.println(release.getReleaseName());
-				
+
 				ticketWithoutIv.setIv(release);
-				//System.out.println(ticketWithoutIv.getTicketKey());
-				//System.out.println(id.intValue());
-				//System.out.println(release.getReleaseIndex());
+
 
 				
 			}
-			
-			//ticketWithoutIv.printTicket();
-			//ticketWithoutIv.printVersions();
+
 			
 			
 		}
@@ -496,14 +461,15 @@ public class ControllerDeliverable1 {
 
 
 	private static Boolean checkIfIvIsCorrect(Release release, Ticket ticket) {
-		
+
+		boolean bool = true;
 		if (release.getReleaseIndex() > ticket.getOv().getReleaseIndex()) {
 			
-			return false;
+			bool=false;
 		
 		}
 		
-		return true;
+		return bool;
 	}
 
 
@@ -547,15 +513,13 @@ public class ControllerDeliverable1 {
 		List<Double> propList = new ArrayList<>();
 		Integer index = projTickets.indexOf(tick);
 		
-		/*if (index-onePercent-1<0) {
-			return (double) 0;
-		}*/
+
 		
 		for (int i = index-1; i >= 0; i--) {
 			
 			Ticket ticket = projTickets.get(i);
 			
-			if (projTickets.get(i).getNotProportion() && projTickets.get(i).getIv()!=null && !ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex()) ) {
+			if (Boolean.TRUE.equals(projTickets.get(i).getNotProportion()) && projTickets.get(i).getIv()!=null && Boolean.FALSE.equals(ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex())) ) {
 				
 				double num = Math.ceil(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getIv().getReleaseIndex().floatValue());
 				double den = Math.floor(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getOv().getReleaseIndex().floatValue());
@@ -565,9 +529,9 @@ public class ControllerDeliverable1 {
 			
 			}
 			
-			else if (projTickets.get(i).getNotProportion() && ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex())){
+			else if (Boolean.TRUE.equals(projTickets.get(i).getNotProportion()) && Boolean.TRUE.equals(ticket.getFv().getReleaseIndex().equals(ticket.getOv().getReleaseIndex()))){
 				double num = Math.ceil(ticket.getFv().getReleaseIndex().doubleValue() - ticket.getIv().getReleaseIndex().floatValue());
-				double den = (double) 1;
+				double den = 1;
 				propList.add(Math.ceil(num/den));
 			}
 			
@@ -579,7 +543,6 @@ public class ControllerDeliverable1 {
 		for (Double p: propList) {
 			tot += p;
 		}
-		System.out.println(tick.getTicketKey()+    "   "+ tot/propList.size());
 		return (tot/propList.size());
 	
 	}
@@ -676,8 +639,7 @@ private static void setFvReleases(List<Release> projReleases, List<Ticket> projT
 					}
 					
 
-					//System.err.print("\nKey: " + ticket.getTicketKey() + "\n" + commit.getFullMessage() +"\n\n");
-					//System.out.println("ticket: " + ticket.getTicketKey() + "------>commit: " + commit.getFullMessage());
+
 					
 				}
 				

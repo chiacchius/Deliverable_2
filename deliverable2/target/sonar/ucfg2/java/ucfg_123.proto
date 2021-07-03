@@ -1,16 +1,17 @@
 
-+Entity.Ticket#getBugFiles()Ljava/util/List;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java¨ ¨( "1*Ô
-1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java≠	 ≠(ù
-ö
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java≠	 ≠(
-%0java.util.List"__id*#*!
-Entity.Ticket"
-bugFilesPath"q
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java≠ ≠(
-
-%0java.util.ListB
-Entity.Ticket
+.Entity.Walk#getTrainSet()Lweka/core/Instances;S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaO O("1*Á
+1S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP	 P(ò
+ï
+S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP	 P(
+%0weka.core.Instances"__id**
+Entity.Walk"
+
+trainSet"r
+S
+I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaP P(
+
+%0weka.core.InstancesB
+Entity.Walk

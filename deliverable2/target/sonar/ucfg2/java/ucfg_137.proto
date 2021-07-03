@@ -1,16 +1,16 @@
 
-5Entity.Walk#getPercentageBugsTest()Ljava/lang/Double;U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java‡ ‡($"1*ñ
-1U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaˆ	 ˆ(¡
-ž
-U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaˆ	 ˆ(
-%0java.lang.Double"__id*'*%
-Entity.Walk"
-percentageBugsTest"q
-U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.javaˆ ˆ(
-
-%0java.lang.DoubleB
-Entity.Walk
+3Entity.Release#getReleaseIndex()Ljava/lang/Integer;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java) )("1*ì
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java*	 *(™
+–
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java*	 *(
+%0java.lang.Integer"__id**
+Entity.Release"
+index"s
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java* *(
+
+%0java.lang.IntegerB
+Entity.Release

@@ -19,13 +19,59 @@ hashCode()java.lang.Object#hashCode()I®
 Handler.FilterHandlerjava.lang.Object+
 <init>()Handler.FilterHandler#<init>()Vk
 wrapper(Lweka/core/Instances;)IHandler.FilterHandler#wrapper(Lweka/core/Instances;)Lweka/filters/Filter;c
-cfs(Lweka/core/Instances;)EHandler.FilterHandler#cfs(Lweka/core/Instances;)Lweka/filters/Filter;1
+cfs(Lweka/core/Instances;)EHandler.FilterHandler#cfs(Lweka/core/Instances;)Lweka/filters/Filter;(
+java.io.Serializablejava.lang.Objectõ
+java.lang.Throwablejava.lang.Objectjava.io.Serializable;
+printStackTrace()&java.lang.Throwable#printStackTrace()V}
+2validateSuppressedExceptionsList(Ljava/util/List;)Gjava.lang.Throwable#validateSuppressedExceptionsList(Ljava/util/List;)I¡
+ìprintEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)®java.lang.Throwable#printEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VB
+getMessage()2java.lang.Throwable#getMessage()Ljava/lang/String;W
+setCause(Ljava/lang/Throwable;)4java.lang.Throwable#setCause(Ljava/lang/Throwable;)V)
+<init>()java.lang.Throwable#<init>()Vg
+'readObject(Ljava/io/ObjectInputStream;)<java.lang.Throwable#readObject(Ljava/io/ObjectInputStream;)VM
+<init>(Ljava/lang/String;)/java.lang.Throwable#<init>(Ljava/lang/String;)VT
+getLocalizedMessage();java.lang.Throwable#getLocalizedMessage()Ljava/lang/String;e
+&printStackTrace(Ljava/io/PrintWriter;);java.lang.Throwable#printStackTrace(Ljava/io/PrintWriter;)VZ
+getOurStackTrace()Djava.lang.Throwable#getOurStackTrace()[Ljava/lang/StackTraceElement;>
+
+toString()0java.lang.Throwable#toString()Ljava/lang/String;Q
+fillInStackTrace();java.lang.Throwable#fillInStackTrace()Ljava/lang/Throwable;s
+-setStackTrace([Ljava/lang/StackTraceElement;)Bjava.lang.Throwable#setStackTrace([Ljava/lang/StackTraceElement;)Va
+$addSuppressed(Ljava/lang/Throwable;)9java.lang.Throwable#addSuppressed(Ljava/lang/Throwable;)Vç
+:printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Ojava.lang.Throwable#printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Vm
+ initCause(Ljava/lang/Throwable;)Ijava.lang.Throwable#initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;T
+getStackTrace()Ajava.lang.Throwable#getStackTrace()[Ljava/lang/StackTraceElement;A
+
+getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
+&printStackTrace(Ljava/io/PrintStream;);java.lang.Throwable#printStackTrace(Ljava/io/PrintStream;)V{
+1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
+fillInStackTrace(I)<java.lang.Throwable#fillInStackTrace(I)Ljava/lang/Throwable;S
+<init>(Ljava/lang/Throwable;)2java.lang.Throwable#<init>(Ljava/lang/Throwable;)Vk
+)writeObject(Ljava/io/ObjectOutputStream;)>java.lang.Throwable#writeObject(Ljava/io/ObjectOutputStream;)VL
+getSuppressed()9java.lang.Throwable#getSuppressed()[Ljava/lang/Throwable;Ô
+java.lang.Exceptionjava.lang.Throwable)
+<init>()java.lang.Exception#<init>()VM
+<init>(Ljava/lang/String;)/java.lang.Exception#<init>(Ljava/lang/String;)Vw
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V{
+1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
+<init>(Ljava/lang/Throwable;)2java.lang.Exception#<init>(Ljava/lang/Throwable;)Vö
+java.lang.RuntimeExceptionjava.lang.Exception0
+<init>()$java.lang.RuntimeException#<init>()VT
+<init>(Ljava/lang/String;)6java.lang.RuntimeException#<init>(Ljava/lang/String;)V~
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Kjava.lang.RuntimeException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VÇ
+1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Mjava.lang.RuntimeException#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VZ
+<init>(Ljava/lang/Throwable;)9java.lang.RuntimeException#<init>(Ljava/lang/Throwable;)V∂
+java.lang.IllegalStateExceptionjava.lang.RuntimeException5
+<init>())java.lang.IllegalStateException#<init>()VY
+<init>(Ljava/lang/String;);java.lang.IllegalStateException#<init>(Ljava/lang/String;)VÉ
+/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Pjava.lang.IllegalStateException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V_
+<init>(Ljava/lang/Throwable;)>java.lang.IllegalStateException#<init>(Ljava/lang/Throwable;)V1
 weka.filters.SupervisedFilterjava.lang.Object®
 weka.core.OptionHandlerjava.lang.Object{
 #makeCopy(Lweka/core/OptionHandler;)Tweka.core.OptionHandler#makeCopy(Lweka/core/OptionHandler;)Lweka/core/OptionHandler;7
 #weka.core.WeightedAttributesHandlerjava.lang.Object6
-"weka.core.WeightedInstancesHandlerjava.lang.Object(
-java.io.Serializablejava.lang.Object1
+"weka.core.WeightedInstancesHandlerjava.lang.Object1
 weka.core.CapabilitiesHandlerjava.lang.Object-
 weka.core.RevisionHandlerjava.lang.Object1
 weka.core.CapabilitiesIgnorerjava.lang.Object1
@@ -247,35 +293,28 @@ toString()Fweka.attributeSelection.WrapperSubsetEval#toString()Ljava/lang/Strin
 <init>() Handler.MetricsHandler#<init>()V÷
 TlocCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)~Handler.MetricsHandler#locCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)Ljava/lang/Integer;Ê
 eretrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)}Handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V‹
-`checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)xHandler.MetricsHandler#checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)VÚ
-Entity.Ticketjava.lang.Object%
-	printFv()Entity.Ticket#printFv()Vq
-/addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)>Entity.Ticket#addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)V[
+`checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)xHandler.MetricsHandler#checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)VÖ
+Entity.Ticketjava.lang.ObjectA
+setAv(LEntity/Release;)&Entity.Ticket#setAv(LEntity/Release;)V0
+getIv()%Entity.Ticket#getIv()LEntity/Release;q
+/addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)>Entity.Ticket#addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)V]
+%setNotProportion(Ljava/lang/Boolean;)4Entity.Ticket#setNotProportion(Ljava/lang/Boolean;)V[
 $addJSONObject(Lorg/json/JSONObject;)3Entity.Ticket#addJSONObject(Lorg/json/JSONObject;)VA
 setIv(LEntity/Release;)&Entity.Ticket#setIv(LEntity/Release;)VA
-setOv(LEntity/Release;)&Entity.Ticket#setOv(LEntity/Release;)VA
+setOv(LEntity/Release;)&Entity.Ticket#setOv(LEntity/Release;)V:
+getCommits()*Entity.Ticket#getCommits()Ljava/util/List;A
 setFv(LEntity/Release;)&Entity.Ticket#setFv(LEntity/Release;)V0
-getAv()%Entity.Ticket#getAv()Ljava/util/List;%
-	printOv()Entity.Ticket#printOv()VI
-getCreationDate()4Entity.Ticket#getCreationDate()Ljava/time/LocalDate;%
-	printAv()Entity.Ticket#printAv()VS
+getAv()%Entity.Ticket#getAv()Ljava/util/List;I
+getNotProportion()3Entity.Ticket#getNotProportion()Ljava/lang/Boolean;E
+getJSONObject()2Entity.Ticket#getJSONObject()Lorg/json/JSONObject;I
+getCreationDate()4Entity.Ticket#getCreationDate()Ljava/time/LocalDate;0
+getFv()%Entity.Ticket#getFv()LEntity/Release;S
  addBuggyFile(Ljava/lang/String;)/Entity.Ticket#addBuggyFile(Ljava/lang/String;)V¡
-W<init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;Ljava/time/LocalDate;)fEntity.Ticket#<init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;Ljava/time/LocalDate;)V<
-getBugFiles()+Entity.Ticket#getBugFiles()Ljava/util/List;0
-getOv()%Entity.Ticket#getOv()LEntity/Release;A
-setAv(LEntity/Release;)&Entity.Ticket#setAv(LEntity/Release;)VM
-setBugFiles(Ljava/util/List;),Entity.Ticket#setBugFiles(Ljava/util/List;)V%
-	printIv()Entity.Ticket#printIv()V0
-getIv()%Entity.Ticket#getIv()LEntity/Release;]
-%setNotProportion(Ljava/lang/Boolean;)4Entity.Ticket#setNotProportion(Ljava/lang/Boolean;)V:
-getCommits()*Entity.Ticket#getCommits()Ljava/util/List;I
-getNotProportion()3Entity.Ticket#getNotProportion()Ljava/lang/Boolean;M
-getResolutionDate()6Entity.Ticket#getResolutionDate()Ljava/time/LocalDate;E
-getJSONObject()2Entity.Ticket#getJSONObject()Lorg/json/JSONObject;1
-printVersions()Entity.Ticket#printVersions()V0
-getFv()%Entity.Ticket#getFv()LEntity/Release;-
-printTicket()Entity.Ticket#printTicket()V@
-getTicketKey().Entity.Ticket#getTicketKey()Ljava/lang/String;ñ
+W<init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;Ljava/time/LocalDate;)fEntity.Ticket#<init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;Ljava/time/LocalDate;)V-
+printTicket()Entity.Ticket#printTicket()V<
+getBugFiles()+Entity.Ticket#getBugFiles()Ljava/util/List;@
+getTicketKey().Entity.Ticket#getTicketKey()Ljava/lang/String;0
+getOv()%Entity.Ticket#getOv()LEntity/Release;‰
 Entity.Releasejava.lang.ObjectE
 getReleaseFiles()0Entity.Release#getReleaseFiles()Ljava/util/List;w
 (getReleaseFileByName(Ljava/lang/String;)KEntity.Release#getReleaseFileByName(Ljava/lang/String;)LEntity/ReleaseFile;T
@@ -286,8 +325,7 @@ W<init>(Ljava/lang/String;Ljava/lang/Integer;Ljava/time/LocalDate;Ljava/time/Loc
 /addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)?Entity.Release#addCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)V†
 F<init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/time/LocalDateTime;)VEntity.Release#<init>(Ljava/lang/Integer;Ljava/lang/String;Ljava/time/LocalDateTime;)V0
 printRelease()Entity.Release#printRelease()Vf
- containsFile(Ljava/lang/String;)BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;0
-printCommits()Entity.Release#printCommits()V;
+ containsFile(Ljava/lang/String;)BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;;
 getCommits()+Entity.Release#getCommits()Ljava/util/List;z
 3setLastCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)CEntity.Release#setLastCommit(Lorg/eclipse/jgit/revwalk/RevCommit;)VH
 getReleaseIndex()3Entity.Release#getReleaseIndex()Ljava/lang/Integer;E
@@ -1416,26 +1454,26 @@ getBytes().org.eclipse.jgit.lib.ObjectLoader#getBytes()[B9
 skipDelimiters(I),java.util.StringTokenizer#skipDelimiters(I)Iñ
 Main.MainControljava.lang.Object&
 <init>()Main.MainControl#<init>()VH
-main([Ljava/lang/String;)+Main.MainControl#main([Ljava/lang/String;)Vø
-!Controller.ControllerDeliverable1java.lang.ObjectÓ
-csetFilesToTicket(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)ÜController.ControllerDeliverable1#setFilesToTicket(Ljava/util/List;Ljava/util/List;Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)Vü
+main([Ljava/lang/String;)+Main.MainControl#main([Ljava/lang/String;)V˛
+!Controller.ControllerDeliverable1java.lang.Objectü
 3checkIfIvIsCorrect(LEntity/Release;LEntity/Ticket;)hController.ControllerDeliverable1#checkIfIvIsCorrect(LEntity/Release;LEntity/Ticket;)Ljava/lang/Boolean;Ñ
 'findIV(LEntity/Ticket;Ljava/util/List;)YController.ControllerDeliverable1#findIV(LEntity/Ticket;Ljava/util/List;)LEntity/Release;Ö
 /setIvReleases(Ljava/util/List;Ljava/util/List;)RController.ControllerDeliverable1#setIvReleases(Ljava/util/List;Ljava/util/List;)V¥
 >proportion(LEntity/Ticket;Ljava/util/List;Ljava/lang/Integer;)rController.ControllerDeliverable1#proportion(LEntity/Ticket;Ljava/util/List;Ljava/lang/Integer;)Ljava/lang/Double;7
-<init>()+Controller.ControllerDeliverable1#<init>()VÖ
+<init>()+Controller.ControllerDeliverable1#<init>()V≠
+CsetFilesToTicket(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)fController.ControllerDeliverable1#setFilesToTicket(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)VÖ
 /setOvReleases(Ljava/util/List;Ljava/util/List;)RController.ControllerDeliverable1#setOvReleases(Ljava/util/List;Ljava/util/List;)VÖ
 /setAvReleases(Ljava/util/List;Ljava/util/List;)RController.ControllerDeliverable1#setAvReleases(Ljava/util/List;Ljava/util/List;)VX
 getCsvFileName()DController.ControllerDeliverable1#getCsvFileName()Ljava/lang/String;•
 ?setFvReleases(Ljava/util/List;Ljava/util/List;Ljava/util/List;)bController.ControllerDeliverable1#setFvReleases(Ljava/util/List;Ljava/util/List;Ljava/util/List;)Vi
 !checkIfFvExists(Ljava/util/List;)DController.ControllerDeliverable1#checkIfFvExists(Ljava/util/List;)Vy
-)run(Ljava/lang/String;Ljava/lang/String;)LController.ControllerDeliverable1#run(Ljava/lang/String;Ljava/lang/String;)VÎ
-!Controller.ControllerDeliverable2java.lang.Objectﬂ
+)run(Ljava/lang/String;Ljava/lang/String;)LController.ControllerDeliverable1#run(Ljava/lang/String;Ljava/lang/String;)V„
+!Controller.ControllerDeliverable2java.lang.Object”
+ïchooseSampSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;Lweka/core/Instances;Lweka/core/Instances;)∏Controller.ControllerDeliverable2#chooseSampSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;Lweka/core/Instances;Lweka/core/Instances;)Vﬂ
 \chooseFeatureSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;LEntity/Walk;)Controller.ControllerDeliverable2#chooseFeatureSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;LEntity/Walk;)V7
 <init>()+Controller.ControllerDeliverable2#<init>()V?
 preProcess()/Controller.ControllerDeliverable2#preProcess()Vç
-≤evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;[Lweka/core/Instances;)’Controller.ControllerDeliverable2#evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;[Lweka/core/Instances;)V€
-ôchooseSamplingSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;Lweka/core/Instances;Lweka/core/Instances;)ºController.ControllerDeliverable2#chooseSamplingSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;Lweka/core/Instances;Lweka/core/Instances;)Va
+≤evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;[Lweka/core/Instances;)’Controller.ControllerDeliverable2#evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;LEntity/Walk;[Lweka/core/Instances;)Va
 walkEvaluation(LEntity/Walk;)@Controller.ControllerDeliverable2#walkEvaluation(LEntity/Walk;)Vã
 2getInstances(Ljava/lang/String;Ljava/lang/String;)UController.ControllerDeliverable2#getInstances(Ljava/lang/String;Ljava/lang/String;)Vy
 )run(Ljava/lang/String;Ljava/lang/String;)LController.ControllerDeliverable2#run(Ljava/lang/String;Ljava/lang/String;)Vÿ
@@ -1548,42 +1586,7 @@ println(C)java.io.PrintStream#println(C)VK
 writeBytes([B)#java.io.PrintStream#writeBytes([B)VU
 <init>(Ljava/io/OutputStream;)3java.io.PrintStream#<init>(Ljava/io/OutputStream;)V/
 println([C) java.io.PrintStream#println([C)Vã
-9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Võ
-java.lang.Throwablejava.lang.Objectjava.io.Serializable;
-printStackTrace()&java.lang.Throwable#printStackTrace()V}
-2validateSuppressedExceptionsList(Ljava/util/List;)Gjava.lang.Throwable#validateSuppressedExceptionsList(Ljava/util/List;)I¡
-ìprintEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)®java.lang.Throwable#printEnclosedStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;[Ljava/lang/StackTraceElement;Ljava/lang/String;Ljava/lang/String;Ljava/util/Set;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VB
-getMessage()2java.lang.Throwable#getMessage()Ljava/lang/String;W
-setCause(Ljava/lang/Throwable;)4java.lang.Throwable#setCause(Ljava/lang/Throwable;)V)
-<init>()java.lang.Throwable#<init>()Vg
-'readObject(Ljava/io/ObjectInputStream;)<java.lang.Throwable#readObject(Ljava/io/ObjectInputStream;)VM
-<init>(Ljava/lang/String;)/java.lang.Throwable#<init>(Ljava/lang/String;)VT
-getLocalizedMessage();java.lang.Throwable#getLocalizedMessage()Ljava/lang/String;e
-&printStackTrace(Ljava/io/PrintWriter;);java.lang.Throwable#printStackTrace(Ljava/io/PrintWriter;)VZ
-getOurStackTrace()Djava.lang.Throwable#getOurStackTrace()[Ljava/lang/StackTraceElement;>
-
-toString()0java.lang.Throwable#toString()Ljava/lang/String;Q
-fillInStackTrace();java.lang.Throwable#fillInStackTrace()Ljava/lang/Throwable;s
--setStackTrace([Ljava/lang/StackTraceElement;)Bjava.lang.Throwable#setStackTrace([Ljava/lang/StackTraceElement;)Va
-$addSuppressed(Ljava/lang/Throwable;)9java.lang.Throwable#addSuppressed(Ljava/lang/Throwable;)Vç
-:printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Ojava.lang.Throwable#printStackTrace(Ljava/lang/Throwable$PrintStreamOrWriter;)Vm
- initCause(Ljava/lang/Throwable;)Ijava.lang.Throwable#initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;T
-getStackTrace()Ajava.lang.Throwable#getStackTrace()[Ljava/lang/StackTraceElement;A
-
-getCause()3java.lang.Throwable#getCause()Ljava/lang/Throwable;e
-&printStackTrace(Ljava/io/PrintStream;);java.lang.Throwable#printStackTrace(Ljava/io/PrintStream;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Throwable#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-fillInStackTrace(I)<java.lang.Throwable#fillInStackTrace(I)Ljava/lang/Throwable;S
-<init>(Ljava/lang/Throwable;)2java.lang.Throwable#<init>(Ljava/lang/Throwable;)Vk
-)writeObject(Ljava/io/ObjectOutputStream;)>java.lang.Throwable#writeObject(Ljava/io/ObjectOutputStream;)VL
-getSuppressed()9java.lang.Throwable#getSuppressed()[Ljava/lang/Throwable;Ô
-java.lang.Exceptionjava.lang.Throwable)
-<init>()java.lang.Exception#<init>()VM
-<init>(Ljava/lang/String;)/java.lang.Exception#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;)V{
-1<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)Fjava.lang.Exception#<init>(Ljava/lang/String;Ljava/lang/Throwable;ZZ)VS
-<init>(Ljava/lang/Throwable;)2java.lang.Exception#<init>(Ljava/lang/Throwable;)VÚ
+9<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)Njava.io.PrintStream#<init>(ZLjava/nio/charset/Charset;Ljava/io/OutputStream;)VÚ
 java.io.IOExceptionjava.lang.Exception)
 <init>()java.io.IOException#<init>()VM
 <init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
@@ -1984,9 +1987,8 @@ paddRelease(Ljava/util/List;Ljava/util/Map;Ljava/util/Map;Ljava/lang/String;Ljav
 (readJsonArrayFromUrl(Ljava/lang/String;)PHandler.JiraHandler#readJsonArrayFromUrl(Ljava/lang/String;)Lorg/json/JSONArray;f
 getReleases(Ljava/lang/String;)CHandler.JiraHandler#getReleases(Ljava/lang/String;)Ljava/util/List;s
 #readJsonFromUrl(Ljava/lang/String;)LHandler.JiraHandler#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;Ñ
-.getTickets(Ljava/lang/String;Ljava/util/List;)RHandler.JiraHandler#getTickets(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;∂	
-Handler.ChangesHandlerjava.lang.Objectô
-7getChangeFromName(Ljava/lang/String;Ljava/lang/String;)^Handler.ChangesHandler#getChangeFromName(Ljava/lang/String;Ljava/lang/String;)LEntity/Changes;,
+.getTickets(Ljava/lang/String;Ljava/util/List;)RHandler.JiraHandler#getTickets(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;ö
+Handler.ChangesHandlerjava.lang.Object,
 <init>() Handler.ChangesHandler#<init>()VÑ
 4updateReleaseFiles(Ljava/util/List;Ljava/util/List;)LHandler.ChangesHandler#updateReleaseFiles(Ljava/util/List;Ljava/util/List;)Vû
 ygetEntryList(Lorg/eclipse/jgit/revwalk/RevWalk;Lorg/eclipse/jgit/diff/DiffFormatter;Lorg/eclipse/jgit/revwalk/RevCommit;)†Handler.ChangesHandler#getEntryList(Lorg/eclipse/jgit/revwalk/RevWalk;Lorg/eclipse/jgit/diff/DiffFormatter;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;Ê
@@ -2415,7 +2417,30 @@ NiteratorBinarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)
 "synchronizedList(Ljava/util/List;)Hjava.util.Collections#synchronizedList(Ljava/util/List;)Ljava/util/List;á
 6disjoint(Ljava/util/Collection;Ljava/util/Collection;)Mjava.util.Collections#disjoint(Ljava/util/Collection;Ljava/util/Collection;)Zk
 (fill(Ljava/util/List;Ljava/lang/Object;)?java.util.Collections#fill(Ljava/util/List;Ljava/lang/Object;)Vü
-8checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)cjava.util.Collections#checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;›R
+8checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)cjava.util.Collections#checkedSortedSet(Ljava/util/SortedSet;Ljava/lang/Class;)Ljava/util/SortedSet;Ñ
+
+java.lang.Booleanjava.lang.constant.Constablejava.lang.Comparablejava.lang.Objectjava.io.Serializable_
+valueOf(Ljava/lang/String;)@java.lang.Boolean#valueOf(Ljava/lang/String;)Ljava/lang/Boolean;W
+ parseBoolean(Ljava/lang/String;)3java.lang.Boolean#parseBoolean(Ljava/lang/String;)ZK
+equals(Ljava/lang/Object;)-java.lang.Boolean#equals(Ljava/lang/Object;)ZP
+describeConstable()9java.lang.Boolean#describeConstable()Ljava/util/Optional;3
+booleanValue()!java.lang.Boolean#booleanValue()Z<
+
+toString().java.lang.Boolean#toString()Ljava/lang/String;>
+toString(Z)/java.lang.Boolean#toString(Z)Ljava/lang/String;=
+
+valueOf(Z)/java.lang.Boolean#valueOf(Z)Ljava/lang/Boolean;1
+logicalOr(ZZ) java.lang.Boolean#logicalOr(ZZ)Z+
+
+hashCode()java.lang.Boolean#hashCode()I3
+logicalXor(ZZ)!java.lang.Boolean#logicalXor(ZZ)Z-
+compare(ZZ)java.lang.Boolean#compare(ZZ)I-
+hashCode(Z)java.lang.Boolean#hashCode(Z)I3
+logicalAnd(ZZ)!java.lang.Boolean#logicalAnd(ZZ)ZS
+compareTo(Ljava/lang/Boolean;)1java.lang.Boolean#compareTo(Ljava/lang/Boolean;)IK
+<init>(Ljava/lang/String;)-java.lang.Boolean#<init>(Ljava/lang/String;)V)
+	<init>(Z)java.lang.Boolean#<init>(Z)VS
+getBoolean(Ljava/lang/String;)1java.lang.Boolean#getBoolean(Ljava/lang/String;)Z›R
 org.json.JSONObjectjava.lang.Object\
 query(Ljava/lang/String;)?org.json.JSONObject#query(Ljava/lang/String;)Ljava/lang/Object;Ä
 ,getEnum(Ljava/lang/Class;Ljava/lang/String;)Porg.json.JSONObject#getEnum(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;Ö

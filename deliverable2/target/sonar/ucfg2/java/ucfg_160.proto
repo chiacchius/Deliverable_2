@@ -1,34 +1,16 @@
 
-“Handler.GitHubHandler#findReleaseFiles(Lorg/eclipse/jgit/api/Git;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)Ljava/util/List;]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaA! A(1"1*Ù
-1]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaF F(¯
-¬
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaF F(/
-%0java.util.List"[Handler.GitHubHandler#associateLastCommit(Ljava/util/List;Ljava/util/List;)Ljava/util/List;*"
-Handler.GitHubHandler*
-
-commitsjava.util.List* 
-
-projReleasesjava.util.ListÉ
-Æ
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaI I(.
-%1java.util.List"aHandler.GitHubHandler#getFiles(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)Ljava/util/List;*"
-Handler.GitHubHandler* 
-
-projReleasesjava.util.List*/
--
-
-repositoryorg.eclipse.jgit.lib.Repository"w
-]
-S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Handler/GitHubHandler.javaI I(/
+)Entity.Changes#getPaths()Ljava/util/List;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java& &("1*æ
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(–
+“
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(
+%0java.util.List"__id**
+Entity.Changes"
+paths"p
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java' '(
 
-%1java.util.List:
-gitorg.eclipse.jgit.api.Git:-
-
-repositoryorg.eclipse.jgit.lib.Repository:
-projReleasesjava.util.List:
-commitsjava.util.ListB"
-Handler.GitHubHandler
+%0java.util.ListB
+Entity.Changes

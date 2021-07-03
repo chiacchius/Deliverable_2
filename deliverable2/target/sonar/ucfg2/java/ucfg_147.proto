@@ -1,16 +1,17 @@
 
-+Entity.Release#getCommits()Ljava/util/List;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java? ?(""1*è
+/Entity.Release#getNumFiles()Ljava/lang/Integer;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaV V("1*ï
 1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java@	 @(˜
-•
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaW	 W(œ
+™
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java@	 @(
-%0java.util.List"__id**
-Entity.Release"	
-commits"p
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaW	 W(
+%0java.lang.Integer"__id* *
+Entity.Release"
+
+numFiles"s
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java@ @(
-
-%0java.util.ListB
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaW W(
+
+%0java.lang.IntegerB
 Entity.Release

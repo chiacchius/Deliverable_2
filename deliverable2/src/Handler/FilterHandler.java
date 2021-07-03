@@ -12,6 +12,10 @@ import weka.filters.supervised.attribute.AttributeSelection;
 
 public class FilterHandler {
 
+	private FilterHandler() {
+		throw new IllegalStateException("Handler class");
+	}
+
 	public static Filter cfs(Instances trainSet) throws SecurityException, IOException {
 		
 		AttributeSelection filter = new AttributeSelection();

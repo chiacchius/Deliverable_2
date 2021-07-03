@@ -1,11 +1,14 @@
 package Entity;
 
+import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 
 import java.util.List;
+
+import Utility.ProjectLogger;
 import org.eclipse.jgit.revwalk.RevCommit;
 
 public class Release {
@@ -28,19 +31,11 @@ public class Release {
 	
 
 	
-	public void printRelease() {
-		System.out.print("\n\nRelease: " + this.index.toString() + "\t" + releaseName + "\t" + date.toString()+ "\n");
-		System.out.print((Instant.ofEpochSecond((this.lastCommit).getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime()).toString() + "\n");
-		System.out.print("commitsNumber = " + commits.size() + " numFiles = " + numFiles.toString()+ "\n");
-		//int len = releaseFiles.size();
-		
-		//System.out.print(this.lastCommit.toString());
-		
-		/*for (int i = 0; i < len ; i++) {
-			System.out.print(this.releaseFiles.get(i).getFilePath()+"\n");
-		}*/
-		
-		//this.printCommits();
+	public void printRelease() throws IOException {
+		ProjectLogger.getSingletonInstance().saveMess("\n\nRelease: " + this.index.toString() + "\t" + releaseName + "\t" + date.toString()+ "\n");
+		ProjectLogger.getSingletonInstance().saveMess((Instant.ofEpochSecond((this.lastCommit).getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime()).toString() + "\n");
+		ProjectLogger.getSingletonInstance().saveMess("commitsNumber = " + commits.size() + " numFiles = " + numFiles.toString()+ "\n");
+
 	}
 	
 	public Integer getReleaseIndex() {
@@ -85,16 +80,8 @@ public class Release {
 		return release1.getReleaseName().equals(release2.getReleaseName());
 		
 	}
-	
-	public void printCommits() {
-		for (int i=0; i<commits.size(); i++) {
-			RevCommit commit = commits.get(i);
-			System.out.print(commit.toString() + "\tdate: " + Instant.ofEpochSecond(commit.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime().toString() + "\n\n");
-		}
-	}
-	
-	
-	
+
+
 	
 	public Integer getNumFiles() {
 		return this.numFiles;
