@@ -1,4 +1,4 @@
-package Handler;
+package handler;
 
 import java.io.File;
 import java.io.IOException;
@@ -15,20 +15,16 @@ import java.time.ZoneId;
 import org.eclipse.jgit.lib.Repository;
 
 
-import Entity.Changes;
-import Entity.Release;
-import Entity.ReleaseFile;
+import entity.Changes;
+import entity.Release;
+import entity.ReleaseFile;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.api.errors.InvalidRemoteException;
 import org.eclipse.jgit.api.errors.JGitInternalException;
-import org.eclipse.jgit.api.errors.NoHeadException;
 
-import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevTree;
-import org.eclipse.jgit.revwalk.RevWalk;
 
 import org.eclipse.jgit.treewalk.TreeWalk;
 

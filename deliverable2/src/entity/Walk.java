@@ -1,9 +1,9 @@
-package Entity;
+package entity;
 
 import java.io.IOException;
 
-import Handler.SamplingHandler;
-import Utility.ProjectLogger;
+import handler.SamplingHandler;
+import utility.ProjectLogger;
 import weka.core.Instances;
 
 public class Walk {

@@ -1,9 +1,9 @@
-package Handler;
+package handler;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-import Entity.Release;
+import entity.Release;
 
 public class ReleaseHandler {
 

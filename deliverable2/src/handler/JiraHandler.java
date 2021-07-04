@@ -1,4 +1,4 @@
-package Handler;
+package handler;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -18,8 +18,8 @@ import java.time.LocalDateTime;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import Entity.Release;
-import Entity.Ticket;
+import entity.Release;
+import entity.Ticket;
 
 import org.json.JSONArray;
 

@@ -288,12 +288,12 @@ toString()Fweka.attributeSelection.WrapperSubsetEval#toString()Ljava/lang/Strin
 "evaluateSubset(Ljava/util/BitSet;)Mweka.attributeSelection.WrapperSubsetEval#evaluateSubset(Ljava/util/BitSet;)Dâ
 -setEvaluationMeasure(Lweka/core/SelectedTag;)Xweka.attributeSelection.WrapperSubsetEval#setEvaluationMeasure(Lweka/core/SelectedTag;)VA
 	getSeed()4weka.attributeSelection.WrapperSubsetEval#getSeed()IZ
-seedTipText()Iweka.attributeSelection.WrapperSubsetEval#seedTipText()Ljava/lang/String;˘
+seedTipText()Iweka.attributeSelection.WrapperSubsetEval#seedTipText()Ljava/lang/String;ˆ
 Handler.MetricsHandlerjava.lang.Object,
 <init>() Handler.MetricsHandler#<init>()V÷
 TlocCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)~Handler.MetricsHandler#locCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)Ljava/lang/Integer;Ê
-eretrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)}Handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V‹
-`checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)xHandler.MetricsHandler#checkBugginess(Ljava/util/List;LEntity/Ticket;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)VÖ
+eretrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)}Handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)VZ
+checkBugginess(LEntity/Ticket;)7Handler.MetricsHandler#checkBugginess(LEntity/Ticket;)VÖ
 Entity.Ticketjava.lang.ObjectA
 setAv(LEntity/Release;)&Entity.Ticket#setAv(LEntity/Release;)V0
 getIv()%Entity.Ticket#getIv()LEntity/Release;q
@@ -1906,14 +1906,14 @@ $getTail(Ljava/util/logging/Handler;)Rjava.util.logging.Formatter#getTail(Ljava
 !java.util.logging.SimpleFormatterjava.util.logging.FormatterÇ
 %format(Ljava/util/logging/LogRecord;)Yjava.util.logging.SimpleFormatter#format(Ljava/util/logging/LogRecord;)Ljava/lang/String;7
 <init>()+java.util.logging.SimpleFormatter#<init>()VÑ
-&getLoggingProperty(Ljava/lang/String;)Zjava.util.logging.SimpleFormatter#getLoggingProperty(Ljava/lang/String;)Ljava/lang/String;≈
+&getLoggingProperty(Ljava/lang/String;)Zjava.util.logging.SimpleFormatter#getLoggingProperty(Ljava/lang/String;)Ljava/lang/String;ê
 Handler.GitHubHandlerjava.lang.Objectî
 5associateLastCommit(Ljava/util/List;Ljava/util/List;)[Handler.GitHubHandler#associateLastCommit(Ljava/util/List;Ljava/util/List;)Ljava/util/List;+
-<init>()Handler.GitHubHandler#<init>()VÖ
-mfindReleaseFiles(Lorg/eclipse/jgit/api/Git;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)ìHandler.GitHubHandler#findReleaseFiles(Lorg/eclipse/jgit/api/Git;Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)Ljava/util/List;¨
+<init>()Handler.GitHubHandler#<init>()V¨
 <cloneProjectFromGitHub(Ljava/lang/String;Ljava/lang/String;)lHandler.GitHubHandler#cloneProjectFromGitHub(Ljava/lang/String;Ljava/lang/String;)Lorg/eclipse/jgit/api/Git;†
 ;getFiles(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)aHandler.GitHubHandler#getFiles(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)Ljava/util/List;|
-)getAllCommits(Lorg/eclipse/jgit/api/Git;)OHandler.GitHubHandler#getAllCommits(Lorg/eclipse/jgit/api/Git;)Ljava/util/List;∫+
+)getAllCommits(Lorg/eclipse/jgit/api/Git;)OHandler.GitHubHandler#getAllCommits(Lorg/eclipse/jgit/api/Git;)Ljava/util/List;–
+SfindReleaseFiles(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)yHandler.GitHubHandler#findReleaseFiles(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)Ljava/util/List;∫+
 org.eclipse.jgit.api.Gitjava.lang.Objectjava.lang.AutoCloseablef
 submoduleSync()Sorg.eclipse.jgit.api.Git#submoduleSync()Lorg/eclipse/jgit/api/SubmoduleSyncCommand;N
 blame()Corg.eclipse.jgit.api.Git#blame()Lorg/eclipse/jgit/api/BlameCommand;c

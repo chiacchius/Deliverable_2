@@ -1,16 +1,16 @@
 
-.Entity.ReleaseFile#getChange()LEntity/Changes;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java< <("1*÷
+/Entity.ReleaseFile#getAuthors()Ljava/util/List;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java8 8("1*ø
 1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java=	 =(Ÿ
-œ
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java9	 9( 
+
 Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java=	 =(
-%0Entity.Changes"__id*"* 
-Entity.ReleaseFile"
-change"t
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java9	 9(
+%0java.util.List"__id*#*!
+Entity.ReleaseFile"	
+authors"t
 Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java= =(
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java9 9(
 
-%0Entity.ChangesB
+%0java.util.ListB
 Entity.ReleaseFile

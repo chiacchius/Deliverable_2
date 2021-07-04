@@ -1,11 +1,11 @@
-package Entity;
+package entity;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import Utility.ProjectLogger;
+import utility.ProjectLogger;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.json.JSONObject;
 

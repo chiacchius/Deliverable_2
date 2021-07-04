@@ -1,16 +1,16 @@
 
-%Entity.Ticket#getAv()Ljava/util/List;U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javal l("1*ß
+%Entity.Ticket#getOv()LEntity/Release;U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javah h("1*ß
 1U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javam	 m(‘
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javai	 i(‘
 Ž
 U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javam	 m(
-%0java.util.List"__id**
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javai	 i(
+%0Entity.Release"__id**
 Entity.Ticket"
-av"o
+ov"o
 U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javam m(
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javai i(
 
-%0java.util.ListB
+%0Entity.ReleaseB
 Entity.Ticket

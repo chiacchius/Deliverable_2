@@ -1,8 +1,8 @@
-package Handler;
+package handler;
 
 import java.io.IOException;
 
-import Utility.ProjectLogger;
+import utility.ProjectLogger;
 import weka.core.Instances;
 import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SMOTE;

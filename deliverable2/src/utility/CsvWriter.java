@@ -1,4 +1,4 @@
-package Utility;
+package utility;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -6,8 +6,8 @@ import java.io.IOException;
 
 import java.util.List;
 
-import Entity.ModelMetrics;
-import Entity.Release;
+import entity.ModelMetrics;
+import entity.Release;
 
 public class CsvWriter {
 	

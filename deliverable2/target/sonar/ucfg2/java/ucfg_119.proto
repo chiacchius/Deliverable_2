@@ -1,16 +1,16 @@
 
-3Entity.Ticket#getNotProportion()Ljava/lang/Boolean;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÜ Ü( "1*ˆ
++Entity.Ticket#getBugFiles()Ljava/util/List;W
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÄ Ä( "1*Ô
 1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá	 á(°
-û
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ	 Å(ù
+ö
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá	 á(
-%0java.lang.Boolean"__id*$*"
-Entity.Ticket"
-notProportion"t
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ	 Å(
+%0java.util.List"__id*#*!
+Entity.Ticket"
+bugFilesPath"q
 W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaá á(
-
-%0java.lang.BooleanB
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.javaÅ Å(
+
+%0java.util.ListB
 Entity.Ticket

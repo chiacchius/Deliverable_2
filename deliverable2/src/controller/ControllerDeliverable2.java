@@ -1,19 +1,19 @@
-package Controller;
+package controller;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import Entity.ModelMetrics;
-import Entity.Walk;
-import Handler.FilterHandler;
-import Handler.SamplingHandler;
+import entity.ModelMetrics;
+import entity.Walk;
+import handler.FilterHandler;
+import handler.SamplingHandler;
 import weka.filters.Filter;
 import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SpreadSubsample;
-import Utility.CsvWriter;
-import Utility.ProjectLogger;
+import utility.CsvWriter;
+import utility.ProjectLogger;
 import weka.classifiers.AbstractClassifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.bayes.NaiveBayes;

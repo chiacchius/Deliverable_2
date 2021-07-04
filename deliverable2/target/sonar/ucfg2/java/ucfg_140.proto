@@ -1,16 +1,16 @@
 
-0Entity.Release#getReleaseFiles()Ljava/util/List;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java6 6()"1*Ì
+8Entity.Release#getReleaseDate()Ljava/time/LocalDateTime;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java2 2($"1*˜
 1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java7	 7(ù
-ö
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3	 3(û
+õ
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java7	 7(
-%0java.util.List"__id*$*"
-Entity.Release"
-releaseFiles"p
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3	 3(
+%0java.time.LocalDateTime"__id**
+Entity.Release"
+date"y
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java7 7(
-
-%0java.util.ListB
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.java3 3(
+
+%0java.time.LocalDateTimeB
 Entity.Release

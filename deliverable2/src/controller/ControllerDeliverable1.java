@@ -1,4 +1,4 @@
-package Controller;
+package controller;
 
 
 import java.io.IOException;
@@ -27,16 +27,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import Entity.Release;
-import Entity.ReleaseFile;
-import Entity.Ticket;
-import Handler.ChangesHandler;
-import Handler.GitHubHandler;
-import Handler.JiraHandler;
-import Handler.MetricsHandler;
-import Handler.ReleaseHandler;
-import Utility.CsvWriter;
-import Utility.ProjectLogger;
+import entity.Release;
+import entity.ReleaseFile;
+import entity.Ticket;
+import handler.ChangesHandler;
+import handler.GitHubHandler;
+import handler.JiraHandler;
+import handler.MetricsHandler;
+import handler.ReleaseHandler;
+import utility.CsvWriter;
+import utility.ProjectLogger;
 
 public class ControllerDeliverable1 {
 	

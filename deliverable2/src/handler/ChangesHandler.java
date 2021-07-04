@@ -1,4 +1,4 @@
-package Handler;
+package handler;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,9 +15,9 @@ import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.EmptyTreeIterator;
 import org.eclipse.jgit.util.io.DisabledOutputStream;
 
-import Entity.Changes;
-import Entity.Release;
-import Entity.ReleaseFile;
+import entity.Changes;
+import entity.Release;
+import entity.ReleaseFile;
 
 public class ChangesHandler {
 

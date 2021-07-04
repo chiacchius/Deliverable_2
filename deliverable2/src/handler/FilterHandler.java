@@ -1,8 +1,8 @@
-package Handler;
+package handler;
 
 import java.io.IOException;
 
-import Utility.ProjectLogger;
+import utility.ProjectLogger;
 import weka.attributeSelection.BestFirst;
 import weka.attributeSelection.CfsSubsetEval;
 import weka.attributeSelection.WrapperSubsetEval;

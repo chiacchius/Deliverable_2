@@ -1,81 +1,70 @@
 
-KEntity.Release#getReleaseFileByName(Ljava/lang/String;)LEntity/ReleaseFile;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javan n()"6*ç
+BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaa a("5*ç
 2V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javao o(É
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
+ c(É
 Ä
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javao o(
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
+ c(
 rfEntity.ReleaseFile"__id*
 ""°
 û
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javao o(
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
+ c(
 rfEntity.ReleaseFile"
 __arrayGet*
 
 %0java.util.List*
 ""*
-5
-1*—
+4
+1*Ω
 3V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaq q("t
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javae e("`
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaq
- q(
-
-rfEntity.ReleaseFile*‡
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaf	 f(
+""*‡
 4V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap- p(/ «
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
+ d( «
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap- p(;
-%3Entity.Changes".Entity.ReleaseFile#getChange()LEntity/Changes;*
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
+ d(
+%1Entity.Changes".Entity.ReleaseFile#getChange()LEntity/Changes;*
 
 rfEntity.ReleaseFile2getChange()¿Ω
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap- p(F
-%4java.util.List")Entity.Changes#getPaths()Ljava/util/List;*
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
+ d(#
+%2java.util.List")Entity.Changes#getPaths()Ljava/util/List;*
 
-%3Entity.Changes2
+%1Entity.Changes2
 getPaths()ÍÁ
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap- p(U
-%5boolean",java.util.List#contains(Ljava/lang/Object;)Z*
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
+ d(2
+%3boolean",java.util.List#contains(Ljava/lang/Object;)Z*
 
-%4java.util.List*
+%2java.util.List*
 
-namejava.lang.String2contains(Ljava/lang/Object;)*
+pathjava.lang.String2contains(Ljava/lang/Object;)*
 2
-3*•
+3*Ä
 5V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap p(“œ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap p(
-%1java.lang.String"2Entity.ReleaseFile#getFilePath()Ljava/lang/String;*
-
-rfEntity.ReleaseFile2getFilePath()ÍÁ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javap p()
-%2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%1java.lang.String*
-
-namejava.lang.String2equals(Ljava/lang/Object;)*
-3
-4*Ä
-6V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javao o( ù
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac c(ù
 ö
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javao o(-
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac c(,
 %0java.util.List"__id*$*"
 Entity.Release"
 releaseFiles*
 2*Ω
 1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javat t("`
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javai i("`
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javat t(
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javai i(
 "":
-namejava.lang.StringB
+pathjava.lang.StringB
 Entity.Release

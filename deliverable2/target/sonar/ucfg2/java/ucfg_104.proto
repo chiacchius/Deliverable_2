@@ -1,16 +1,16 @@
 
-4Entity.Ticket#getCreationDate()Ljava/time/LocalDate;U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java6 6(!"1*Û
+.Entity.Ticket#getTicketKey()Ljava/lang/String;U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java2 2("1*‰
 1U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7	 7(†
-ù
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java3	 3(î
+ë
 U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7	 7(
-%0java.time.LocalDate"__id*#*!
-Entity.Ticket"
-creationDate"t
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java3	 3(
+%0java.lang.String"__id**
+Entity.Ticket"
+key"q
 U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7 7(
-
-%0java.time.LocalDateB
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java3 3(
+
+%0java.lang.StringB
 Entity.Ticket

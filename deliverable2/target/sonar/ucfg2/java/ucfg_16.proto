@@ -1,16 +1,16 @@
 
-;Entity.ModelMetrics#getFeatureSelection()Ljava/lang/String;[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java7 7(""1*‰
+4Entity.ModelMetrics#getBalancing()Ljava/lang/String;[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java3 3("1*‚
 1[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java8	 8(­
-ª
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4	 4(¦
+£
 [
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java8	 8(
-%0java.lang.String"__id*-*+
-Entity.ModelMetrics"
-featureSelection"w
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4	 4(
+%0java.lang.String"__id*&*$
+Entity.ModelMetrics"
+	balancing"w
 [
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java8 8(
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java4 4(
 
 %0java.lang.StringB
 Entity.ModelMetrics

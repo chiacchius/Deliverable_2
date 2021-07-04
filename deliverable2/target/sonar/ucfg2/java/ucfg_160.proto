@@ -1,16 +1,53 @@
 
-)Entity.Changes#getPaths()Ljava/util/List;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java& &("1*Ê
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(ñ
+-Entity.Changes#checkPath(Ljava/lang/String;)ZV
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java ("5*ç
+2V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (É
+Ä
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+pathjava.lang.String"__id*
+""°
+û
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+pathjava.lang.String"
+__arrayGet*
+
+%0java.util.List*
+""*
+4
+1*Ω
+3V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java ("`
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+""*’
+4V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+ÔÏ
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
+%1boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
+
+pathjava.lang.String*
+
+newPathjava.lang.String2equals(Ljava/lang/Object;)*
+2
+3*˘
+5V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (ñ
 ì
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java'	 '(
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (
 %0java.util.List"__id**
 Entity.Changes"
-paths"p
+paths*
+2*Ω
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java#	 #("`
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java' '(
-
-%0java.util.ListB
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java# #(
+"":
+newPathjava.lang.StringB
 Entity.Changes
