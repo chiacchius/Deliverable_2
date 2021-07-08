@@ -21,7 +21,7 @@ public class CsvWriter {
 		FileWriter fileWriter = null;
 		String outname = null;
 		try {
-			outname = projectName + "VersionInfo.csv";
+			outname = projectName + "_metris.csv";
 			fileWriter = new FileWriter(outname);
 		}catch (Exception e){
 			ProjectLogger.getSingletonInstance().saveMess("[X] Error in fileWriter creation\n");
@@ -89,7 +89,7 @@ public class CsvWriter {
 		
 		
 		try (BufferedWriter br = new BufferedWriter(
-				new FileWriter(projectName + "_metrics.csv"))) {
+				new FileWriter(projectName + "_model.csv"))) {
 			StringBuilder sb = new StringBuilder();
 
 			sb.append("Dataset,Training_Release,%Training,%Defective_training,%Defective_testing,Classifier,Feature_Selection,Balancing,Sensitivity,TP,FP,TN,FN,Precision,Recall,ROC_Area,Kappa\n");
