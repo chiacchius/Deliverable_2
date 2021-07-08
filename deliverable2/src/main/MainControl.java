@@ -4,20 +4,17 @@ package main;
 
 import controller.ControllerDeliverable1;
 import controller.ControllerDeliverable2;
-import utility.ProjectLogger;
 
 
 public class MainControl {
 
-	private static ProjectLogger logCTR;
-	
+
 	public static void main(String[] args) throws Exception  {
 		
 		
 		String projName1 = "BOOKKEEPER";
 		String projName2 = "ZOOKEEPER";
 		String path = "./";
-		logCTR = ProjectLogger.getSingletonInstance();
 		var controllerDeliverable1 = new ControllerDeliverable1();
 		var controllerDeliverable2 = new ControllerDeliverable2();
 

@@ -1,16 +1,16 @@
 
-/Entity.ReleaseFile#getRelease()LEntity/Release;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaM M("1*¯
-1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaN	 N(†
-ù
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaN	 N(
-%0Entity.Release"__id*#*!
-Entity.ReleaseFile"	
-release"t
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaN N(
-
-%0Entity.ReleaseB
-Entity.ReleaseFile
+-entity.Changes#getNewPath()Ljava/lang/String;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java/ /("1*Ï
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java0	 0(ö
+ó
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java0	 0(
+%0java.lang.String"__id**
+entity.Changes"	
+newPath"r
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java0 0(
+
+%0java.lang.StringB
+entity.Changes

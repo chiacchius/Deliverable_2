@@ -1,16 +1,17 @@
 
--Entity.Walk#getTestSet()Lweka/core/Instances;S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java] ]("1*æ
-1S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^	 ^(—
-”
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^	 ^(
-%0weka.core.Instances"__id**
-Entity.Walk"	
-testSet"r
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java^ ^(
-
-%0weka.core.InstancesB
-Entity.Walk
+2entity.ReleaseFile#getFilePath()Ljava/lang/String;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java# #("1*ý
+1Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$	 $(£
+ 
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$	 $(
+%0java.lang.String"__id*$*"
+entity.ReleaseFile"
+
+filePath"v
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$ $(
+
+%0java.lang.StringB
+entity.ReleaseFile

@@ -1,9 +1,16 @@
 
-Entity.Walk#getTrainId()IU
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java• •("1*»
-1U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java–	 –("_
-U
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Walk.java– –(
-""B
-Entity.Walk
+1entity.ReleaseFile#getNumRev()Ljava/lang/Integer;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaE E("1*ý
+1Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaF	 F(¢
+Ÿ
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaF	 F(
+%0java.lang.Integer"__id*"* 
+entity.ReleaseFile"
+numRev"w
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaF F(
+
+%0java.lang.IntegerB
+entity.ReleaseFile

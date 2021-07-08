@@ -6,6 +6,7 @@ public class ModelMetrics {
 	private String classifier;
 	private String balancing;
 	private String featureSelection;
+	private String sensitive;
 	private int trainingReleaseNumber;
 	private double trainingPercent;
 	private double defectTrainingPercent;
@@ -19,13 +20,14 @@ public class ModelMetrics {
 	private double rocArea;
 	private double kappa;
 
-	//Il costruttore è stato fatto usando array come parametri in input per rispettare il vincolo sul numero di parametri in ingresso di una funzione (<= 7)
-	public ModelMetrics(String dataset, String[] classBalaFeatu, int trainingReleaseNumber, double[] trainPercDefTrainDefTest, int[] confusionMatrix, double[] precRecRocKap) {
+	//To reduce the number of input parameters (<= 7)
+	public ModelMetrics(String dataset, String[] classBalaFeatuSens, int trainingReleaseNumber, double[] trainPercDefTrainDefTest, int[] confusionMatrix, double[] precRecRocKap) {
 		
 		this.dataset = dataset;
-		this.classifier = classBalaFeatu[0];
-		this.balancing = classBalaFeatu[1];
-		this.featureSelection = classBalaFeatu[2];
+		this.classifier = classBalaFeatuSens[0];
+		this.balancing = classBalaFeatuSens[1];
+		this.featureSelection = classBalaFeatuSens[2];
+		this.sensitive = classBalaFeatuSens[3];
 		this.trainingReleaseNumber = trainingReleaseNumber;
 		this.trainingPercent = trainPercDefTrainDefTest[0];
 		this.defectTrainingPercent = trainPercDefTrainDefTest[1];
@@ -55,6 +57,8 @@ public class ModelMetrics {
 	public String getFeatureSelection() {
 		return featureSelection;
 	}
+
+	public String getSensitive() { return sensitive; }
 
 	public int getTrainingReleaseNumber() {
 		return trainingReleaseNumber;
@@ -103,6 +107,7 @@ public class ModelMetrics {
 	public double getKappa() {
 		return kappa;
 	}
-	
-	
+
+
+
 }

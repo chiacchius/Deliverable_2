@@ -10,17 +10,24 @@ import entity.ModelMetrics;
 import entity.Release;
 
 public class CsvWriter {
+
+	private CsvWriter() {
+		throw new IllegalStateException("Utility class");
+	}
 	
 	
 	public static String writeFirstCsv(String projectName, List<Release> releases) throws IOException{
 		   
 		FileWriter fileWriter = null;
-		 String outname = null;
+		String outname = null;
+		try {
+			outname = projectName + "VersionInfo.csv";
+			fileWriter = new FileWriter(outname);
+		}catch (Exception e){
+			ProjectLogger.getSingletonInstance().saveMess("[X] Error in fileWriter creation\n");
+
+		}
 		 try {
-	            fileWriter = null;
-	            outname = projectName + "VersionInfo.csv";
-					    //Name of CSV for output
-					    fileWriter = new FileWriter(outname);
 	            fileWriter.append("Version ID,Version Name,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");
 	            for ( int i = 0; i < releases.size()/2; i++) {
@@ -60,15 +67,14 @@ public class CsvWriter {
 	            }
 
 	     } catch (Exception e) {
-	            System.out.println("Error in csv writer");
+	            ProjectLogger.getSingletonInstance().saveMess("Error in csv writer");
 	            e.printStackTrace();
 	     } finally {
 	            try {
 	               fileWriter.flush();
 	               fileWriter.close();
 	               
-	            } catch (IOException e) {
-	               System.out.println("Error while flushing/closing fileWriter !!!");
+	            } catch (IOException e) { ProjectLogger.getSingletonInstance().saveMess("Error while flushing/closing fileWriter !!!");
 	               e.printStackTrace();
 	            }
 	     }
@@ -86,7 +92,7 @@ public class CsvWriter {
 				new FileWriter(projectName + "_metrics.csv"))) {
 			StringBuilder sb = new StringBuilder();
 
-			sb.append("Dataset,Training_Release,%Training,%Defective_training,%Defective_testing,Classifier,Balancing,Feature_Selection,TP,FP,TN,FN,Precision,Recall,ROC_Area,Kappa\n");
+			sb.append("Dataset,Training_Release,%Training,%Defective_training,%Defective_testing,Classifier,Feature_Selection,Balancing,Sensitivity,TP,FP,TN,FN,Precision,Recall,ROC_Area,Kappa\n");
 			
 				for (ModelMetrics metric : modelMetrics) {
 					
@@ -102,9 +108,11 @@ public class CsvWriter {
 					sb.append(",");
 					sb.append(metric.getClassifier());
 					sb.append(",");
+					sb.append(metric.getFeatureSelection());
+					sb.append(",");
 					sb.append(metric.getBalancing());
 					sb.append(",");
-					sb.append(metric.getFeatureSelection());
+					sb.append(metric.getSensitive());
 					sb.append(",");
 					sb.append(metric.getTp());
 					sb.append(",");

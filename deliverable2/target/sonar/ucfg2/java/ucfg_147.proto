@@ -1,29 +1,16 @@
 
-KEntity.Release#compare(LEntity/Release;LEntity/Release;)Ljava/lang/Boolean;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaN N("1*ã
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaP	 P(ÖÓ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaP	 P("
-%0java.lang.String"1Entity.Release#getReleaseName()Ljava/lang/String;*
-
-release1Entity.Release2getReleaseName()ÖÓ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaP* P(C
-%1java.lang.String"1Entity.Release#getReleaseName()Ljava/lang/String;*
-
-release2Entity.Release2getReleaseName()èå
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaP	 P(D
-%2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
-
-%0java.lang.String*
-
-%1java.lang.String2equals(Ljava/lang/Object;)"i
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaP P(E
-
-%2boolean:
-release1Entity.Release:
-release2Entity.ReleaseB
-Entity.Release
+0entity.ReleaseFile#getChurn()Ljava/lang/Integer;Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java~ ~("1*ü
+1Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java	 (¡
+ž
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java	 (
+%0java.lang.Integer"__id*!*
+entity.ReleaseFile"
+churn"w
+Z
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java (
+
+%0java.lang.IntegerB
+entity.ReleaseFile

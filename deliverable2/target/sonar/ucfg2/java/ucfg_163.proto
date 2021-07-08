@@ -1,16 +1,9 @@
 
--Entity.Changes#getNewPath()Ljava/lang/String;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java/ /("1*ì
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java0	 0(š
-—
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java0	 0(
-%0java.lang.String"__id**
-Entity.Changes"	
-newPath"r
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java0 0(
-
-%0java.lang.StringB
-Entity.Changes
+)entity.ModelMetrics#getTrainingPercent()D[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.javaC C(!"1*Ç
+1[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.javaD	 D("e
+[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.javaD D(
+""B
+entity.ModelMetrics

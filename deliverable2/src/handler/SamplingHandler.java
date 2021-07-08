@@ -10,6 +10,10 @@ import weka.filters.supervised.instance.SpreadSubsample;
 
 public class SamplingHandler {
 
+	private SamplingHandler() {
+		throw new IllegalStateException("Handler class");
+	}
+
 	public static Resample oversampling(Instances trainSet) throws SecurityException, IOException {
 		Resample resample = null;
 		

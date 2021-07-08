@@ -1,70 +1,17 @@
 
-BEntity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaa a("5*ç
-2V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
- c(É
-Ä
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
- c(
-rfEntity.ReleaseFile"__id*
-""°
-û
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac
- c(
-rfEntity.ReleaseFile"
-__arrayGet*
-
-%0java.util.List*
-""*
-4
-1*Ω
-3V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javae e("`
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javaf	 f(
-""*‡
-4V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
- d( «
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
- d(
-%1Entity.Changes".Entity.ReleaseFile#getChange()LEntity/Changes;*
-
-rfEntity.ReleaseFile2getChange()¿Ω
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
- d(#
-%2java.util.List")Entity.Changes#getPaths()Ljava/util/List;*
-
-%1Entity.Changes2
-getPaths()ÍÁ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javad
- d(2
-%3boolean",java.util.List#contains(Ljava/lang/Object;)Z*
-
-%2java.util.List*
-
-pathjava.lang.String2contains(Ljava/lang/Object;)*
-2
-3*Ä
-5V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac c(ù
-ö
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javac c(,
-%0java.util.List"__id*$*"
-Entity.Release"
-releaseFiles*
-2*Ω
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javai i("`
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Release.javai i(
-"":
-pathjava.lang.StringB
-Entity.Release
+3entity.ReleaseFile#getMaxChurn()Ljava/lang/Integer;\
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaç ç("1*Ö
+1\
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaé	 é(¶
+£
+\
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaé	 é(
+%0java.lang.Integer"__id*$*"
+entity.ReleaseFile"
+
+maxChurn"y
+\
+P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaé é(
+
+%0java.lang.IntegerB
+entity.ReleaseFile

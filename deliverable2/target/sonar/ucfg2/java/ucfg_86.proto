@@ -1,17 +1,16 @@
 
-5Entity.ReleaseFile#getLocTouched()Ljava/lang/Integer;\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.java› ›("1*‡
-1\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaœ	 œ(¨
-¥
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaœ	 œ(
-%0java.lang.Integer"__id*&*$
-Entity.ReleaseFile"
-
-locTouched"y
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaœ œ(
-
-%0java.lang.IntegerB
-Entity.ReleaseFile
+2entity.Ticket#getJSONObject()Lorg/json/JSONObject;U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java> >( "1*î
+1U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java?	 ?(›
+˜
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java?	 ?(
+%0org.json.JSONObject"__id**
+entity.Ticket"	
+jsonObj"t
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java? ?(
+
+%0org.json.JSONObjectB
+entity.Ticket

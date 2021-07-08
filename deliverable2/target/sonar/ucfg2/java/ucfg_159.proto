@@ -1,16 +1,16 @@
 
-JEntity.Changes#getChangeType()Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java ( "1* 
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java	 (³
-°
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java	 (0
-%0*org.eclipse.jgit.diff.DiffEntry$ChangeType"__id**
-Entity.Changes"
-change"Œ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Changes.java (2
-0
-%0*org.eclipse.jgit.diff.DiffEntry$ChangeTypeB
-Entity.Changes
+4entity.ModelMetrics#getBalancing()Ljava/lang/String;[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.java5 5("1*‚
+1[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.java6	 6(¦
+£
+[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.java6	 6(
+%0java.lang.String"__id*&*$
+entity.ModelMetrics"
+	balancing"w
+[
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ModelMetrics.java6 6(
+
+%0java.lang.StringB
+entity.ModelMetrics

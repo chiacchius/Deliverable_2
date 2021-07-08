@@ -1,9 +1,103 @@
 
-Entity.ModelMetrics#getTp()I[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.javaK K("1*«
-1[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.javaL	 L("e
-[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.javaL L(
-""B
-Entity.ModelMetrics
+Lhandler.JiraHandler#readJsonFromUrl(Ljava/lang/String;)Lorg/json/JSONObject;]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaï ï()"7*‡
+2]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ
+ õ(-"|
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ
+ õ(-
+
+%9org.json.JSONObject*–
+3]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ õ(,íè
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ õ(
+%9org.json.JSONObject"org.json.JSONObject—
+Œ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ õ(,
+%10"/org.json.JSONObject#<init>(Ljava/lang/String;)V*
+
+%9org.json.JSONObject*
+
+%8java.lang.String*
+2*á
+4]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò ò(_¶
+£
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò ò(_
+rdjava.io.BufferedReader"__id*
+
+%6java.io.BufferedReaderÙ
+Ò
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaõ  õ(+
+%8java.lang.String"?handler.JiraHandler#readAll(Ljava/io/Reader;)Ljava/lang/String;*"
+handler.JiraHandler*
+
+rdjava.io.BufferedReader*
+3*‚
+5]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò ò(_òï
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò ò(,
+%6java.io.BufferedReader"java.io.BufferedReader›
+⁄
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò ò(_
+%7"0java.io.BufferedReader#<init>(Ljava/io/Reader;)V*
+
+%6java.io.BufferedReader*!
+
+%4java.io.InputStreamReader*
+4*º
+6]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaòC ò(Eê
+ç
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaòG ò(]
+%3java.nio.charset.Charset"__id*
+""ûõ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò1 ò(B
+%4java.io.InputStreamReader"java.io.InputStreamReaderû
+õ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javaò- ò(^
+%5"Rjava.io.InputStreamReader#<init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V*!
+
+%4java.io.InputStreamReader*
+
+isjava.io.InputStream* 
+
+%3java.nio.charset.Charset*
+5*´
+7]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javañ  ñ(#ÑÅ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javañ ñ(
+%0java.net.URL"java.net.URL√
+¿
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javañ ñ($
+%1"(java.net.URL#<init>(Ljava/lang/String;)V*
+
+%0java.net.URL*
+
+urljava.lang.String—Œ
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javañ ñ(1
+%2java.io.InputStream".java.net.URL#openStream()Ljava/io/InputStream;*
+
+%0java.net.URL2openStream()†
+ù
+]
+Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/JiraHandler.javañ ñ(2
+isjava.io.InputStream"__id*
+
+%2java.io.InputStream*
+6:
+urljava.lang.StringB"
+handler.JiraHandler

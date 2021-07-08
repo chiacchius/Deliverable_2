@@ -1,16 +1,62 @@
 
-4Entity.Ticket#getCreationDate()Ljava/time/LocalDate;U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java6 6(!"1*Û
-1U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7	 7(†
-ù
-U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7	 7(
-%0java.time.LocalDate"__id*#*!
-Entity.Ticket"
-creationDate"t
-U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/Ticket.java7 7(
+:handler.SamplingHandler#getBugsNum(Lweka/core/Instances;)I_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javaY Y("6*≠
+4_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java^ ^(µ
+≤
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java^ ^(
+%4weka.core.Instance"
+__arrayGet*!
+
+trainSetweka.core.Instances*
+""√¿
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java^ ^(1	
+%5int"!weka.core.Instances#classIndex()I*!
+
+trainSetweka.core.Instances2classIndex()√¿
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java^ ^(2
+%6double"weka.core.Instance#value(I)D*
+
+%4weka.core.Instance*
+	
+%5int2value(I)*
+5*¶
+5_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java] ](∑¥
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java] ]($	
+%3int"weka.core.Instances#size()I*!
+
+trainSetweka.core.Instances2size()*
+4
+1*ò
+6_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javaZ Z(…∆
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java[( [(@	
+%0int"$weka.core.Instances#numAttributes()I*!
+
+trainSetweka.core.Instances2numAttributes()ÔÏ
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java[ [(E
+%1weka.core.Attribute"5weka.core.Instances#attribute(I)Lweka/core/Attribute;*!
+
+trainSetweka.core.Instances*
+""2attribute(I)ÓÎ
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java[ [(Y	
+%2int"5weka.core.Attribute#indexOfValue(Ljava/lang/String;)I*
 
-%0java.time.LocalDateB
-Entity.Ticket
+%1weka.core.Attribute*
+Yes2 indexOfValue(Ljava/lang/String;)*
+5*œ
+1_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javab	 b("i
+_
+U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javab b(
+"":
+trainSetweka.core.InstancesB"
+handler.SamplingHandler

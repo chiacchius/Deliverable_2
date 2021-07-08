@@ -1,9 +1,33 @@
 
- Entity.ModelMetrics#getRecall()D[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java_ _("1*Ç
-1[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java`	 `("e
-[
-Q/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ModelMetrics.java` `(
-""B
-Entity.ModelMetrics
+yhandler.GitHubHandler#findReleaseFiles(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;)Ljava/util/List;]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/GitHubHandler.java>! >(1"1*Ù
+1]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/GitHubHandler.javaC C(¯
+¬
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/GitHubHandler.javaC C(/
+%0java.util.List"[handler.GitHubHandler#associateLastCommit(Ljava/util/List;Ljava/util/List;)Ljava/util/List;*"
+handler.GitHubHandler*
+
+commitsjava.util.List* 
+
+projReleasesjava.util.ListÉ
+Æ
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/GitHubHandler.javaF F(.
+%1java.util.List"ahandler.GitHubHandler#getFiles(Ljava/util/List;Lorg/eclipse/jgit/lib/Repository;)Ljava/util/List;*"
+handler.GitHubHandler* 
+
+projReleasesjava.util.List*/
+-
+
+repositoryorg.eclipse.jgit.lib.Repository"w
+]
+S/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/GitHubHandler.javaF F(/
+
+%1java.util.List:-
+
+repositoryorg.eclipse.jgit.lib.Repository:
+projReleasesjava.util.List:
+commitsjava.util.ListB"
+handler.GitHubHandler

@@ -1,17 +1,16 @@
 
-3Entity.ReleaseFile#getAvgChurn()Ljava/lang/Integer;\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaë ë("1*Ö
-1\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí	 í(¶
-£
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí	 í(
-%0java.lang.Integer"__id*$*"
-Entity.ReleaseFile"
-
-avgChurn"y
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaí í(
-
-%0java.lang.IntegerB
-Entity.ReleaseFile
+4entity.Ticket#getCreationDate()Ljava/time/LocalDate;U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java6 6(!"1*Û
+1U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java7	 7(†
+ù
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java7	 7(
+%0java.time.LocalDate"__id*#*!
+entity.Ticket"
+creationDate"t
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java7 7(
+
+%0java.time.LocalDateB
+entity.Ticket

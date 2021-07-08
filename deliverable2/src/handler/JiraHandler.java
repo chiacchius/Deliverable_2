@@ -12,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 import java.util.Collections;
-import java.util.Comparator;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import org.json.JSONException;
@@ -64,12 +63,8 @@ public class JiraHandler {
 		            }
 		         }
 		         // order releases by date
-		         Collections.sort(releases, new Comparator<LocalDateTime>(){
-		            //@Override
-		            public int compare(LocalDateTime o1, LocalDateTime o2) {
-		                return o1.compareTo(o2);
-		            }
-		         });
+				 //@Override
+		         Collections.sort(releases, (o1, o2) -> o1.compareTo(o2));
 		         if (releases.size() < 6)
 		            return Collections.emptyList();
 		         
@@ -89,11 +84,13 @@ public class JiraHandler {
 	
 	
 	
-	public static List<Ticket> getTickets(String projectName, List<Release> projReleases) throws IOException, JSONException{
+	public static List<Ticket> getTickets(String projectName) throws IOException, JSONException{
 		
 		List<Ticket> tickets = new ArrayList<>();
 		
-		 Integer j = 0, i = 0, total = 1;
+		 Integer j = 0;
+		 Integer i = 0;
+		 Integer total = 1;
 	      //Get JSON API for closed bugs w/ AV in the project
 	      do {
 	         //Only gets a max of 1000 at a time, so must do this multiple times if bugs >1000

@@ -1,17 +1,16 @@
 
-3Entity.ReleaseFile#getMaxChurn()Ljava/lang/Integer;\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaç ç("1*Ö
-1\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé	 é(¶
-£
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé	 é(
-%0java.lang.Integer"__id*$*"
-Entity.ReleaseFile"
-
-maxChurn"y
-\
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Entity/ReleaseFile.javaé é(
-
-%0java.lang.IntegerB
-Entity.ReleaseFile
+.entity.Ticket#getTicketKey()Ljava/lang/String;U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java2 2("1*‰
+1U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java3	 3(î
+ë
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java3	 3(
+%0java.lang.String"__id**
+entity.Ticket"
+key"q
+U
+K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java3 3(
+
+%0java.lang.StringB
+entity.Ticket

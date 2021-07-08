@@ -9,6 +9,8 @@ import entity.ModelMetrics;
 import entity.Walk;
 import handler.FilterHandler;
 import handler.SamplingHandler;
+import weka.classifiers.CostMatrix;
+import weka.classifiers.meta.CostSensitiveClassifier;
 import weka.filters.Filter;
 import weka.filters.supervised.instance.Resample;
 import weka.filters.supervised.instance.SpreadSubsample;
@@ -217,6 +219,9 @@ public class ControllerDeliverable2 {
 		
 	}
 
+	private boolean checkTrainSetValidity(Instances trainSet){
+		return trainSet.numAttributes() <= 1 || (trainSet.numAttributes() <= 2  && trainSet.attribute(0).name().equals("Version ID"));
+	}
 
 	private void chooseSampSelection(AbstractClassifier classifier, String classifierName, String featureName, Walk walk, Instances trainSet, Instances testSet) throws Exception {
 		
@@ -230,7 +235,7 @@ public class ControllerDeliverable2 {
 		for (int i=0; i<samplings.size(); i++) {
 			
 			
-			if (trainSet.numAttributes() <= 1 || (trainSet.numAttributes() <= 2  && trainSet.attribute(0).name().equals("Version ID"))) {
+			if (checkTrainSetValidity(trainSet)) {
 				
 				break;
 			}
@@ -312,10 +317,8 @@ public class ControllerDeliverable2 {
 			
 			
 			Instances[] dataset = {trainSet, testSet};
-			
-			evaluate(classifier, filteredClassifier,
-					classifierName, featureName, samplings.get(i), walk, dataset);
-			
+
+			chooseSensitive(classifier, filteredClassifier, classifierName, featureName, samplings.get(i), walk, dataset);
 			
 		}
 		
@@ -323,68 +326,150 @@ public class ControllerDeliverable2 {
 		
 	}
 
+	private void chooseSensitive(AbstractClassifier classifier, FilteredClassifier filteredClassifier, String classifierName, String featureName, String sampling, Walk walk, Instances[] dataset) throws IOException {
 
-	private void evaluate(AbstractClassifier classifier, FilteredClassifier filteredClassifier, String classifierName,
-			String featureName, String sampling, Walk walk, Instances[] dataset) throws SecurityException, IOException {
+		List<String> sensitives = new ArrayList<>();
+
+		sensitives.add("No sensitive");
+		sensitives.add("Sensitive threshold");
+		sensitives.add("Sensitive learning");
+
+		for (int i=0; i<sensitives.size(); i++) {
+
+			CostSensitiveClassifier costSensitiveClassifier = null;
+
+
+			switch (sensitives.get(i)){
+
+				case "No sensitive":
+
+					break;
+
+				case "Sensitive threshold":
+					costSensitiveClassifier = new CostSensitiveClassifier();
+
+					if (filteredClassifier==null){
+						costSensitiveClassifier.setClassifier(classifier);
+					}
+					else costSensitiveClassifier.setClassifier(filteredClassifier);
+
+					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10));
+					costSensitiveClassifier.setMinimizeExpectedCost(false);
+
+				break;
+
+				case "Sensitive learning":
+					costSensitiveClassifier = new CostSensitiveClassifier();
+					if (filteredClassifier==null){
+						costSensitiveClassifier.setClassifier(classifier);
+					}
+					else costSensitiveClassifier.setClassifier(filteredClassifier);
+
+					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10));
+					costSensitiveClassifier.setMinimizeExpectedCost(true);
+
+				break;
+
+				default:	ProjectLogger.getSingletonInstance().saveMess("[X] Error in the sensitive selection");
+				break;
+			}
+
+			String[] attributes = {classifierName, sampling, featureName, sensitives.get(i)}; //to reduce complexity
+			evaluate(classifier, filteredClassifier, costSensitiveClassifier, attributes, walk, dataset);
+
+		}
+
+	}
+
+
+
+
+	private void evaluate(AbstractClassifier classifier, FilteredClassifier filteredClassifier, CostSensitiveClassifier costSensitiveClassifier, String[] attributes, Walk walk, Instances[] dataset) throws SecurityException, IOException {
 
 		Instances trainSet = dataset[0];
 		Instances testSet = dataset[1];
 		
 		Evaluation evaluation = null; 
-		try { evaluation = new Evaluation(testSet); }
-		catch 
-			(Exception e) { ProjectLogger.getSingletonInstance().saveMess("Error in initializing the Evaluator"); 
-			System.exit(1);
-		}
+
 		
 		int classIndex = trainSet.attribute(trainSet.numAttributes() - 1).indexOfValue("Yes");
-		
-		if(filteredClassifier != null)
-		{
-			
-			try 
-			{ 
 
-				filteredClassifier.buildClassifier(trainSet); 
-				evaluation.evaluateModel(filteredClassifier, testSet);
-				
-				
-				
-				
-				
+
+		if (costSensitiveClassifier!=null){
+			try
+			{
+
+				costSensitiveClassifier.buildClassifier(trainSet);
+				evaluation = new Evaluation(testSet, costSensitiveClassifier.getCostMatrix());
+
+				evaluation.evaluateModel(costSensitiveClassifier, testSet);
+
+
+
+
+
 			}
-			catch (Exception e) { 
-				
-				ProjectLogger.getSingletonInstance().saveMess("Error in the build of the filter classifier"); 
+			catch (Exception e) {
+
+				ProjectLogger.getSingletonInstance().saveMess("Error in the build of the cost sensitive classifier");
 				System.exit(1);
-				
+
 			}
+
+
 		}
-		
-		
-		else 
-		{
-			
-			try 
-			{ 
-				classifier.buildClassifier(trainSet); 
-				
-				evaluation.evaluateModel(classifier, testSet);
-				
-				
+		else if (filteredClassifier != null){
+
+
+
+				try
+				{
+
+					evaluation = new Evaluation(testSet);
+
+					filteredClassifier.buildClassifier(trainSet);
+					evaluation.evaluateModel(filteredClassifier, testSet);
+
+
+
+				}
+				catch (Exception e) {
+
+					ProjectLogger.getSingletonInstance().saveMess("Error in the build of the filter classifier");
+					System.exit(1);
+
+				}
 			}
-			catch (Exception e) { 
-				ProjectLogger.getSingletonInstance().saveMess("Failed to build unfiltered classifier"); 
-		
-				System.exit(1);
-				
-			}
-		
+
+
+			else
+			{
+
+				try
+				{
+
+					evaluation = new Evaluation(testSet);
+
+
+					classifier.buildClassifier(trainSet);
+
+					evaluation.evaluateModel(classifier, testSet);
+
+
+				}
+				catch (Exception e) {
+					ProjectLogger.getSingletonInstance().saveMess("Failed to build unfiltered classifier");
+
+					System.exit(1);
+
+				}
+
+
 		}
 		
 		if(!Double.isNaN(evaluation.precision(classIndex)) && !Double.isNaN(evaluation.recall(classIndex)) && !Double.isNaN(evaluation.areaUnderROC(classIndex)) &&!Double.isNaN(evaluation.kappa())) {
 			
-			String[] attributes = {classifierName, sampling, featureName};
+
 			double[] percents = {walk.getPercentageTrain(), walk.getPercentageBugsTrain() , walk.getPercentageBugsTest() };
 			int[] trueFalsePositiveNegative = {(int) evaluation.numTruePositives(classIndex), (int) evaluation.numTrueNegatives(classIndex), 
 					(int) evaluation.numFalsePositives(classIndex), (int) evaluation.numFalseNegatives(classIndex)};
@@ -466,6 +551,20 @@ public class ControllerDeliverable2 {
 	    }
 		
 	}
-	
+
+
+	private CostMatrix createCostMatrix(double weightFalsePositive, double weightFalseNegative) {
+
+		CostMatrix costMatrix = new CostMatrix(2);
+		costMatrix.setCell(0, 0, 0.0);
+		costMatrix.setCell(1, 0, weightFalsePositive);
+		costMatrix.setCell(0, 1, weightFalseNegative);
+		costMatrix.setCell(1, 1, 0.0);
+		return costMatrix;
+
+
+	}
+
+
 
 }

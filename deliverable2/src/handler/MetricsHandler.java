@@ -13,7 +13,6 @@ import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
 import org.eclipse.jgit.diff.Edit;
 import org.eclipse.jgit.diff.RawTextComparator;
-import org.eclipse.jgit.errors.MissingObjectException;
 import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -57,7 +56,7 @@ public class MetricsHandler {
 		}
 	}
 
-	public static void retrieveAllMetrics(Repository repository, List<RevCommit> commits, List<Ticket> projTickets, List<Release> projReleases) throws IOException {
+	public static void retrieveAllMetrics(Repository repository, List<Release> projReleases) throws IOException {
 		
 		RevCommit head = null;
 		try( RevWalk revWalk = new RevWalk( repository ) ){
@@ -75,7 +74,6 @@ public class MetricsHandler {
 				List<DiffEntry> diffEntries = new ArrayList<>();
 				diffEntries = df.scan(parent.getTree(), head.getTree());
 				LocalDateTime ldt = Instant.ofEpochSecond( head.getCommitTime()).atZone(ZoneId.of("UTC")).toLocalDateTime();
-				ReleaseHandler releaseController = new ReleaseHandler();
 				Release rel = ReleaseHandler.findReleaseFromLdt( ldt, projReleases);
 				
 				if( rel == null ) {
@@ -86,24 +84,15 @@ public class MetricsHandler {
 				
 				
 				for(DiffEntry diff : diffEntries){
-					
+
+					ReleaseFile rf=null;
 					//control if '.java' file
-					if ( diff.getNewPath().contains(".java") || diff.getOldPath().contains(".java") ) {
+					if ( (diff.getNewPath().contains(".java") || diff.getOldPath().contains(".java")) && findReleaseFileByPath(rel, diff.getNewPath(), diff.getOldPath())!=null) {
 						
 						
-						ReleaseFile rf = null;
+						rf = findReleaseFileByPath(rel, diff.getNewPath(), diff.getOldPath());
 						
-						
-						if( rel.containsFile(diff.getNewPath() )  ) {
-							rf = rel.getReleaseFileByName(diff.getNewPath());
-							
-						}else if( rel.containsFile(diff.getOldPath() )){
-							rf = rel.getReleaseFileByName(diff.getOldPath());
-							
-							
-						}else {
-							continue;
-						}
+
 						
 						
 						int locTouched = 0;
@@ -150,16 +139,22 @@ public class MetricsHandler {
 		
 		
 	}
-	
-	
 
-	
-	
-	
-	
-	
+	private static ReleaseFile findReleaseFileByPath(Release rel, String newPath, String oldPath) {
+		ReleaseFile rf = null;
+		if( Boolean.TRUE.equals(rel.containsFile(newPath ) ) ) {
+			rf = rel.getReleaseFileByName(newPath);
 
-	public static Integer locCalculator(Repository repository, TreeWalk treeWalk) throws MissingObjectException, IOException {
+		}else if( Boolean.TRUE.equals(rel.containsFile(oldPath))){
+			rf = rel.getReleaseFileByName(oldPath);
+
+
+		}
+		return rf;
+	}
+
+
+	public static Integer locCalculator(Repository repository, TreeWalk treeWalk) throws IOException {
 		ObjectLoader loader = repository.open(treeWalk.getObjectId(0));
 		ByteArrayOutputStream output = new ByteArrayOutputStream();
 		

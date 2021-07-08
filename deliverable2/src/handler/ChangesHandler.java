@@ -47,13 +47,13 @@ public class ChangesHandler {
 				String oldPath = entry.getOldPath();
 				String newPath = entry.getNewPath();
 				
-				if (oldPath.contains(".java") || newPath.contains(".java")) {
+				if ((oldPath.contains(".java") || newPath.contains(".java")) && entry.getChangeType().toString().equals("RENAME")) {
 				
-					if (entry.getChangeType().toString().equals("RENAME")) {
+
 						createOrUpdateChanges(changes, oldPath, newPath);
 						
 						
-					}
+
 
 					
 					

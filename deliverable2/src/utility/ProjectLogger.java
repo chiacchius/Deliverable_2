@@ -8,6 +8,8 @@ import java.util.logging.SimpleFormatter;
 
 public class ProjectLogger {
 
+
+
 	private static final String PATH = "./logFile.log";
 	
 	private static ProjectLogger instance = null;

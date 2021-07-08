@@ -7,6 +7,10 @@ import entity.Release;
 
 public class ReleaseHandler {
 
+
+	private ReleaseHandler() {
+		throw new IllegalStateException("Handler class");
+	}
 	
 	
 	public static Release findRelease(int id, List<Release> projReleases) {

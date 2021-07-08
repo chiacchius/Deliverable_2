@@ -1,29 +1,16 @@
 
-hController.ControllerDeliverable1#checkIfIvIsCorrect(LEntity/Release;LEntity/Ticket;)Ljava/lang/Boolean;k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaÏ Ï(*"3*¦
-3k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaÑ Ñ(îë
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaÒ Ò(
-%0java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
-
-releaseEntity.Release2getReleaseIndex()ÑÎ
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaÒ" Ò(0
-%1Entity.Release"%Entity.Ticket#getOv()LEntity/Release;*
-
-ticketEntity.Ticket2getOv()éæ
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaÒ" Ò(B
-%2java.lang.Integer"3Entity.Release#getReleaseIndex()Ljava/lang/Integer;*
-
-%1Entity.Release2getReleaseIndex()*
-1*ç
-1k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaØ	 Ø("u
-k
-_/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/Controller/ControllerDeliverable1.javaØ Ø(
-"":
-releaseEntity.Release:
-ticketEntity.TicketB%"#
-!Controller.ControllerDeliverable1
+8entity.Release#getReleaseDate()Ljava/time/LocalDateTime;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java2 2($"1*÷
+1V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3	 3(ž
+›
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3	 3(
+%0java.time.LocalDateTime"__id**
+entity.Release"
+date"y
+V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3 3(
+
+%0java.time.LocalDateTimeB
+entity.Release

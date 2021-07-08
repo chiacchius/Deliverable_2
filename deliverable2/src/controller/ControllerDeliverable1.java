@@ -57,7 +57,7 @@ public class ControllerDeliverable1 {
 		
 		
 		
-		String PROJNAME = projectName;
+		String projName = projectName;
 		Repository repository;
 	    
 	    List<Release> projReleases;
@@ -67,7 +67,7 @@ public class ControllerDeliverable1 {
 
 	    ProjectLogger.getSingletonInstance().saveMess(" [*] Starting retrieve data for " + projectName);
 
-		Git git= GitHubHandler.cloneProjectFromGitHub(path, PROJNAME);
+		Git git= GitHubHandler.cloneProjectFromGitHub(path, projName);
 		repository  = git.getRepository();
 		
 		
@@ -75,12 +75,12 @@ public class ControllerDeliverable1 {
 		
     	
     	//retrieve all releases of the project
-    	projReleases = JiraHandler.getReleases(PROJNAME);
+    	projReleases = JiraHandler.getReleases(projName);
     	
      	
     	
     	//retrieve all the tickets
-    	projTickets = JiraHandler.getTickets(PROJNAME, projReleases);
+    	projTickets = JiraHandler.getTickets(projName);
     	
     	
     	//retrieve all the file .java of a specific release
@@ -99,7 +99,7 @@ public class ControllerDeliverable1 {
     	
     	
     	ChangesHandler.getChanges(repository, commits, files, projReleases);
-    	MetricsHandler.retrieveAllMetrics(repository, commits, projTickets, projReleases);  //retrieve all metrics
+    	MetricsHandler.retrieveAllMetrics(repository, projReleases);  //retrieve all metrics
     	
     	
     	setFilesToTicket(projTickets, repository); //take all changed file for every ticket
@@ -122,7 +122,7 @@ public class ControllerDeliverable1 {
     	
     	
 
-    	this.csvFile = CsvWriter.writeFirstCsv(PROJNAME, projReleases);
+    	this.csvFile = CsvWriter.writeFirstCsv(projName, projReleases);
     	
     	ProjectLogger.getSingletonInstance().saveMess(" [*] Exiting for " + projectName);
 
