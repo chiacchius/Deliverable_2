@@ -494,7 +494,6 @@ public class ControllerDeliverable2 {
 		
 		//delete version name and filename attributes because they are dangerous for the data analysis
 		
-		this.dataSet.deleteAttributeAt(2);
 		this.dataSet.deleteAttributeAt(1);
 		
 		
@@ -515,6 +514,7 @@ public class ControllerDeliverable2 {
 			
 			
 		}
+
 		catch (Exception e) {
 			
 			ProjectLogger.getSingletonInstance().saveMess("[X]Error in the dataset normalization");
@@ -538,9 +538,8 @@ public class ControllerDeliverable2 {
 	    	System.exit(1);
 	    }
 		ArffSaver arffSav = new ArffSaver();
-		
 		arffSav.setInstances(this.dataSet);
-		
+
 		try {
 	    	arffSav.setFile(new File(projectName + "Metrics.arff"));
 	    	arffSav.writeBatch(); 
@@ -557,8 +556,8 @@ public class ControllerDeliverable2 {
 
 		CostMatrix costMatrix = new CostMatrix(2);
 		costMatrix.setCell(0, 0, 0.0);
-		costMatrix.setCell(1, 0, weightFalsePositive);
-		costMatrix.setCell(0, 1, weightFalseNegative);
+		costMatrix.setCell(1, 0, weightFalseNegative);
+		costMatrix.setCell(0, 1, weightFalsePositive);
 		costMatrix.setCell(1, 1, 0.0);
 		return costMatrix;
 

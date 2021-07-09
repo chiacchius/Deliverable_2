@@ -28,7 +28,7 @@ public class CsvWriter {
 
 		}
 		 try {
-	            fileWriter.append("Version ID,Version Name,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
+	            fileWriter.append("Version ID,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");
 	            for ( int i = 0; i < releases.size()/2; i++) {
 		           	Release release = releases.get(i);
@@ -36,8 +36,6 @@ public class CsvWriter {
 		               
 		               
 		               fileWriter.append(release.getReleaseIndex().toString());
-		               fileWriter.append(",");
-		               fileWriter.append(release.getReleaseName());
 		               fileWriter.append(",");
 		               fileWriter.append(release.getReleaseFiles().get(j).getFilePath());
 		               fileWriter.append(",");

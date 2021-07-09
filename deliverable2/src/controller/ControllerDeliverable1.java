@@ -474,40 +474,6 @@ public class ControllerDeliverable1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private static Double proportion(Ticket tick, List<Ticket> projTickets, Integer onePercent) {
 		
 		List<Double> propList = new ArrayList<>();
