@@ -15,13 +15,14 @@ getClass(),java.lang.Object#getClass()Ljava/lang/Class;5
 notifyAll()java.lang.Object#notifyAll()V"
 wait()java.lang.Object#wait()V*
 
-hashCode()java.lang.Object#hashCode()Iþ
+hashCode()java.lang.Object#hashCode()I©
 handler.MetricsHandlerjava.lang.Object¦
 EretrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)]handler.MetricsHandler#retrieveAllMetrics(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;)V,
 <init>() handler.MetricsHandler#<init>()VÖ
 TlocCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)~handler.MetricsHandler#locCalculator(Lorg/eclipse/jgit/lib/Repository;Lorg/eclipse/jgit/treewalk/TreeWalk;)Ljava/lang/Integer;Å
 KfindReleaseFileByPath(Lentity/Release;Ljava/lang/String;Ljava/lang/String;)vhandler.MetricsHandler#findReleaseFileByPath(Lentity/Release;Ljava/lang/String;Ljava/lang/String;)Lentity/ReleaseFile;Z
-checkBugginess(Lentity/Ticket;)7handler.MetricsHandler#checkBugginess(Lentity/Ticket;)V(
+checkBugginess(Lentity/Ticket;)7handler.MetricsHandler#checkBugginess(Lentity/Ticket;)V¨
+FsetMetrics(Lentity/ReleaseFile;IILorg/eclipse/jgit/revwalk/RevCommit;)^handler.MetricsHandler#setMetrics(Lentity/ReleaseFile;IILorg/eclipse/jgit/revwalk/RevCommit;)V(
 java.io.Serializablejava.lang.Object›
 java.lang.Throwablejava.lang.Objectjava.io.Serializable;
 printStackTrace()&java.lang.Throwable#printStackTrace()V}
@@ -1249,19 +1250,19 @@ getBytes().org.eclipse.jgit.lib.ObjectLoader#getBytes()[B9
 nextElement()9java.util.StringTokenizer#nextElement()Ljava/lang/Object;=
 hasMoreTokens()*java.util.StringTokenizer#hasMoreTokens()ZA
 hasMoreElements(),java.util.StringTokenizer#hasMoreElements()ZA
-skipDelimiters(I),java.util.StringTokenizer#skipDelimiters(I)I‡
+skipDelimiters(I),java.util.StringTokenizer#skipDelimiters(I)I²
 !controller.ControllerDeliverable2java.lang.Objectß
 \chooseFeatureSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Lentity/Walk;)controller.ControllerDeliverable2#chooseFeatureSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Lentity/Walk;)V
 ,checkTrainSetValidity(Lweka/core/Instances;)Ocontroller.ControllerDeliverable2#checkTrainSetValidity(Lweka/core/Instances;)Z7
 <init>()+controller.ControllerDeliverable2#<init>()V?
 preProcess()/controller.ControllerDeliverable2#preProcess()V›
-¹chooseSensitive(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)Ücontroller.ControllerDeliverable2#chooseSensitive(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)Vk
-createCostMatrix(DD)Scontroller.ControllerDeliverable2#createCostMatrix(DD)Lweka/classifiers/CostMatrix;Ó
+¹chooseSensitive(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)Ücontroller.ControllerDeliverable2#chooseSensitive(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)VÓ
 •chooseSampSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;Lweka/core/Instances;Lweka/core/Instances;)¸controller.ControllerDeliverable2#chooseSampSelection(Lweka/classifiers/AbstractClassifier;Ljava/lang/String;Ljava/lang/String;Lentity/Walk;Lweka/core/Instances;Lweka/core/Instances;)V‹
 2getInstances(Ljava/lang/String;Ljava/lang/String;)Ucontroller.ControllerDeliverable2#getInstances(Ljava/lang/String;Ljava/lang/String;)V¥
 ¾evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Lweka/classifiers/meta/CostSensitiveClassifier;[Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)ácontroller.ControllerDeliverable2#evaluate(Lweka/classifiers/AbstractClassifier;Lweka/classifiers/meta/FilteredClassifier;Lweka/classifiers/meta/CostSensitiveClassifier;[Ljava/lang/String;Lentity/Walk;[Lweka/core/Instances;)Va
 walkEvaluation(Lentity/Walk;)@controller.ControllerDeliverable2#walkEvaluation(Lentity/Walk;)Vy
-)run(Ljava/lang/String;Ljava/lang/String;)Lcontroller.ControllerDeliverable2#run(Ljava/lang/String;Ljava/lang/String;)VŠ
+)run(Ljava/lang/String;Ljava/lang/String;)Lcontroller.ControllerDeliverable2#run(Ljava/lang/String;Ljava/lang/String;)V•
+)createCostMatrix(DDLweka/core/Instances;)hcontroller.ControllerDeliverable2#createCostMatrix(DDLweka/core/Instances;)Lweka/classifiers/CostMatrix;Š
 utility.ProjectLoggerjava.lang.Object+
 <init>()utility.ProjectLogger#<init>()V]
 getSingletonInstance()Cutility.ProjectLogger#getSingletonInstance()Lutility/ProjectLogger;S
@@ -3743,12 +3744,7 @@ setSeed(I)<weka.filters.supervised.instance.SpreadSubsample#setSeed(I)VF
 <init>(Ljava/lang/String;).java.io.FileWriter#<init>(Ljava/lang/String;)Vx
 0<init>(Ljava/io/File;Ljava/nio/charset/Charset;)Djava.io.FileWriter#<init>(Ljava/io/File;Ljava/nio/charset/Charset;)V€
 4<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)Hjava.io.FileWriter#<init>(Ljava/lang/String;Ljava/nio/charset/Charset;)VX
- <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Vò
-java.io.IOExceptionjava.lang.Exception)
-<init>()java.io.IOException#<init>()VM
-<init>(Ljava/lang/String;)/java.io.IOException#<init>(Ljava/lang/String;)Vw
-/<init>(Ljava/lang/String;Ljava/lang/Throwable;)Djava.io.IOException#<init>(Ljava/lang/String;Ljava/lang/Throwable;)VS
-<init>(Ljava/lang/Throwable;)2java.io.IOException#<init>(Ljava/lang/Throwable;)Vž
+ <init>(Ljava/io/FileDescriptor;)4java.io.FileWriter#<init>(Ljava/io/FileDescriptor;)Vž
 java.io.BufferedWriterjava.io.WriterL
 <init>(Ljava/io/Writer;)0java.io.BufferedWriter#<init>(Ljava/io/Writer;)VN
 <init>(Ljava/io/Writer;I)1java.io.BufferedWriter#<init>(Ljava/io/Writer;I)V*

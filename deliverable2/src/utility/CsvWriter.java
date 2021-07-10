@@ -18,16 +18,16 @@ public class CsvWriter {
 	
 	public static String writeFirstCsv(String projectName, List<Release> releases) throws IOException{
 		   
-		FileWriter fileWriter = null;
-		String outname = null;
-		try {
-			outname = projectName + "_metris.csv";
-			fileWriter = new FileWriter(outname);
+		//FileWriter fileWriter = null;
+		String outname = projectName + "_metris.csv";
+		/*try {
+
+
 		}catch (Exception e){
 			ProjectLogger.getSingletonInstance().saveMess("[X] Error in fileWriter creation\n");
 
-		}
-		 try {
+		}*/
+		 try(FileWriter fileWriter = new FileWriter(outname)) {
 	            fileWriter.append("Version ID,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");
 	            for ( int i = 0; i < releases.size()/2; i++) {
@@ -63,18 +63,11 @@ public class CsvWriter {
 		               fileWriter.append("\n");
 		            }
 	            }
+			    fileWriter.flush();
 
 	     } catch (Exception e) {
 	            ProjectLogger.getSingletonInstance().saveMess("Error in csv writer");
 	            e.printStackTrace();
-	     } finally {
-	            try {
-	               fileWriter.flush();
-	               fileWriter.close();
-	               
-	            } catch (IOException e) { ProjectLogger.getSingletonInstance().saveMess("Error while flushing/closing fileWriter !!!");
-	               e.printStackTrace();
-	            }
 	     }
 		 return outname;
 	}

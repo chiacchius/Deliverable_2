@@ -108,15 +108,18 @@ public class MetricsHandler {
 							
 					    }
 						
-						
-						locTouched = locAdded + locDeleted;
+
+						setMetrics(rf, locAdded, locDeleted, head);
+						/*locTouched = locAdded + locDeleted;
 						churn = locAdded - locDeleted;
-						rf.addLocAdded( Integer.valueOf(locAdded) );
-						rf.addLocTouched( Integer.valueOf(locTouched) );
-			            rf.addChurn( churn );
-			            rf.addAuthor( head.getAuthorIdent().getName());
-			            rf.setNumRev( rf.getNumRev() + 1);
-						
+
+						if (rf!=null) {
+							rf.addLocAdded(Integer.valueOf(locAdded));
+							rf.addLocTouched(Integer.valueOf(locTouched));
+							rf.addChurn(churn);
+							rf.addAuthor(head.getAuthorIdent().getName());
+							rf.setNumRev(rf.getNumRev() + 1);
+						}*/
 						
 						
 						
@@ -138,6 +141,19 @@ public class MetricsHandler {
 	    
 		
 		
+	}
+
+	private static void setMetrics(ReleaseFile rf, int locAdded, int locDeleted, RevCommit head) {
+		int locTouched = locAdded + locDeleted;
+		int churn = locAdded - locDeleted;
+
+		if (rf!=null) {
+			rf.addLocAdded(Integer.valueOf(locAdded));
+			rf.addLocTouched(Integer.valueOf(locTouched));
+			rf.addChurn(churn);
+			rf.addAuthor(head.getAuthorIdent().getName());
+			rf.setNumRev(rf.getNumRev() + 1);
+		}
 	}
 
 	private static ReleaseFile findReleaseFileByPath(Release rel, String newPath, String oldPath) {

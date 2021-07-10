@@ -353,7 +353,7 @@ public class ControllerDeliverable2 {
 					}
 					else costSensitiveClassifier.setClassifier(filteredClassifier);
 
-					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10));
+					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10, dataset[0]));
 					costSensitiveClassifier.setMinimizeExpectedCost(false);
 
 				break;
@@ -365,7 +365,7 @@ public class ControllerDeliverable2 {
 					}
 					else costSensitiveClassifier.setClassifier(filteredClassifier);
 
-					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10));
+					costSensitiveClassifier.setCostMatrix( createCostMatrix(1, 10, dataset[0]));
 					costSensitiveClassifier.setMinimizeExpectedCost(true);
 
 				break;
@@ -552,13 +552,26 @@ public class ControllerDeliverable2 {
 	}
 
 
-	private CostMatrix createCostMatrix(double weightFalsePositive, double weightFalseNegative) {
+	private CostMatrix createCostMatrix(double weightFalsePositive, double weightFalseNegative, Instances trainSet) {
 
 		CostMatrix costMatrix = new CostMatrix(2);
-		costMatrix.setCell(0, 0, 0.0);
-		costMatrix.setCell(1, 0, weightFalseNegative);
-		costMatrix.setCell(0, 1, weightFalsePositive);
-		costMatrix.setCell(1, 1, 0.0);
+		int classIndex = trainSet.attribute(trainSet.numAttributes() - 1).indexOfValue("Yes");
+
+		if (classIndex==0){
+			costMatrix.setCell(0, 0, 0.0);
+			costMatrix.setCell(0, 1, weightFalseNegative);
+			costMatrix.setCell(1, 0, weightFalsePositive);
+			costMatrix.setCell(1, 1, 0.0);
+		}
+		else if (classIndex==1){
+			costMatrix.setCell(0, 0, 0.0);
+			costMatrix.setCell(1, 0, weightFalseNegative);
+			costMatrix.setCell(0, 1, weightFalsePositive);
+			costMatrix.setCell(1, 1, 0.0);
+		}
+
+
+
 		return costMatrix;
 
 

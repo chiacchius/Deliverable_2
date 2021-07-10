@@ -1,16 +1,16 @@
 
-8entity.Release#getReleaseDate()Ljava/time/LocalDateTime;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java2 2($"1*÷
+1entity.Release#getReleaseName()Ljava/lang/String;V
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java. .("1*ð
 1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3	 3(ž
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java/	 /(ž
 ›
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3	 3(
-%0java.time.LocalDateTime"__id**
-entity.Release"
-date"y
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java/	 /(
+%0java.lang.String"__id*#*!
+entity.Release"
+releaseName"r
 V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java3 3(
-
-%0java.time.LocalDateTimeB
+L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java/ /(
+
+%0java.lang.StringB
 entity.Release
