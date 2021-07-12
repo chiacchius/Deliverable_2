@@ -1,0 +1,64 @@
+lug 12, 2021 10:08:08 AM utility.ProjectLogger saveMess
+INFO: deliverable1 start
+lug 12, 2021 10:08:08 AM utility.ProjectLogger saveMess
+INFO: starting deliverable 2
+lug 12, 2021 10:08:08 AM utility.ProjectLogger saveMess
+INFO:  [*] Starting retrieve data for BOOKKEEPER
+lug 12, 2021 10:08:15 AM utility.ProjectLogger saveMess
+INFO: files: 5708
+lug 12, 2021 10:08:43 AM utility.ProjectLogger saveMess
+INFO:  [*] Exiting for BOOKKEEPER
+lug 12, 2021 10:08:43 AM utility.ProjectLogger saveMess
+INFO: [*]Getting csv File: BOOKKEEPER_metris.csv and starting machine learning processing
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: arff file correctly created
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: last Walk7
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 1.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 2.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 3.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 4.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 5.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: *********************************
+The train set is up to the 6.0th release
+*********************************
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: classifier choose : Random Forest
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTrainSet null
+lug 12, 2021 10:08:44 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTestSet null
+lug 12, 2021 10:08:50 AM utility.ProjectLogger saveMess
+INFO: classifier choose : IBk
+lug 12, 2021 10:08:50 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTrainSet null
+lug 12, 2021 10:08:50 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTestSet null
+lug 12, 2021 10:08:52 AM utility.ProjectLogger saveMess
+INFO: classifier choose : Naive Bayes
+lug 12, 2021 10:08:52 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTrainSet null
+lug 12, 2021 10:08:52 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTestSet null
+lug 12, 2021 10:08:53 AM utility.ProjectLogger saveMess
+INFO: classifier choose : Random Forest
+lug 12, 2021 10:08:53 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTrainSet null
+lug 12, 2021 10:08:53 AM utility.ProjectLogger saveMess
+INFO: No selection filteredTestSet null

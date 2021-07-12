@@ -18,15 +18,8 @@ public class CsvWriter {
 	
 	public static String writeFirstCsv(String projectName, List<Release> releases) throws IOException{
 		   
-		//FileWriter fileWriter = null;
 		String outname = projectName + "_metris.csv";
-		/*try {
 
-
-		}catch (Exception e){
-			ProjectLogger.getSingletonInstance().saveMess("[X] Error in fileWriter creation\n");
-
-		}*/
 		 try(FileWriter fileWriter = new FileWriter(outname)) {
 	            fileWriter.append("Version ID,File,LOC,LOCAdded,AVGLocAdded,MaxLocAdded,LocTouched,Churn,maxChurn,avgChurn,NumAuthors,NunRev,Bugginess");
 	            fileWriter.append("\n");

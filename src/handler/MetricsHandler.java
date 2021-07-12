@@ -94,11 +94,10 @@ public class MetricsHandler {
 						
 
 						
-						
-						int locTouched = 0;
+
 						int locAdded = 0;
 						int locDeleted = 0;
-						int churn = 0;
+
 						
 						
 						
@@ -110,16 +109,6 @@ public class MetricsHandler {
 						
 
 						setMetrics(rf, locAdded, locDeleted, head);
-						/*locTouched = locAdded + locDeleted;
-						churn = locAdded - locDeleted;
-
-						if (rf!=null) {
-							rf.addLocAdded(Integer.valueOf(locAdded));
-							rf.addLocTouched(Integer.valueOf(locTouched));
-							rf.addChurn(churn);
-							rf.addAuthor(head.getAuthorIdent().getName());
-							rf.setNumRev(rf.getNumRev() + 1);
-						}*/
 						
 						
 						
