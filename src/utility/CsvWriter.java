@@ -123,6 +123,7 @@ public class CsvWriter {
 
 			ProjectLogger.getSingletonInstance().saveMess("Error in csv writer");
 		}
+		modelMetrics.clear();
 		
 		
 	}
