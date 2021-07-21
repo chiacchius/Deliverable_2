@@ -1,17 +1,17 @@
 
-/entity.Release#getNumFiles()Ljava/lang/Integer;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaV V("1*Ô
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaW	 W(ú
-ô
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaW	 W(
+/entity.Release#getNumFiles()Ljava/lang/Integer;I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaV V("1*»
+1I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaW	 W(è
+å
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaW	 W(
 %0java.lang.Integer"__id* *
 entity.Release"
 
-numFiles"s
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaW W(
+numFiles"f
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaW W(
 
 %0java.lang.IntegerB
 entity.Release

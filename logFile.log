@@ -1,952 +1,796 @@
-lug 14, 2021 6:36:05 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:03 AM utility.ProjectLogger saveMess
 INFO: deliverable1 start
-lug 14, 2021 6:36:05 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:03 AM utility.ProjectLogger saveMess
 INFO: starting deliverable 2
-lug 14, 2021 6:36:05 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:03 AM utility.ProjectLogger saveMess
 INFO:  [*] Starting retrieve data for BOOKKEEPER
-lug 14, 2021 6:36:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:08 AM utility.ProjectLogger saveMess
 INFO: files: 5708
-lug 14, 2021 6:36:22 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:19 AM utility.ProjectLogger saveMess
 INFO:  [*] Exiting for BOOKKEEPER
-lug 14, 2021 6:36:22 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:19 AM utility.ProjectLogger saveMess
 INFO: [*]Getting csv File: BOOKKEEPER_metris.csv and starting machine learning processing
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: arff file correctly created
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: last Walk7
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 1.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 2.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 3.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 4.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 5.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 6.0th release
 *********************************
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:20 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:27 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:25 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:36:27 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:27 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:28 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:26 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:36:28 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:26 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:28 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:26 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:29 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:27 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:36:29 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:27 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:29 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:27 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:34 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:36:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:34 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:34 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:39 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:36 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:36:39 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:36 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:39 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:36 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:40 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:37 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:36:40 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:37 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:40 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:37 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:42 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:40 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:48 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:48 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:49 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:50 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:50 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:36:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:51 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:36:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:51 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:36:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:51 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:36:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:52 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:55 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:37:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:56 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:06 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:57 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:58 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:59 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:59 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:22:59 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:13 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:15 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:15 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:37:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:37:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:00 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:37:35 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:18 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:41 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:22 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:37:41 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:22 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:37:41 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:22 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:37:51 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:37:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:32 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:37:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:32 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:37:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:32 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:37:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:35 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:38:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:39 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:38:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:39 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:38:00 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:39 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:38:21 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:59 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:38:21 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:59 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:38:21 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:23:59 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:38:30 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:07 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:38:30 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:07 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:38:30 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:07 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:38:30 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:07 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:38:30 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:07 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:38:33 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:10 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:38:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:15 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:38:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:15 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:38:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:15 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:47 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:39:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:47 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:47 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:57 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:39:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:57 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:24:57 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:05 AM utility.ProjectLogger saveMess
 INFO: deliverable1 start
-lug 14, 2021 6:39:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:05 AM utility.ProjectLogger saveMess
 INFO: starting deliverable 2
-lug 14, 2021 6:39:23 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:05 AM utility.ProjectLogger saveMess
 INFO:  [*] Starting retrieve data for ZOOKEEPER
-lug 14, 2021 6:39:29 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:10 AM utility.ProjectLogger saveMess
 INFO: files: 19953
-lug 14, 2021 6:39:44 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO:  [*] Exiting for ZOOKEEPER
-lug 14, 2021 6:39:44 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: [*]Getting csv File: ZOOKEEPER_metris.csv and starting machine learning processing
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: arff file correctly created
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: last Walk21
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 1.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 2.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 3.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 4.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 5.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 6.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 7.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 8.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 9.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 10.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 11.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 12.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 13.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 14.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 15.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 16.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 17.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 18.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 19.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: *********************************
 The train set is up to the 20.0th release
 *********************************
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:24 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:45 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:25 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:26 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:27 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:48 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:49 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:28 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:50 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:29 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:50 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:29 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:51 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:29 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:51 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:30 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:52 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:31 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:53 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:39:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:32 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:39:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:39:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:39:55 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:34 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:57 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:35 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:58 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:36 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:39:58 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:36 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:38 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:38 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:38 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:01 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:39 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:02 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:40 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:40 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:41 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:40:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:41 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:04 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:41 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:06 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:44 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:40:06 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:44 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:06 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:44 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:06 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:44 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:07 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:45 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:08 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:45 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:51 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:52 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:52 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:52 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:53 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:17 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:54 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:40:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:56 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:40:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:56 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:25:56 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:24 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:01 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:40:24 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:01 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:24 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:01 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:14 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:40:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:14 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:14 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:22 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:40:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:22 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:46 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:22 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:40:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:29 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:40:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:29 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:40:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:29 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:41:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:48 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:41:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:48 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:41:14 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:48 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:41:26 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:59 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:41:26 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:59 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:41:26 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:26:59 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:41:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:09 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:41:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:09 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:41:36 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:09 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:42:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:35 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:42:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:35 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:42:03 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:35 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:42:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:52 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:42:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:52 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:42:19 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:27:52 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:42:35 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:07 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:42:35 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:07 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:42:35 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:07 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:43:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:43 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:43:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:43 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:43:11 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:28:43 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:43:34 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:05 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:43:34 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:05 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:43:34 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:05 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:43:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:25 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:43:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:43:54 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:29:25 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:44:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:21 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:44:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:21 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:44:47 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:21 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:45:20 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:54 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:45:20 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:54 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:45:20 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:30:54 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:45:50 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:31:24 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:45:50 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:31:24 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:45:50 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:31:24 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:46:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:32:28 AM utility.ProjectLogger saveMess
 INFO: classifier choose : IBk
-lug 14, 2021 6:46:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:32:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:46:56 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:32:28 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:47:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:09 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Naive Bayes
-lug 14, 2021 6:47:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:09 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:47:38 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:09 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:48:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:47 AM utility.ProjectLogger saveMess
 INFO: classifier choose : Random Forest
-lug 14, 2021 6:48:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:47 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTrainSet null
-lug 14, 2021 6:48:16 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:47 AM utility.ProjectLogger saveMess
 INFO: No selection filteredTestSet null
-lug 14, 2021 6:48:26 PM utility.ProjectLogger saveMess
+lug 20, 2021 10:33:57 AM utility.ProjectLogger saveMess
 INFO: Invalid walk
-lug 14, 2021 6:49:36 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 6:49:36 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 6:49:36 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:19:25 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 14, 2021 8:19:25 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:19:25 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:20:39 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 14, 2021 8:20:39 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:20:39 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:27:46 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 8:27:46 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:27:46 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:28:52 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 14, 2021 8:28:52 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:28:52 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:29:51 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 14, 2021 8:29:51 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:29:51 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:31:47 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 8:31:47 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:31:47 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:33:07 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 14, 2021 8:33:07 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:33:07 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:34:23 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 14, 2021 8:34:23 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:34:23 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:36:43 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 8:36:43 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:36:43 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:38:18 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 14, 2021 8:38:18 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:38:18 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:39:52 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 14, 2021 8:39:52 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:39:52 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:42:38 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 8:42:38 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:42:38 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:44:32 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 14, 2021 8:44:32 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:44:32 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:46:24 PM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 14, 2021 8:46:24 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:46:24 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 14, 2021 8:49:29 PM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 14, 2021 8:49:29 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 14, 2021 8:49:29 PM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:24:06 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 15, 2021 9:24:06 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:24:06 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:26:29 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 15, 2021 9:26:29 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:26:29 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:30:13 AM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 15, 2021 9:30:13 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:30:13 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:34:10 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 15, 2021 9:34:10 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:34:10 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:38:14 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 15, 2021 9:38:14 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:38:14 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:45:53 AM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 15, 2021 9:45:53 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:45:53 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:50:49 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 15, 2021 9:50:49 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:50:49 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 9:54:54 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Random Forest
-lug 15, 2021 9:54:54 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 9:54:54 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 10:02:34 AM utility.ProjectLogger saveMess
-INFO: classifier choose : IBk
-lug 15, 2021 10:02:34 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 10:02:34 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null
-lug 15, 2021 10:08:02 AM utility.ProjectLogger saveMess
-INFO: classifier choose : Naive Bayes
-lug 15, 2021 10:08:02 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTrainSet null
-lug 15, 2021 10:08:02 AM utility.ProjectLogger saveMess
-INFO: No selection filteredTestSet null

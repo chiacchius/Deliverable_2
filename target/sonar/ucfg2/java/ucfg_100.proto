@@ -1,16 +1,16 @@
 
-3entity.Ticket#getNotProportion()Ljava/lang/Boolean;W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java† †( "1*ö
-1W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java‡	 ‡(¡
-ž
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java‡	 ‡(
+3entity.Ticket#getNotProportion()Ljava/lang/Boolean;J
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.java† †( "1*Ï
+1J
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.java‡	 ‡(”
+‘
+J
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.java‡	 ‡(
 %0java.lang.Boolean"__id*$*"
 entity.Ticket"
-notProportion"t
-W
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.java‡ ‡(
+notProportion"g
+J
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.java‡ ‡(
 
 %0java.lang.BooleanB
 entity.Ticket

@@ -1,17 +1,17 @@
 
-3entity.ReleaseFile#getLocAdded()Ljava/lang/Integer;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javan n("1*ÿ
-1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javao	 o(¤
-¡
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javao	 o(
+3entity.ReleaseFile#getLocAdded()Ljava/lang/Integer;M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javan n("1*Ø
+1M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javao	 o(—
+”
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javao	 o(
 %0java.lang.Integer"__id*$*"
 entity.ReleaseFile"
 
-locAdded"w
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javao o(
+locAdded"j
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javao o(
 
 %0java.lang.IntegerB
 entity.ReleaseFile

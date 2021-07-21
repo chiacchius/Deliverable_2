@@ -1,16 +1,16 @@
 
-)entity.Changes#getPaths()Ljava/util/List;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java& &("1*æ
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java'	 '(–
-“
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java'	 '(
+)entity.Changes#getPaths()Ljava/util/List;I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Changes.java& &("1*¿
+1I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Changes.java'	 '(‰
+†
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Changes.java'	 '(
 %0java.util.List"__id**
 entity.Changes"
-paths"p
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Changes.java' '(
+paths"c
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Changes.java' '(
 
 %0java.util.ListB
 entity.Changes

@@ -1,16 +1,16 @@
 
-6entity.Walk#getPercentageBugsTrain()Ljava/lang/Double;S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javay y(%"1*Ï
-1S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaz	 z(†
-ù
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaz	 z(
+6entity.Walk#getPercentageBugsTrain()Ljava/lang/Double;F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javay y(%"1*≈
+1F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaz	 z(ì
+ê
+F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaz	 z(
 %0java.lang.Double"__id*(*&
 entity.Walk"
-percentageBugsTrain"o
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaz z(
+percentageBugsTrain"b
+F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaz z(
 
 %0java.lang.DoubleB
 entity.Walk

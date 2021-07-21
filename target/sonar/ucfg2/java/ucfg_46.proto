@@ -1,27 +1,27 @@
 
-Kentity.Release#compare(Lentity/Release;Lentity/Release;)Ljava/lang/Boolean;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaN N("1*ã
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaP	 P(ÖÓ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaP	 P("
+Kentity.Release#compare(Lentity/Release;Lentity/Release;)Ljava/lang/Boolean;I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaN N("1*¢
+1I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaP	 P(ÉÆ
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaP	 P("
 %0java.lang.String"1entity.Release#getReleaseName()Ljava/lang/String;*
 
-release1entity.Release2getReleaseName()ÖÓ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaP* P(C
+release1entity.Release2getReleaseName()ÉÆ
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaP* P(C
 %1java.lang.String"1entity.Release#getReleaseName()Ljava/lang/String;*
 
-release2entity.Release2getReleaseName()èå
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaP	 P(D
+release2entity.Release2getReleaseName()ÛØ
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaP	 P(D
 %2boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
 %0java.lang.String*
 
-%1java.lang.String2equals(Ljava/lang/Object;)"i
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaP P(E
+%1java.lang.String2equals(Ljava/lang/Object;)"\
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaP P(E
 
 %2boolean:
 release1entity.Release:

@@ -1,45 +1,45 @@
 
-Ñhandler.ChangesHandler#getChanges(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java ('"11*Œ
-2^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java$ $(ù
-ö
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java$ $(*
+Ñhandler.ChangesHandler#getChanges(Lorg/eclipse/jgit/lib/Repository;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljava/util/List;Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java ('"11*ß
+2Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java$ $(ê
+ç
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java$ $(*
 comm"org.eclipse.jgit.revwalk.RevCommit"__id*
-""¿
-Ω
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java$ $(*
+""≥
+∞
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java$ $(*
 comm"org.eclipse.jgit.revwalk.RevCommit"
 __arrayGet*
 
 commitsjava.util.List*
 ""*
 9
-1* 
-3^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java- -(õ
-ò
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java- -((
+1*£
+3Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java- -(é
+ã
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java- -((
 entryorg.eclipse.jgit.diff.DiffEntry"__id*
-""æ
-ª
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java- -((
+""±
+Æ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java- -((
 entryorg.eclipse.jgit.diff.DiffEntry"
 __arrayGet*
 
 entriesjava.util.List*
 ""*
 2
-7*∑
-4^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java5 5(Ã
-…
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java5 5(6
+7*ù
+4Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java5 5(ø
+º
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java5 5(6
 %19void"chandler.ChangesHandler#createOrUpdateChanges(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V*"
 handler.ChangesHandler*
 
@@ -48,126 +48,126 @@ T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler
 oldPathjava.lang.String*
 
 newPathjava.lang.String*
-3*Ú
-5^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2D 2(I∞≠
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2D 2(Y1
+3*æ
+5Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2D 2(I£†
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2D 2(Y1
 %16*org.eclipse.jgit.diff.DiffEntry$ChangeType"[org.eclipse.jgit.diff.DiffEntry#getChangeType()Lorg/eclipse/jgit/diff/DiffEntry$ChangeType;**
 (
-entryorg.eclipse.jgit.diff.DiffEntry2getChangeType()ÍÁ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2D 2(d
+entryorg.eclipse.jgit.diff.DiffEntry2getChangeType()›⁄
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2D 2(d
 %17java.lang.String"+java.lang.Enum#toString()Ljava/lang/String;*3
 1
 %16*org.eclipse.jgit.diff.DiffEntry$ChangeType2
-toString()‰·
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2D 2(u
+toString()◊‘
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2D 2(u
 %18boolean",java.lang.String#equals(Ljava/lang/Object;)Z*
 
 %17java.lang.String*
 
 RENAME2equals(Ljava/lang/Object;)*
 3
-4*Â
-6^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2& 2(-˜Ù
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2& 2(?
+4*À
+6Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2& 2(-ÍÁ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2& 2(?
 %15boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
 
 newPathjava.lang.String*	
 .java2"contains(Ljava/lang/CharSequence;)*
 3
-5*ü	
-7^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java/ /(ˆÛ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java/ /('
+5*—
+7Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java/ /(ÈÊ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java/ /('
 %12java.lang.String">org.eclipse.jgit.diff.DiffEntry#getOldPath()Ljava/lang/String;**
 (
-entryorg.eclipse.jgit.diff.DiffEntry2getOldPath()°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java/ /((
+entryorg.eclipse.jgit.diff.DiffEntry2getOldPath()î
+ë
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java/ /((
 oldPathjava.lang.String"__id*
 
-%12java.lang.StringˆÛ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java0 0('
+%12java.lang.StringÈÊ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java0 0('
 %13java.lang.String">org.eclipse.jgit.diff.DiffEntry#getNewPath()Ljava/lang/String;**
 (
-entryorg.eclipse.jgit.diff.DiffEntry2getNewPath()°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java0 0((
+entryorg.eclipse.jgit.diff.DiffEntry2getNewPath()î
+ë
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java0 0((
 newPathjava.lang.String"__id*
 
-%13java.lang.String˜Ù
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java2	 2("
+%13java.lang.StringÍÁ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java2	 2("
 %14boolean"4java.lang.String#contains(Ljava/lang/CharSequence;)Z*
 
 oldPathjava.lang.String*	
 .java2"contains(Ljava/lang/CharSequence;)*
 5
-6*Â
-9^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java%( %(<¶
-£
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java%( %(E3
+6*÷
+9Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java%( %(<ô
+ñ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java%( %(E3
 %4-org.eclipse.jgit.util.io.DisabledOutputStream"__id*
-""≥∞
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java% %(')
-%5#org.eclipse.jgit.diff.DiffFormatter"#org.eclipse.jgit.diff.DiffFormatterí
-è
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java% %(F
+""¶£
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java% %(')
+%5#org.eclipse.jgit.diff.DiffFormatter"#org.eclipse.jgit.diff.DiffFormatterÖ
+Ç
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java% %(F
 %6"Corg.eclipse.jgit.diff.DiffFormatter#<init>(Ljava/io/OutputStream;)V*+
 )
 %5#org.eclipse.jgit.diff.DiffFormatter*5
 3
-%4-org.eclipse.jgit.util.io.DisabledOutputStream¡
-æ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java% %(G)
+%4-org.eclipse.jgit.util.io.DisabledOutputStream¥
+±
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java% %(G)
 df#org.eclipse.jgit.diff.DiffFormatter"__id*+
 )
-%5#org.eclipse.jgit.diff.DiffFormatter÷”
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java& &(
+%5#org.eclipse.jgit.diff.DiffFormatter…∆
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java& &(
 
 %7void"Uorg.eclipse.jgit.diff.DiffFormatter#setRepository(Lorg/eclipse/jgit/lib/Repository;)V*+
 )
 df#org.eclipse.jgit.diff.DiffFormatter*/
 -
 
-repositoryorg.eclipse.jgit.lib.Repository20setRepository(Lorg/eclipse/jgit/lib/Repository;)†
-ù
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java' '(1-
+repositoryorg.eclipse.jgit.lib.Repository20setRepository(Lorg/eclipse/jgit/lib/Repository;)ì
+ê
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java' '(1-
 %8'org.eclipse.jgit.diff.RawTextComparator"__id*
-""ÓÎ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java' '(2
+""·ﬁ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java' '(2
 
 %9void"aorg.eclipse.jgit.diff.DiffFormatter#setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)V*+
 )
 df#org.eclipse.jgit.diff.DiffFormatter*/
 -
-%8'org.eclipse.jgit.diff.RawTextComparator2<setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)ÙÒ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java( ((
+%8'org.eclipse.jgit.diff.RawTextComparator2<setDiffComparator(Lorg/eclipse/jgit/diff/RawTextComparator;)Á‰
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java( ((
 %10void"8org.eclipse.jgit.diff.DiffFormatter#setDetectRenames(Z)V*+
 )
 df#org.eclipse.jgit.diff.DiffFormatter*
-""2setDetectRenames(Z)æ
-ª
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java* *(5
+""2setDetectRenames(Z)±
+Æ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java* *(5
 %11java.util.List"†handler.ChangesHandler#getEntryList(Lorg/eclipse/jgit/revwalk/RevWalk;Lorg/eclipse/jgit/diff/DiffFormatter;Lorg/eclipse/jgit/revwalk/RevCommit;)Ljava/util/List;*"
 handler.ChangesHandler*(
 &
@@ -175,72 +175,72 @@ T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler
 )
 df#org.eclipse.jgit.diff.DiffFormatter*,
 *
-comm"org.eclipse.jgit.revwalk.RevCommitù
-ö
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java* *(6
+comm"org.eclipse.jgit.revwalk.RevCommitê
+ç
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java* *(6
 entriesjava.util.List"__id*
 
 %11java.util.List*
-3*Õ	
-11^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java (+ìê
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java ()
-%0java.util.ArrayList"java.util.ArrayList•
-¢
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java (+
+3*Ú
+11Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java (+ÜÉ
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java ()
+%0java.util.ArrayList"java.util.ArrayListò
+ï
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java (+
 %1"java.util.ArrayList#<init>()V*
 
-%0java.util.ArrayList°
-û
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java (,
+%0java.util.ArrayListî
+ë
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java (,
 changesjava.util.List"__id*
 
-%0java.util.ArrayList≠™
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java (&
-%2 org.eclipse.jgit.revwalk.RevWalk" org.eclipse.jgit.revwalk.RevWalkë
-é
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java (&
+%0java.util.ArrayList†ù
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java (&
+%2 org.eclipse.jgit.revwalk.RevWalk" org.eclipse.jgit.revwalk.RevWalkÑ
+Å
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java (&
 %3"Korg.eclipse.jgit.revwalk.RevWalk#<init>(Lorg/eclipse/jgit/lib/Repository;)V*(
 &
 %2 org.eclipse.jgit.revwalk.RevWalk*/
 -
 
-repositoryorg.eclipse.jgit.lib.Repositoryª
-∏
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.java ('&
+repositoryorg.eclipse.jgit.lib.RepositoryÆ
+´
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.java ('&
 rw org.eclipse.jgit.revwalk.RevWalk"__id*(
 &
 %2 org.eclipse.jgit.revwalk.RevWalk*
-2*é
-1^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.javaF F(ç
-ä
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.javaF F(
+2*⁄
+1Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.javaF F(Ä
+˝
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.javaF F(
 %20void"Ghandler.ChangesHandler#updateChanges(Ljava/util/List;Ljava/util/List;)V*"
 handler.ChangesHandler*
 
 changesjava.util.List*
 
-filesjava.util.Listô
-ñ
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.javaG G(+
+filesjava.util.Listå
+â
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.javaG G(+
 %21void"Lhandler.ChangesHandler#updateReleaseFiles(Ljava/util/List;Ljava/util/List;)V*"
 handler.ChangesHandler*
 
 changesjava.util.List* 
 
-projReleasesjava.util.List"}
-^
-T/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/ChangesHandler.javaJ J(
+projReleasesjava.util.List"p
+Q
+G/Users/chiacchius/Desktop/Deliverable_2/src/handler/ChangesHandler.javaJ J(
 
 changesjava.util.List:-
 

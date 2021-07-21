@@ -1,17 +1,17 @@
 
-2entity.ReleaseFile#getFilePath()Ljava/lang/String;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java# #("1*ý
-1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$	 $(£
- 
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$	 $(
+2entity.ReleaseFile#getFilePath()Ljava/lang/String;M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.java# #("1*Ö
+1M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.java$	 $(–
+“
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.java$	 $(
 %0java.lang.String"__id*$*"
 entity.ReleaseFile"
 
-filePath"v
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.java$ $(
+filePath"i
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.java$ $(
 
 %0java.lang.StringB
 entity.ReleaseFile

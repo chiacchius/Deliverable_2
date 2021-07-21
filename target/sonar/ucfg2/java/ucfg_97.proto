@@ -1,16 +1,16 @@
 
-*entity.Ticket#getCommits()Ljava/util/List;U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.javau u(""1*ä
-1U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.javav	 v(–
-“
-U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.javav	 v(
+*entity.Ticket#getCommits()Ljava/util/List;H
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.javau u(""1*½
+1H
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.javav	 v(‰
+†
+H
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.javav	 v(
 %0java.util.List"__id**
 entity.Ticket"	
-commits"o
-U
-K/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Ticket.javav v(
+commits"b
+H
+>/Users/chiacchius/Desktop/Deliverable_2/src/entity/Ticket.javav v(
 
 %0java.util.ListB
 entity.Ticket

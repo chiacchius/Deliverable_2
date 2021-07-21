@@ -1,18 +1,18 @@
 
-Bentity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaa a("5*ç
-2V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javac
- c(É
-Ä
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javac
+Bentity.Release#containsFile(Ljava/lang/String;)Ljava/lang/Boolean;I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaa a("5*‰
+2I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javac
+ c(u
+s
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javac
  c(
 rfentity.ReleaseFile"__id*
-""°
-û
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javac
+""î
+ë
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javac
  c(
 rfentity.ReleaseFile"
 __arrayGet*
@@ -20,30 +20,30 @@ __arrayGet*
 %0java.util.List*
 ""*
 4
-1*Ω
-3V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javae e("`
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javaf	 f(
-""*‡
-4V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javad
- d( «
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javad
+1*£
+3I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javae e("S
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javaf	 f(
+""*¨
+4I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javad
+ d(Ω∫
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javad
  d(
 %1entity.Changes".entity.ReleaseFile#getChange()Lentity/Changes;*
 
-rfentity.ReleaseFile2getChange()¿Ω
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javad
+rfentity.ReleaseFile2getChange()≥∞
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javad
  d(#
 %2java.util.List")entity.Changes#getPaths()Ljava/util/List;*
 
 %1entity.Changes2
-getPaths()ÍÁ
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javad
+getPaths()›⁄
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javad
  d(2
 %3boolean",java.util.List#contains(Ljava/lang/Object;)Z*
 
@@ -51,20 +51,20 @@ L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javad
 
 pathjava.lang.String2contains(Ljava/lang/Object;)*
 2
-3*Ä
-5V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javac c(ù
-ö
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javac c(,
+3*Ê
+5I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javac c(ê
+ç
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javac c(,
 %0java.util.List"__id*$*"
 entity.Release"
 releaseFiles*
-2*Ω
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javai i("`
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.javai i(
+2*£
+1I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javai i("S
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.javai i(
 "":
 pathjava.lang.StringB
 entity.Release

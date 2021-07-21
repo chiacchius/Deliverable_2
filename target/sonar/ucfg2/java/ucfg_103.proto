@@ -1,106 +1,106 @@
 
-fhandler.SamplingHandler#oversampling(Lweka/core/Instances;)Lweka/filters/supervised/instance/Resample;_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java ($"13*ó
-13_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (©
-¶
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (5
+fhandler.SamplingHandler#oversampling(Lweka/core/Instances;)Lweka/filters/supervised/instance/Resample;R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java ($"13*˝
+13R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (ú
+ô
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (5
 resample)weka.filters.supervised.instance.Resample"__id*
 ""*
-12*˙
-5_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (Yéã
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (;
+12*‡
+5R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (YÅ˛
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (;
 
 %8void"Bweka.filters.supervised.instance.Resample#setSampleSizePercent(D)V*7
 5
 resample)weka.filters.supervised.instance.Resample*
 ""2setSampleSizePercent(D)*
-1*…
-6_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (X›
-⁄
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (X
+1*Ø
+6R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (X–
+Õ
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (X
 %7double"2handler.SamplingHandler#getMinorityPercentage(II)D*"
 handler.SamplingHandler*
 	
 %5int*
 	
 %6int*
-5*£
-7_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javaH (P∑¥
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.javaH (W	
+5*â
+7R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.javaH (P™ß
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.javaH (W	
 %6int"weka.core.Instances#size()I*!
 
 trainSetweka.core.Instances2size()*
-6*◊
-8_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (1Î
-Ë
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java2 (F	
+6*Ω
+8R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (1ﬁ
+€
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java2 (F	
 %5int":handler.SamplingHandler#getBugsNum(Lweka/core/Instances;)I*"
 handler.SamplingHandler*!
 
 trainSetweka.core.Instances*
-7*¸
-9_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (êç
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java ('
+7*‚
+9R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (ÉÄ
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java ('
 
 %4void"Cweka.filters.supervised.instance.Resample#setBiasToUniformClass(D)V*7
 5
 resample)weka.filters.supervised.instance.Resample*
 ""2setBiasToUniformClass(D)*
-8*Û
-10_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (ÜÉ
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (#
+8*Ÿ
+10R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (˘ˆ
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (#
 
 %3void">weka.filters.supervised.instance.Resample#setNoReplacement(Z)V*7
 5
 resample)weka.filters.supervised.instance.Resample*
 ""2setNoReplacement(Z)*
-9*ç
-11_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (‘
-—
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (5
+9*Ê
+11R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java («
+ƒ
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (5
 resample)weka.filters.supervised.instance.Resample"__id*1
 /
-%0)weka.filters.supervised.instance.Resample»≈
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java ($
+%0)weka.filters.supervised.instance.Resampleª∏
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java ($
 %2boolean"Pweka.filters.supervised.instance.Resample#setInputFormat(Lweka/core/Instances;)Z*7
 5
 resample)weka.filters.supervised.instance.Resample*!
 
 trainSetweka.core.Instances2%setInputFormat(Lweka/core/Instances;)*
-10*É
-12_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (¿Ω
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (/
-%0)weka.filters.supervised.instance.Resample")weka.filters.supervised.instance.Resample“
-œ
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java (
+10*‹
+12R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (≥∞
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (/
+%0)weka.filters.supervised.instance.Resample")weka.filters.supervised.instance.Resample≈
+¬
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java (
 %1"3weka.filters.supervised.instance.Resample#<init>()V*1
 /
 %0)weka.filters.supervised.instance.Resample*
-11*Å
-1_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java'	 '("ö
-_
-U/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/handler/SamplingHandler.java' '(7
+11*Á
+1R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java'	 '("ç
+R
+H/Users/chiacchius/Desktop/Deliverable_2/src/handler/SamplingHandler.java' '(7
 5
 resample)weka.filters.supervised.instance.Resample:
 trainSetweka.core.InstancesB"

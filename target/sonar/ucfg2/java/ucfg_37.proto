@@ -1,16 +1,16 @@
 
-3entity.Release#getReleaseIndex()Ljava/lang/Integer;V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java) )("1*ì
-1V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java*	 *(™
-–
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java*	 *(
+3entity.Release#getReleaseIndex()Ljava/lang/Integer;I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.java) )("1*Å
+1I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.java*	 *(Œ
+‰
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.java*	 *(
 %0java.lang.Integer"__id**
 entity.Release"
-index"s
-V
-L/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Release.java* *(
+index"f
+I
+?/Users/chiacchius/Desktop/Deliverable_2/src/entity/Release.java* *(
 
 %0java.lang.IntegerB
 entity.Release

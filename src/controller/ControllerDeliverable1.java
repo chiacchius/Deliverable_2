@@ -421,6 +421,8 @@ public class ControllerDeliverable1 {
 				Double ov = (double) ticketWithoutIv.getOv().getReleaseIndex();
 				
 				Double id = fv - (fv - ov) * prop;
+
+				System.out.println("proportion: " + id);
 				
 				id = Math.floor(id);
 

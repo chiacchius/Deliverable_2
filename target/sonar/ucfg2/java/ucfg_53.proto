@@ -1,17 +1,17 @@
 
-.entity.Walk#getTrainSet()Lweka/core/Instances;S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaO O("1*ç
-1S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaP	 P(˜
-•
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaP	 P(
+.entity.Walk#getTrainSet()Lweka/core/Instances;F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaO O("1*À
+1F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaP	 P(‹
+ˆ
+F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaP	 P(
 %0weka.core.Instances"__id**
 entity.Walk"
 
-trainSet"r
-S
-I/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/Walk.javaP P(
+trainSet"e
+F
+</Users/chiacchius/Desktop/Deliverable_2/src/entity/Walk.javaP P(
 
 %0weka.core.InstancesB
 entity.Walk

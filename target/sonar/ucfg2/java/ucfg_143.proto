@@ -1,16 +1,16 @@
 
-6entity.ReleaseFile#getMaxLocAdded()Ljava/lang/Integer;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaj j("1*‚
-1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javak	 k(§
-¤
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javak	 k(
+6entity.ReleaseFile#getMaxLocAdded()Ljava/lang/Integer;M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javaj j("1*Û
+1M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javak	 k(š
+—
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javak	 k(
 %0java.lang.Integer"__id*'*%
 entity.ReleaseFile"
-maxLocAdded"w
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javak k(
+maxLocAdded"j
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javak k(
 
 %0java.lang.IntegerB
 entity.ReleaseFile

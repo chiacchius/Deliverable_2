@@ -1,16 +1,16 @@
 
-.entity.ReleaseFile#getLoc()Ljava/lang/Integer;Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaU U("1*˙
-1Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaV	 V(ü
-ú
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaV	 V(
+.entity.ReleaseFile#getLoc()Ljava/lang/Integer;M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javaU U("1*”
+1M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javaV	 V(í
+è
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javaV	 V(
 %0java.lang.Integer"__id**
 entity.ReleaseFile"
-loc"w
-Z
-P/Users/chiacchius/Desktop/Deliverable_2/deliverable2/src/entity/ReleaseFile.javaV V(
+loc"j
+M
+C/Users/chiacchius/Desktop/Deliverable_2/src/entity/ReleaseFile.javaV V(
 
 %0java.lang.IntegerB
 entity.ReleaseFile
